@@ -765,7 +765,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Often on promo; thin TGP.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 5.5,
             "col_gallery": [
@@ -1124,7 +1131,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "clearance",
+                "generation": "30-series",
+                "model_year": 2023,
+                "note": "Entry 3050 still pops up on sale; fine for esports only.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 5.5,
             "col_gallery": [
@@ -1487,7 +1501,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2025,
+                "note": "ASUS UK/EU store + retailers still stock 4050 V16.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 7.2,
             "col_gallery": [
@@ -1853,7 +1874,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "Current V16 50-series SKU — package-limited but retail.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 7.2,
             "col_gallery": [
@@ -2198,7 +2226,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still widely listed; strong value while 4050 clears.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4,
             "col_gallery": [
@@ -2538,7 +2573,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Common on Lenovo.com + EU retailers; great 4060 value.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4,
             "col_gallery": [
@@ -2877,7 +2919,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Steady EU stock.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.5,
             "col_gallery": [
@@ -3217,7 +3266,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Frequent Amazon/MediaMarkt stock.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 3.5,
             "col_gallery": [
@@ -3558,7 +3614,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.2,
             "col_gallery": [
@@ -3899,7 +3962,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "limited",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "G15 availability is patchy by country — check Geizhals/Amazon before locking in.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 3.8,
             "col_gallery": [
@@ -4241,7 +4311,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 3.5,
             "col_gallery": [
@@ -4583,7 +4660,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 3.8,
             "col_gallery": [
@@ -4924,7 +5008,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "limited",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Legion 5 40-series clearing; check vs Legion 5 50-series.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.5,
             "col_gallery": [
@@ -4960,8 +5051,8 @@
             "col_ram": "8–16GB DDR4/5",
             "col_battery": 45,
             "col_weight": 2.25,
-            "col_status": "alt",
-            "col_notes": "Aging platform. Avoid 8GB single-channel configs. Only if under €600 and you accept last-gen limits.",
+            "col_status": "pass",
+            "col_notes": "Aging platform. Avoid 8GB single-channel configs. Only if under €600 and you accept last-gen limits. [Hard to find new — aftermarket/clearance]",
             "col_url": "https://www.lenovo.com/gb/en/laptops/",
             "col_s_gaming": 5.6,
             "col_s_gpu": 5.3,
@@ -5074,7 +5165,7 @@
               "durability": "Standard consumer testing",
               "software": "OEM control center (MSI Center / Armoury Crate / Lenovo Vantage / etc.)",
               "warranty": "Typically 1–2 years limited (region / seller dependent)",
-              "notes": "Aging platform. Avoid 8GB single-channel configs. Only if under €600 and you accept last-gen limits.",
+              "notes": "Aging platform. Avoid 8GB single-channel configs. Only if under €600 and you accept last-gen limits. [Hard to find new — aftermarket/clearance]",
               "link": "https://www.lenovo.com/gb/en/laptops/",
               "disclaimer": "Price, FPS, and battery on this card are for the priced config. Street prices move weekly — use the EU/UK buy links to compare live offers. Exact CPU, TGP, RAM, and SSD vary by SKU.",
               "performance": {
@@ -5264,7 +5355,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "aftermarket",
+                "generation": "30-series",
+                "model_year": 2022,
+                "note": "Aging line — only if deeply discounted; skip for a normal new buy.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4,
             "col_gallery": [
@@ -5610,7 +5708,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Clearance 4060 TUF still common; new 5060 A15 also arriving.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.8,
             "col_gallery": [
@@ -5652,8 +5757,8 @@
             "col_ram": "16–32GB LPDDR5",
             "col_battery": 76,
             "col_weight": 1.65,
-            "col_status": "consider",
-            "col_notes": "Premium portable 4060. Last-gen stock can be excellent value vs new 50-series. OLED battery mid, not Mac-class.",
+            "col_status": "pass",
+            "col_notes": "Premium portable 4060. Last-gen stock can be excellent value vs new 50-series. OLED battery mid, not Mac-class. [Hard to find new — aftermarket/clearance]",
             "col_url": "https://www.asus.com/uk/laptops/",
             "col_s_gaming": 8.4,
             "col_s_gpu": 8.2,
@@ -5765,7 +5870,7 @@
               "durability": "Standard consumer testing",
               "software": "OEM control center (MSI Center / Armoury Crate / Lenovo Vantage / etc.)",
               "warranty": "Typically 1–2 years limited (region / seller dependent)",
-              "notes": "Premium portable 4060. Last-gen stock can be excellent value vs new 50-series. OLED battery mid, not Mac-class.",
+              "notes": "Premium portable 4060. Last-gen stock can be excellent value vs new 50-series. OLED battery mid, not Mac-class. [Hard to find new — aftermarket/clearance]",
               "link": "https://www.asus.com/uk/laptops/",
               "disclaimer": "Price, FPS, and battery on this card are for the priced config. Street prices move weekly — use the EU/UK buy links to compare live offers. Exact CPU, TGP, RAM, and SSD vary by SKU.",
               "performance": {
@@ -5978,7 +6083,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "aftermarket",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "2024 G14 4060 is largely gone from mainstream EU/UK retail — mostly used/refurb. Prefer 2025 G14 50-series or TUF/LOQ 5060 for new stock.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 8.5,
             "col_gallery": [
@@ -6325,7 +6437,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 3.8,
             "col_gallery": [
@@ -6666,7 +6785,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.5,
             "col_gallery": [
@@ -7012,7 +7138,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4,
             "col_gallery": [
@@ -7355,7 +7488,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "limited",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Fewer EU shelves than Acer/MSI — verify warranty region.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 3.5,
             "col_gallery": [
@@ -7704,7 +7844,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 7.5,
             "col_gallery": [
@@ -8050,7 +8197,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.5,
             "col_gallery": [
@@ -8392,7 +8546,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 3.5,
             "col_gallery": [
@@ -8732,7 +8893,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "clearance",
+                "generation": "30-series",
+                "model_year": 2023,
+                "note": "Older GPU class — only if cheap.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4,
             "col_gallery": [
@@ -9084,7 +9252,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "clearance",
+                "generation": "30-series",
+                "model_year": 2023,
+                "note": "Older GPU class — only if cheap.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 7.2,
             "col_gallery": [
@@ -9429,7 +9604,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.2,
             "col_gallery": [
@@ -9779,7 +9961,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 5.5,
             "col_gallery": [
@@ -10120,7 +10309,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_aesthetic": 4.2,
             "col_gallery": [
@@ -10156,8 +10352,8 @@
             "col_ram": "16–32GB (often soldered)",
             "col_battery": 68,
             "col_weight": 1.84,
-            "col_status": "consider",
-            "col_notes": "Build/screen tax. Only if aesthetics matter and you find prior-gen 4060 discounted hard.",
+            "col_status": "pass",
+            "col_notes": "Build/screen tax. Only if aesthetics matter and you find prior-gen 4060 discounted hard. [Hard to find new — aftermarket/clearance]",
             "col_url": "https://www.razer.com/",
             "col_detail": {
               "price_note": "2025 Blades start higher on 50-series; this row is prior-gen 4060 stock",
@@ -10254,7 +10450,7 @@
               },
               "cooling": "Vapor chamber + dual fans (thin limits sustained power)",
               "durability": "Premium build; limited DIY repair",
-              "notes": "Build/screen tax. Only if aesthetics matter and you find prior-gen 4060 discounted hard.",
+              "notes": "Build/screen tax. Only if aesthetics matter and you find prior-gen 4060 discounted hard. [Hard to find new — aftermarket/clearance]",
               "performance": {
                 "gpu_class": "rtx4060",
                 "chassis_class": "thin",
@@ -10441,7 +10637,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "aftermarket",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Prior-gen Blade; new Blades are 50-series and much more expensive.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 8.2,
             "col_s_gpu": 8,
@@ -10486,8 +10689,8 @@
             "col_ram": "16–32GB LPDDR5X",
             "col_battery": 90,
             "col_weight": 1.85,
-            "col_status": "top",
-            "col_notes": "Premium thin 4070-class. Verify exact GPU generation on the listing — naming drifts.",
+            "col_status": "pass",
+            "col_notes": "Premium thin 4070-class. Verify exact GPU generation on the listing — naming drifts. [Hard to find new — aftermarket/clearance]",
             "col_url": "https://rog.asus.com/",
             "col_detail": {
               "price_note": "Verify GPU label — some listings are 50-series",
@@ -10581,7 +10784,7 @@
               },
               "cooling": "Tri-fan / vapor chamber (gen-dependent)",
               "durability": "Premium thin-and-light",
-              "notes": "Premium thin 4070-class. Verify exact GPU generation on the listing — naming drifts.",
+              "notes": "Premium thin 4070-class. Verify exact GPU generation on the listing — naming drifts. [Hard to find new — aftermarket/clearance]",
               "performance": {
                 "gpu_class": "rtx4060",
                 "chassis_class": "thin",
@@ -10784,7 +10987,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "aftermarket",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Prior-gen G16 stock; new retail is 2025 50-series. Treat as clearance/used.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 8.6,
             "col_s_gpu": 8.5,
@@ -11122,7 +11332,14 @@
                 }
               ],
               "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
-              "link": "https://www.msi.com/Laptop"
+              "link": "https://www.msi.com/Laptop",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 8.3,
             "col_s_gpu": 8.1,
@@ -11453,7 +11670,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 8,
             "col_s_gpu": 7.9,
@@ -11788,7 +12012,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 7.8,
             "col_s_gpu": 7.8,
@@ -12122,7 +12353,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "current",
+                "model_year": 2025,
+                "note": "Check Geizhals / Amazon / Scan for live stock.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 5.5,
             "col_s_gpu": 5.2,
@@ -12456,7 +12694,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "current",
+                "model_year": 2025,
+                "note": "Check Geizhals / Amazon / Scan for live stock.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 4.8,
             "col_s_gpu": 4.5,
@@ -12792,7 +13037,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "apple",
+                "model_year": 2024,
+                "note": "Always in stock at Apple / education / refurb.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 6.5,
             "col_s_gpu": 6.8,
@@ -13126,7 +13378,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "40-series",
+                "model_year": 2024,
+                "note": "Still often available; confirm live stock before buying.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 8.4,
             "col_s_gpu": 8.2,
@@ -13451,7 +13710,14 @@
                   "note": "ES — often competitive EU pricing"
                 }
               ],
-              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty."
+              "buy_guide": "EU: start on Geizhals, then Alternate / Amazon.de / Coolblue / Notebooksbilliger. UK: Scan, Currys, Amazon.co.uk, manufacturer store. Prefer VAT-included local sellers for warranty.",
+              "availability": {
+                "status": "retail",
+                "generation": "modular",
+                "model_year": 2024,
+                "note": "Direct from Framework EU/UK — build time varies.",
+                "checked": "2026-08"
+              }
             },
             "col_s_gaming": 7.5,
             "col_s_gpu": 7.2,
@@ -13477,6 +13743,2936 @@
             "col_price_aud_max": 3699,
             "col_price_gbp_min": 1349,
             "col_price_gbp_max": 1999
+          }
+        },
+        {
+          "id": "lap_lenovo_loq_5060",
+          "createdAt": 1785849440306,
+          "cells": {
+            "col_model": "Lenovo LOQ 15 (RTX 5060, 2025–26)",
+            "col_brand": "lenovo",
+            "col_price": {
+              "EUR": 1399,
+              "GBP": 1249,
+              "AUD": 2299
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "Ryzen 7 250 / i7-HX class",
+            "col_display": "15.6\" FHD 144–180Hz",
+            "col_ram": "16GB DDR5 (≤32GB)",
+            "col_battery": 60,
+            "col_weight": 2.4,
+            "col_s_gaming": 8.9,
+            "col_s_gpu": 8.7,
+            "col_s_cpu": 8.2,
+            "col_s_battery": 5.2,
+            "col_s_thermals": 6.8,
+            "col_s_display": 6.6,
+            "col_s_ram": 7.8,
+            "col_s_io": 7.5,
+            "col_s_port": 5.6,
+            "col_s_build": 6.9,
+            "col_s_aesthetic": 6.2,
+            "col_status": "top",
+            "col_notes": "Current-gen LOQ value king in EU/UK when on sale. Real gaming TGP chassis — prefer over thin 5060s and over aftermarket G14 4060 stock.",
+            "col_url": "https://www.lenovo.com/gb/en/loq/",
+            "col_image": "https://p4-ofp.static.pub//fes/cms/2024/08/23/aecao4pbkx3w8n9bjvs286w0oj8j5t361897.png",
+            "col_config": "R7/i7 · RTX 5060 8GB @ ~100–115 W · 16GB dual-channel · 512GB–1TB",
+            "col_price_note": "New LOQ 15AHP11 class in EU from ~€1.3–1.7k depending on GPU; street often under list.",
+            "col_price_eur_min": 1231,
+            "col_price_eur_max": 1651,
+            "col_price_gbp_min": 1099,
+            "col_price_gbp_max": 1474,
+            "col_price_aud_min": 2023,
+            "col_price_aud_max": 2713,
+            "col_detail": {
+              "series": "Lenovo LOQ 15 (RTX 5060, 2025–26)",
+              "model_name": "Lenovo LOQ 15 (RTX 5060, 2025–26)",
+              "brand": "lenovo",
+              "os": "Windows 11 Home",
+              "price_eur": 1399,
+              "price_gbp": 1249,
+              "price_aud": 2299,
+              "price_note": "New LOQ 15AHP11 class in EU from ~€1.3–1.7k depending on GPU; street often under list.",
+              "priced_config": "R7/i7 · RTX 5060 8GB @ ~100–115 W · 16GB dual-channel · 512GB–1TB",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2026,
+                "note": "New LOQ 15AHP11 class in EU from ~€1.3–1.7k depending on GPU; street often under list.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1231,
+                  "max": 1651
+                },
+                "GBP": {
+                  "min": 1099,
+                  "max": 1474
+                },
+                "AUD": {
+                  "min": 2023,
+                  "max": 2713
+                }
+              },
+              "display": {
+                "size_in": 15.6,
+                "resolution": "1920 × 1080 (FHD) or FHD+",
+                "refresh_hz": 180,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "Ryzen 7 250 / i7-HX class",
+                "family": "AMD H/HS/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Radeon Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈100–140 W (LOQ gaming chassis)"
+              },
+              "memory": {
+                "installed": "16GB DDR5 (≤32GB)",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "1 TB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 60,
+                "cells": "3–4 cell typical",
+                "adapter_w": 180,
+                "estimated_web_h": "3–5.5",
+                "estimated_game_h": "1.0–1.8",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.4,
+                "weight_lbs": 5.3,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "Current-gen LOQ value king in EU/UK when on sale. Real gaming TGP chassis — prefer over thin 5060s and over aftermarket G14 4060 stock.",
+              "link": "https://www.lenovo.com/gb/en/loq/",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "lenovo",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.lenovo.com/gb/en/laptops/",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: R7/i7 · RTX 5060 8GB @ ~100–115 W · 16GB dual-channel · 512GB–1TB",
+                  "bound": "≈100–140 W (LOQ gaming chassis)",
+                  "note": "FPS for this priced config only — R7/i7 · RTX 5060 8GB @ ~100–115 W · 16GB dual-channel · 512GB–1TB. Bound: ≈100–140 W (LOQ gaming chassis). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈100–140 W (LOQ gaming chassis)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [
+                "https://p4-ofp.static.pub//fes/cms/2024/08/23/aecao4pbkx3w8n9bjvs286w0oj8j5t361897.png"
+              ],
+              "youtube_search_query": "Lenovo LOQ 15 (RTX 5060, 2025–26) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_lenovo_loq_5050",
+          "createdAt": 1785849440713,
+          "cells": {
+            "col_model": "Lenovo LOQ 15 (RTX 5050)",
+            "col_brand": "lenovo",
+            "col_price": {
+              "EUR": 1149,
+              "GBP": 999,
+              "AUD": 1899
+            },
+            "col_gpu": "rtx5050",
+            "col_cpu": "Ryzen 5/7 or i5-HX class",
+            "col_display": "15.6\" FHD 144Hz",
+            "col_ram": "16GB DDR5",
+            "col_battery": 60,
+            "col_weight": 2.4,
+            "col_s_gaming": 8.2,
+            "col_s_gpu": 8,
+            "col_s_cpu": 7.8,
+            "col_s_battery": 5.2,
+            "col_s_thermals": 6.7,
+            "col_s_display": 6.5,
+            "col_s_ram": 7.8,
+            "col_s_io": 7.5,
+            "col_s_port": 5.6,
+            "col_s_build": 6.8,
+            "col_s_aesthetic": 6.2,
+            "col_status": "top",
+            "col_notes": "Sweet spot between last-gen 4050/4060 clearance and full 5060 pricing. Buy new if 5060 delta is large.",
+            "col_url": "https://www.lenovo.com/gb/en/loq/",
+            "col_image": "https://p4-ofp.static.pub//fes/cms/2024/08/23/aecao4pbkx3w8n9bjvs286w0oj8j5t361897.png",
+            "col_config": "R5/R7 · RTX 5050 · 16GB dual-channel · 512GB",
+            "col_price_note": "Appearing on Lenovo US/EU configs and Amazon — check Geizhals for local EU.",
+            "col_price_eur_min": 1011,
+            "col_price_eur_max": 1356,
+            "col_price_gbp_min": 879,
+            "col_price_gbp_max": 1179,
+            "col_price_aud_min": 1671,
+            "col_price_aud_max": 2241,
+            "col_detail": {
+              "series": "Lenovo LOQ 15 (RTX 5050)",
+              "model_name": "Lenovo LOQ 15 (RTX 5050)",
+              "brand": "lenovo",
+              "os": "Windows 11 Home",
+              "price_eur": 1149,
+              "price_gbp": 999,
+              "price_aud": 1899,
+              "price_note": "Appearing on Lenovo US/EU configs and Amazon — check Geizhals for local EU.",
+              "priced_config": "R5/R7 · RTX 5050 · 16GB dual-channel · 512GB",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "Appearing on Lenovo US/EU configs and Amazon — check Geizhals for local EU.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1011,
+                  "max": 1356
+                },
+                "GBP": {
+                  "min": 879,
+                  "max": 1179
+                },
+                "AUD": {
+                  "min": 1671,
+                  "max": 2241
+                }
+              },
+              "display": {
+                "size_in": 15.6,
+                "resolution": "1920 × 1080 (FHD) or FHD+",
+                "refresh_hz": 144,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "Ryzen 5/7 or i5-HX class",
+                "family": "AMD H/HS/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Radeon Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5050 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈95–115 W (LOQ class)"
+              },
+              "memory": {
+                "installed": "16GB DDR5",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "512 GB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 60,
+                "cells": "3–4 cell typical",
+                "adapter_w": 180,
+                "estimated_web_h": "3–5.5",
+                "estimated_game_h": "1.0–1.8",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.4,
+                "weight_lbs": 5.3,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "Sweet spot between last-gen 4050/4060 clearance and full 5060 pricing. Buy new if 5060 delta is large.",
+              "link": "https://www.lenovo.com/gb/en/loq/",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "lenovo",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.lenovo.com/gb/en/laptops/",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=Lenovo%20LOQ%2015%20(RTX%205050)%20NVIDIA%20GeForce%20RTX%205050%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=Lenovo%20LOQ%2015%20(RTX%205050)%20NVIDIA%20GeForce%20RTX%205050%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=Lenovo%20LOQ%2015%20(RTX%205050)%20NVIDIA%20GeForce%20RTX%205050%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=Lenovo%20LOQ%2015%20(RTX%205050)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=Lenovo%20LOQ%2015%20(RTX%205050)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=Lenovo%20LOQ%2015%20(RTX%205050)%20NVIDIA%20GeForce%20RTX%205050%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=Lenovo%20LOQ%2015%20(RTX%205050)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5050",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: R5/R7 · RTX 5050 · 16GB dual-channel · 512GB",
+                  "bound": "≈95–115 W (LOQ class)",
+                  "note": "FPS for this priced config only — R5/R7 · RTX 5050 · 16GB dual-channel · 512GB. Bound: ≈95–115 W (LOQ class). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 62,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "High, DLSS",
+                      "fps": 60,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 60,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 130,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 210,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 108,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈95–115 W (LOQ class)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [
+                "https://p4-ofp.static.pub//fes/cms/2024/08/23/aecao4pbkx3w8n9bjvs286w0oj8j5t361897.png"
+              ],
+              "youtube_search_query": "Lenovo LOQ 15 (RTX 5050) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20LOQ%2015%20(RTX%205050)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_asus_tuf_a15_5060",
+          "createdAt": 1785849440778,
+          "cells": {
+            "col_model": "ASUS TUF A15 (RTX 5060)",
+            "col_brand": "asus",
+            "col_price": {
+              "EUR": 1349,
+              "GBP": 1199,
+              "AUD": 2199
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "Ryzen 7 HX class",
+            "col_display": "15.6\" FHD 144–165Hz",
+            "col_ram": "16GB DDR5",
+            "col_battery": 90,
+            "col_weight": 2.2,
+            "col_s_gaming": 8.8,
+            "col_s_gpu": 8.6,
+            "col_s_cpu": 8.3,
+            "col_s_battery": 7,
+            "col_s_thermals": 7,
+            "col_s_display": 6.8,
+            "col_s_ram": 7.8,
+            "col_s_io": 7.2,
+            "col_s_port": 6.5,
+            "col_s_build": 7.4,
+            "col_s_aesthetic": 6.5,
+            "col_status": "top",
+            "col_notes": "New-gen TUF workhorse with big battery and tough build. Better retail availability than last-gen Zephyrus deals.",
+            "col_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+            "col_image": "https://dlcdnwebimgs.asus.com/gain/9c0932c2-838a-4993-b02c-8487dd7d0b58/w800",
+            "col_config": "R7 · RTX 5060 8GB @ ~115 W · 16GB dual-channel · 512GB–1TB",
+            "col_price_note": "Rolling out on ASUS store + Amazon/Scan class retailers — verify exact TGP on the SKU.",
+            "col_price_eur_min": 1187,
+            "col_price_eur_max": 1592,
+            "col_price_gbp_min": 1055,
+            "col_price_gbp_max": 1415,
+            "col_price_aud_min": 1935,
+            "col_price_aud_max": 2595,
+            "col_detail": {
+              "series": "ASUS TUF A15 (RTX 5060)",
+              "model_name": "ASUS TUF A15 (RTX 5060)",
+              "brand": "asus",
+              "os": "Windows 11 Home",
+              "price_eur": 1349,
+              "price_gbp": 1199,
+              "price_aud": 2199,
+              "price_note": "Rolling out on ASUS store + Amazon/Scan class retailers — verify exact TGP on the SKU.",
+              "priced_config": "R7 · RTX 5060 8GB @ ~115 W · 16GB dual-channel · 512GB–1TB",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "Rolling out on ASUS store + Amazon/Scan class retailers — verify exact TGP on the SKU.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1187,
+                  "max": 1592
+                },
+                "GBP": {
+                  "min": 1055,
+                  "max": 1415
+                },
+                "AUD": {
+                  "min": 1935,
+                  "max": 2595
+                }
+              },
+              "display": {
+                "size_in": 15.6,
+                "resolution": "1920 × 1080 (FHD) or FHD+",
+                "refresh_hz": 165,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "Ryzen 7 HX class",
+                "family": "AMD H/HS/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Radeon Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈105–140 W (TUF A15)"
+              },
+              "memory": {
+                "installed": "16GB DDR5",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "1 TB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 90,
+                "cells": "3–4 cell typical",
+                "adapter_w": 230,
+                "estimated_web_h": "5–8",
+                "estimated_game_h": "1.3–2.2",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.2,
+                "weight_lbs": 4.8,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "New-gen TUF workhorse with big battery and tough build. Better retail availability than last-gen Zephyrus deals.",
+              "link": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "asus",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.asus.com/uk/laptops/",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=ASUS%20TUF%20A15%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=ASUS%20TUF%20A15%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=ASUS%20TUF%20A15%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=ASUS%20TUF%20A15%20(RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=ASUS%20TUF%20A15%20(RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=ASUS%20TUF%20A15%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=ASUS%20TUF%20A15%20(RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: R7 · RTX 5060 8GB @ ~115 W · 16GB dual-channel · 512GB–1TB",
+                  "bound": "≈105–140 W (TUF A15)",
+                  "note": "FPS for this priced config only — R7 · RTX 5060 8GB @ ~115 W · 16GB dual-channel · 512GB–1TB. Bound: ≈105–140 W (TUF A15). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈105–140 W (TUF A15)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [
+                "https://dlcdnwebimgs.asus.com/gain/9c0932c2-838a-4993-b02c-8487dd7d0b58/w800"
+              ],
+              "youtube_search_query": "ASUS TUF A15 (RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20TUF%20A15%20(RTX%205060)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_acer_nitro_v15_5060",
+          "createdAt": 1785849440937,
+          "cells": {
+            "col_model": "Acer Nitro V 15 (RTX 5060)",
+            "col_brand": "acer",
+            "col_price": {
+              "EUR": 1199,
+              "GBP": 1049,
+              "AUD": 1999
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "i5/i7-HX or R7 class",
+            "col_display": "15.6\" FHD 144–165Hz",
+            "col_ram": "16GB DDR5",
+            "col_battery": 57,
+            "col_weight": 2.1,
+            "col_s_gaming": 8.7,
+            "col_s_gpu": 8.5,
+            "col_s_cpu": 7.9,
+            "col_s_battery": 4.8,
+            "col_s_thermals": 6.4,
+            "col_s_display": 6.4,
+            "col_s_ram": 7.6,
+            "col_s_io": 7,
+            "col_s_port": 6,
+            "col_s_build": 6.2,
+            "col_s_aesthetic": 5.8,
+            "col_status": "top",
+            "col_notes": "Aggressive Nitro pricing on 50-series. Noisy and plasticky — pure FPS per euro when stocked.",
+            "col_url": "https://www.acer.com/gb-en/laptops",
+            "col_image": "https://images.acer.com/is/image/acer/nitro-v-15-anv15-41-with-fingerprint-backlit-on-wallpaper-black-01?$Product-Cards-XL$",
+            "col_config": "i5/R7 · RTX 5060 · 16GB dual-channel · 512GB",
+            "col_price_note": "Common on Amazon.de / MediaMarkt / Currys-class listings as inventory builds.",
+            "col_price_eur_min": 1055,
+            "col_price_eur_max": 1415,
+            "col_price_gbp_min": 923,
+            "col_price_gbp_max": 1238,
+            "col_price_aud_min": 1759,
+            "col_price_aud_max": 2359,
+            "col_detail": {
+              "series": "Acer Nitro V 15 (RTX 5060)",
+              "model_name": "Acer Nitro V 15 (RTX 5060)",
+              "brand": "acer",
+              "os": "Windows 11 Home",
+              "price_eur": 1199,
+              "price_gbp": 1049,
+              "price_aud": 1999,
+              "price_note": "Common on Amazon.de / MediaMarkt / Currys-class listings as inventory builds.",
+              "priced_config": "i5/R7 · RTX 5060 · 16GB dual-channel · 512GB",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "Common on Amazon.de / MediaMarkt / Currys-class listings as inventory builds.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1055,
+                  "max": 1415
+                },
+                "GBP": {
+                  "min": 923,
+                  "max": 1238
+                },
+                "AUD": {
+                  "min": 1759,
+                  "max": 2359
+                }
+              },
+              "display": {
+                "size_in": 15.6,
+                "resolution": "1920 × 1080 (FHD) or FHD+",
+                "refresh_hz": 165,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "i5/i7-HX or R7 class",
+                "family": "AMD H/HS/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Radeon Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈100–140 W (Nitro V)"
+              },
+              "memory": {
+                "installed": "16GB DDR5",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "512 GB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 57,
+                "cells": "3–4 cell typical",
+                "adapter_w": 180,
+                "estimated_web_h": "3–5.5",
+                "estimated_game_h": "1.0–1.8",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.1,
+                "weight_lbs": 4.6,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "Aggressive Nitro pricing on 50-series. Noisy and plasticky — pure FPS per euro when stocked.",
+              "link": "https://www.acer.com/gb-en/laptops",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "acer",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.acer.com/gb-en/laptops",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=Acer%20Nitro%20V%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=Acer%20Nitro%20V%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=Acer%20Nitro%20V%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=Acer%20Nitro%20V%2015%20(RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=Acer%20Nitro%20V%2015%20(RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=Acer%20Nitro%20V%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=Acer%20Nitro%20V%2015%20(RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: i5/R7 · RTX 5060 · 16GB dual-channel · 512GB",
+                  "bound": "≈100–140 W (Nitro V)",
+                  "note": "FPS for this priced config only — i5/R7 · RTX 5060 · 16GB dual-channel · 512GB. Bound: ≈100–140 W (Nitro V). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈100–140 W (Nitro V)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [
+                "https://images.acer.com/is/image/acer/nitro-v-15-anv15-41-with-fingerprint-backlit-on-wallpaper-black-01?$Product-Cards-XL$"
+              ],
+              "youtube_search_query": "Acer Nitro V 15 (RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=Acer%20Nitro%20V%2015%20(RTX%205060)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_msi_thin15_5060",
+          "createdAt": 1785849440729,
+          "cells": {
+            "col_model": "MSI Thin 15 (RTX 5060)",
+            "col_brand": "msi",
+            "col_price": {
+              "EUR": 1249,
+              "GBP": 1099,
+              "AUD": 2049
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "i7 class",
+            "col_display": "15.6\" FHD 144Hz",
+            "col_ram": "16GB DDR5/DDR4",
+            "col_battery": 52.4,
+            "col_weight": 1.86,
+            "col_s_gaming": 8,
+            "col_s_gpu": 7.9,
+            "col_s_cpu": 7.6,
+            "col_s_battery": 4,
+            "col_s_thermals": 5.5,
+            "col_s_display": 6.2,
+            "col_s_ram": 7.4,
+            "col_s_io": 7.8,
+            "col_s_port": 6.8,
+            "col_s_build": 6,
+            "col_s_aesthetic": 6,
+            "col_status": "top",
+            "col_notes": "Thin 5060 is power-limited — do not expect LOQ-class sustained FPS. Buy for ports/weight, not max TGP.",
+            "col_url": "https://www.msi.com/Laptop",
+            "col_image": "https://storage-asset.msi.com/global/picture/image/feature/nb/Thin/Thin15-B13V/images/kv-bg-top.jpg",
+            "col_config": "i7 · RTX 5060 @ ~55–75 W thin · 16GB dual-channel · 512GB",
+            "col_price_note": "Appearing in MSI/EU retail; always confirm low-TGP thin chassis on the label.",
+            "col_price_eur_min": 1099,
+            "col_price_eur_max": 1474,
+            "col_price_gbp_min": 967,
+            "col_price_gbp_max": 1297,
+            "col_price_aud_min": 1803,
+            "col_price_aud_max": 2418,
+            "col_detail": {
+              "series": "MSI Thin 15 (RTX 5060)",
+              "model_name": "MSI Thin 15 (RTX 5060)",
+              "brand": "msi",
+              "os": "Windows 11 Home",
+              "price_eur": 1249,
+              "price_gbp": 1099,
+              "price_aud": 2049,
+              "price_note": "Appearing in MSI/EU retail; always confirm low-TGP thin chassis on the label.",
+              "priced_config": "i7 · RTX 5060 @ ~55–75 W thin · 16GB dual-channel · 512GB",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "Appearing in MSI/EU retail; always confirm low-TGP thin chassis on the label.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1099,
+                  "max": 1474
+                },
+                "GBP": {
+                  "min": 967,
+                  "max": 1297
+                },
+                "AUD": {
+                  "min": 1803,
+                  "max": 2418
+                }
+              },
+              "display": {
+                "size_in": 15.6,
+                "resolution": "1920 × 1080 (FHD) or FHD+",
+                "refresh_hz": 144,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "i7 class",
+                "family": "Intel H/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Intel Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈55–75 W sustained (thin MSI — not full 115 W)"
+              },
+              "memory": {
+                "installed": "16GB DDR5/DDR4",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "512 GB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 52.4,
+                "cells": "3–4 cell typical",
+                "adapter_w": 180,
+                "estimated_web_h": "2.5–4.5",
+                "estimated_game_h": "0.8–1.5",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 1.86,
+                "weight_lbs": 4.1,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Thin plastic/metal mix",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often none",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Thin dual-fan",
+              "notes": "Thin 5060 is power-limited — do not expect LOQ-class sustained FPS. Buy for ports/weight, not max TGP.",
+              "link": "https://www.msi.com/Laptop",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "msi",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.msi.com/Laptop",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=MSI%20Thin%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=MSI%20Thin%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=MSI%20Thin%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=MSI%20Thin%2015%20(RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=MSI%20Thin%2015%20(RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=MSI%20Thin%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=MSI%20Thin%2015%20(RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "thin",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: i7 · RTX 5060 @ ~55–75 W thin · 16GB dual-channel · 512GB",
+                  "bound": "≈55–75 W sustained (thin MSI — not full 115 W)",
+                  "note": "FPS for this priced config only — i7 · RTX 5060 @ ~55–75 W thin · 16GB dual-channel · 512GB. Bound: ≈55–75 W sustained (thin MSI — not full 115 W). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 62,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "High, DLSS",
+                      "fps": 60,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 60,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 130,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 210,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 108,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈55–75 W sustained (thin MSI — not full 115 W)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [
+                "https://storage-asset.msi.com/global/picture/image/feature/nb/Thin/Thin15-B13V/images/kv-bg-top.jpg"
+              ],
+              "youtube_search_query": "MSI Thin 15 (RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=MSI%20Thin%2015%20(RTX%205060)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_asus_zephyrus_g14_5060",
+          "createdAt": 1785849440912,
+          "cells": {
+            "col_model": "ASUS ROG Zephyrus G14 (2025, RTX 5060)",
+            "col_brand": "asus",
+            "col_price": {
+              "EUR": 1999,
+              "GBP": 1749,
+              "AUD": 3199
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "Ryzen AI 9 HX 370 class",
+            "col_display": "14\" 3K OLED 120Hz",
+            "col_ram": "32GB LPDDR5X",
+            "col_battery": 73,
+            "col_weight": 1.5,
+            "col_s_gaming": 8.7,
+            "col_s_gpu": 8.5,
+            "col_s_cpu": 9,
+            "col_s_battery": 7.6,
+            "col_s_thermals": 7.4,
+            "col_s_display": 9.2,
+            "col_s_ram": 8.5,
+            "col_s_io": 6.5,
+            "col_s_port": 8.8,
+            "col_s_build": 8.8,
+            "col_s_aesthetic": 9.2,
+            "col_status": "top",
+            "col_notes": "Buy this instead of hunting 2024 G14 4060 on aftermarket. Premium thin + current GPU generation; pay for OLED/portability not pure FPS/€.",
+            "col_url": "https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2025/",
+            "col_image": "https://dlcdnwebimgs.asus.com/gain/9c0932c2-838a-4993-b02c-8487dd7d0b58/w800",
+            "col_config": "AI 9 HX · RTX 5060 ~100 W · 32GB · 1TB · 3K OLED",
+            "col_price_note": "Current G14 (GA403) on ASUS/Best Buy class stores — configs start higher than last-gen clearance.",
+            "col_price_eur_min": 1759,
+            "col_price_eur_max": 2359,
+            "col_price_gbp_min": 1539,
+            "col_price_gbp_max": 2064,
+            "col_price_aud_min": 2815,
+            "col_price_aud_max": 3775,
+            "col_detail": {
+              "series": "ASUS ROG Zephyrus G14 (2025, RTX 5060)",
+              "model_name": "ASUS ROG Zephyrus G14 (2025, RTX 5060)",
+              "brand": "asus",
+              "os": "Windows 11 Home",
+              "price_eur": 1999,
+              "price_gbp": 1749,
+              "price_aud": 3199,
+              "price_note": "Current G14 (GA403) on ASUS/Best Buy class stores — configs start higher than last-gen clearance.",
+              "priced_config": "AI 9 HX · RTX 5060 ~100 W · 32GB · 1TB · 3K OLED",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "Current G14 (GA403) on ASUS/Best Buy class stores — configs start higher than last-gen clearance.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1759,
+                  "max": 2359
+                },
+                "GBP": {
+                  "min": 1539,
+                  "max": 2064
+                },
+                "AUD": {
+                  "min": 2815,
+                  "max": 3775
+                }
+              },
+              "display": {
+                "size_in": 14,
+                "resolution": "High-res (QHD/3K class)",
+                "refresh_hz": 120,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "Ryzen AI 9 HX 370 class",
+                "family": "AMD H/HS/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Radeon Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈90–115 W (G14 premium thin)"
+              },
+              "memory": {
+                "installed": "32GB LPDDR5X",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "1 TB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 73,
+                "cells": "3–4 cell typical",
+                "adapter_w": 180,
+                "estimated_web_h": "4–7",
+                "estimated_game_h": "1.3–2.2",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 1.5,
+                "weight_lbs": 3.3,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Thin plastic/metal mix",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often none",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Thin dual-fan",
+              "notes": "Buy this instead of hunting 2024 G14 4060 on aftermarket. Premium thin + current GPU generation; pay for OLED/portability not pure FPS/€.",
+              "link": "https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2025/",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "asus",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.asus.com/uk/laptops/",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "thin",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: AI 9 HX · RTX 5060 ~100 W · 32GB · 1TB · 3K OLED",
+                  "bound": "≈90–115 W (G14 premium thin)",
+                  "note": "FPS for this priced config only — AI 9 HX · RTX 5060 ~100 W · 32GB · 1TB · 3K OLED. Bound: ≈90–115 W (G14 premium thin). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈90–115 W (G14 premium thin)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [
+                "https://dlcdnwebimgs.asus.com/gain/9c0932c2-838a-4993-b02c-8487dd7d0b58/w800"
+              ],
+              "youtube_search_query": "ASUS ROG Zephyrus G14 (2025, RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_hp_victus_15_5060",
+          "createdAt": 1785849440803,
+          "cells": {
+            "col_model": "HP Victus 15 (RTX 5060)",
+            "col_brand": "hp",
+            "col_price": {
+              "EUR": 1199,
+              "GBP": 1049,
+              "AUD": 1949
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "i5/i7 or R5/R7",
+            "col_display": "15.6\" FHD 144Hz",
+            "col_ram": "16GB DDR5",
+            "col_battery": 70,
+            "col_weight": 2.3,
+            "col_s_gaming": 8.5,
+            "col_s_gpu": 8.4,
+            "col_s_cpu": 7.7,
+            "col_s_battery": 6,
+            "col_s_thermals": 6.3,
+            "col_s_display": 6.4,
+            "col_s_ram": 7.6,
+            "col_s_io": 7,
+            "col_s_port": 6.2,
+            "col_s_build": 6.3,
+            "col_s_aesthetic": 6,
+            "col_status": "top",
+            "col_notes": "Victus keeps showing up on Currys/Amazon promos. Verify dual-channel RAM — HP still ships single-stick configs.",
+            "col_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+            "col_image": "",
+            "col_config": "i5/R7 · RTX 5060 · 16GB dual-channel (verify) · 512GB",
+            "col_price_note": "UK Currys/Amazon and EU HP partners — stock fluctuates with back-to-school promos.",
+            "col_price_eur_min": 1055,
+            "col_price_eur_max": 1415,
+            "col_price_gbp_min": 923,
+            "col_price_gbp_max": 1238,
+            "col_price_aud_min": 1715,
+            "col_price_aud_max": 2300,
+            "col_detail": {
+              "series": "HP Victus 15 (RTX 5060)",
+              "model_name": "HP Victus 15 (RTX 5060)",
+              "brand": "hp",
+              "os": "Windows 11 Home",
+              "price_eur": 1199,
+              "price_gbp": 1049,
+              "price_aud": 1949,
+              "price_note": "UK Currys/Amazon and EU HP partners — stock fluctuates with back-to-school promos.",
+              "priced_config": "i5/R7 · RTX 5060 · 16GB dual-channel (verify) · 512GB",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "UK Currys/Amazon and EU HP partners — stock fluctuates with back-to-school promos.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1055,
+                  "max": 1415
+                },
+                "GBP": {
+                  "min": 923,
+                  "max": 1238
+                },
+                "AUD": {
+                  "min": 1715,
+                  "max": 2300
+                }
+              },
+              "display": {
+                "size_in": 15.6,
+                "resolution": "1920 × 1080 (FHD) or FHD+",
+                "refresh_hz": 144,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "i5/i7 or R5/R7",
+                "family": "AMD H/HS/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Radeon Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈95–115 W (Victus mid)"
+              },
+              "memory": {
+                "installed": "16GB DDR5",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "512 GB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 70,
+                "cells": "3–4 cell typical",
+                "adapter_w": 180,
+                "estimated_web_h": "4–7",
+                "estimated_game_h": "1.3–2.2",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.3,
+                "weight_lbs": 5.1,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "Victus keeps showing up on Currys/Amazon promos. Verify dual-channel RAM — HP still ships single-stick configs.",
+              "link": "https://www.hp.com/gb-en/shop/vwa/laptops",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "hp",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=HP%20Victus%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=HP%20Victus%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=HP%20Victus%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=HP%20Victus%2015%20(RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=HP%20Victus%2015%20(RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=HP%20Victus%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=HP%20Victus%2015%20(RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: i5/R7 · RTX 5060 · 16GB dual-channel (verify) · 512GB",
+                  "bound": "≈95–115 W (Victus mid)",
+                  "note": "FPS for this priced config only — i5/R7 · RTX 5060 · 16GB dual-channel (verify) · 512GB. Bound: ≈95–115 W (Victus mid). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈95–115 W (Victus mid)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [],
+              "youtube_search_query": "HP Victus 15 (RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=HP%20Victus%2015%20(RTX%205060)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_lenovo_legion5_5060",
+          "createdAt": 1785849440304,
+          "cells": {
+            "col_model": "Lenovo Legion 5 15 (RTX 5060)",
+            "col_brand": "lenovo",
+            "col_price": {
+              "EUR": 1599,
+              "GBP": 1399,
+              "AUD": 2599
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "Ryzen 7 / i7-HX class",
+            "col_display": "15.6\" FHD/QHD 165Hz class",
+            "col_ram": "16–32GB DDR5",
+            "col_battery": 80,
+            "col_weight": 2.4,
+            "col_s_gaming": 9,
+            "col_s_gpu": 8.8,
+            "col_s_cpu": 8.5,
+            "col_s_battery": 6.5,
+            "col_s_thermals": 7.6,
+            "col_s_display": 7.6,
+            "col_s_ram": 8,
+            "col_s_io": 7.8,
+            "col_s_port": 6.5,
+            "col_s_build": 7.8,
+            "col_s_aesthetic": 7,
+            "col_status": "top",
+            "col_notes": "Step up from LOQ when you want better cooling/build and can catch a Legion coupon. Prefer over aftermarket premium 40-series.",
+            "col_url": "https://www.lenovo.com/gb/en/laptops/",
+            "col_image": "",
+            "col_config": "R7/i7 · RTX 5060 @ ~115–140 W · 16GB · 1TB",
+            "col_price_note": "Lenovo.com EU/UK configurators + retailers; watch weekly Legion sales.",
+            "col_price_eur_min": 1407,
+            "col_price_eur_max": 1887,
+            "col_price_gbp_min": 1231,
+            "col_price_gbp_max": 1651,
+            "col_price_aud_min": 2287,
+            "col_price_aud_max": 3067,
+            "col_detail": {
+              "series": "Lenovo Legion 5 15 (RTX 5060)",
+              "model_name": "Lenovo Legion 5 15 (RTX 5060)",
+              "brand": "lenovo",
+              "os": "Windows 11 Home",
+              "price_eur": 1599,
+              "price_gbp": 1399,
+              "price_aud": 2599,
+              "price_note": "Lenovo.com EU/UK configurators + retailers; watch weekly Legion sales.",
+              "priced_config": "R7/i7 · RTX 5060 @ ~115–140 W · 16GB · 1TB",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "Lenovo.com EU/UK configurators + retailers; watch weekly Legion sales.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1407,
+                  "max": 1887
+                },
+                "GBP": {
+                  "min": 1231,
+                  "max": 1651
+                },
+                "AUD": {
+                  "min": 2287,
+                  "max": 3067
+                }
+              },
+              "display": {
+                "size_in": 15.6,
+                "resolution": "High-res (QHD/3K class)",
+                "refresh_hz": 165,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:9",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "Ryzen 7 / i7-HX class",
+                "family": "AMD H/HS/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Radeon Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈115–140 W (Legion cooling)"
+              },
+              "memory": {
+                "installed": "16–32GB DDR5",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "1 TB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 80,
+                "cells": "3–4 cell typical",
+                "adapter_w": 230,
+                "estimated_web_h": "4–7",
+                "estimated_game_h": "1.3–2.2",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.4,
+                "weight_lbs": 5.3,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "Step up from LOQ when you want better cooling/build and can catch a Legion coupon. Prefer over aftermarket premium 40-series.",
+              "link": "https://www.lenovo.com/gb/en/laptops/",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "lenovo",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.lenovo.com/gb/en/laptops/",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=Lenovo%20Legion%205%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=Lenovo%20Legion%205%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=Lenovo%20Legion%205%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=Lenovo%20Legion%205%2015%20(RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=Lenovo%20Legion%205%2015%20(RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=Lenovo%20Legion%205%2015%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=Lenovo%20Legion%205%2015%20(RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: R7/i7 · RTX 5060 @ ~115–140 W · 16GB · 1TB",
+                  "bound": "≈115–140 W (Legion cooling)",
+                  "note": "FPS for this priced config only — R7/i7 · RTX 5060 @ ~115–140 W · 16GB · 1TB. Bound: ≈115–140 W (Legion cooling). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈115–140 W (Legion cooling)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [],
+              "youtube_search_query": "Lenovo Legion 5 15 (RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20Legion%205%2015%20(RTX%205060)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_asus_tuf_f16_5060",
+          "createdAt": 1785849441161,
+          "cells": {
+            "col_model": "ASUS TUF Gaming F16 (RTX 5060)",
+            "col_brand": "asus",
+            "col_price": {
+              "EUR": 1399,
+              "GBP": 1249,
+              "AUD": 2299
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "Core 7 / Ultra class",
+            "col_display": "16\" FHD+ 165Hz 16:10",
+            "col_ram": "16GB DDR5",
+            "col_battery": 90,
+            "col_weight": 2.2,
+            "col_s_gaming": 8.8,
+            "col_s_gpu": 8.6,
+            "col_s_cpu": 8.2,
+            "col_s_battery": 7,
+            "col_s_thermals": 7.1,
+            "col_s_display": 7.4,
+            "col_s_ram": 7.8,
+            "col_s_io": 6.8,
+            "col_s_port": 7,
+            "col_s_build": 7.5,
+            "col_s_aesthetic": 6.8,
+            "col_status": "top",
+            "col_notes": "16:10 TUF with big battery — excellent student/desk hybrid when 5060 F16 is in stock.",
+            "col_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+            "col_image": "",
+            "col_config": "Core 7 · RTX 5060 · 16GB dual-channel · 512GB · 16\"",
+            "col_price_note": "ASUS EU/UK store and Amazon listings expanding through 2025–26.",
+            "col_price_eur_min": 1231,
+            "col_price_eur_max": 1651,
+            "col_price_gbp_min": 1099,
+            "col_price_gbp_max": 1474,
+            "col_price_aud_min": 2023,
+            "col_price_aud_max": 2713,
+            "col_detail": {
+              "series": "ASUS TUF Gaming F16 (RTX 5060)",
+              "model_name": "ASUS TUF Gaming F16 (RTX 5060)",
+              "brand": "asus",
+              "os": "Windows 11 Home",
+              "price_eur": 1399,
+              "price_gbp": 1249,
+              "price_aud": 2299,
+              "price_note": "ASUS EU/UK store and Amazon listings expanding through 2025–26.",
+              "priced_config": "Core 7 · RTX 5060 · 16GB dual-channel · 512GB · 16\"",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "ASUS EU/UK store and Amazon listings expanding through 2025–26.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1231,
+                  "max": 1651
+                },
+                "GBP": {
+                  "min": 1099,
+                  "max": 1474
+                },
+                "AUD": {
+                  "min": 2023,
+                  "max": 2713
+                }
+              },
+              "display": {
+                "size_in": 16,
+                "resolution": "1920 × 1080 (FHD) or FHD+",
+                "refresh_hz": 165,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:10 class",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "Core 7 / Ultra class",
+                "family": "Intel H/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Intel Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈105–140 W (TUF F16)"
+              },
+              "memory": {
+                "installed": "16GB DDR5",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "512 GB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 90,
+                "cells": "3–4 cell typical",
+                "adapter_w": 230,
+                "estimated_web_h": "5–8",
+                "estimated_game_h": "1.3–2.2",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.2,
+                "weight_lbs": 4.8,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "16:10 TUF with big battery — excellent student/desk hybrid when 5060 F16 is in stock.",
+              "link": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "asus",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.asus.com/uk/laptops/",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: Core 7 · RTX 5060 · 16GB dual-channel · 512GB · 16\"",
+                  "bound": "≈105–140 W (TUF F16)",
+                  "note": "FPS for this priced config only — Core 7 · RTX 5060 · 16GB dual-channel · 512GB · 16\". Bound: ≈105–140 W (TUF F16). Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈105–140 W (TUF F16)",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [],
+              "youtube_search_query": "ASUS TUF Gaming F16 (RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)%20review"
+            }
+          }
+        },
+        {
+          "id": "lap_msi_crosshair_16_5060",
+          "createdAt": 1785849440679,
+          "cells": {
+            "col_model": "MSI Crosshair / Sword 16 (RTX 5060)",
+            "col_brand": "msi",
+            "col_price": {
+              "EUR": 1449,
+              "GBP": 1279,
+              "AUD": 2399
+            },
+            "col_gpu": "rtx5060",
+            "col_cpu": "i7-HX class",
+            "col_display": "16\" QHD+ 165Hz class",
+            "col_ram": "16GB DDR5",
+            "col_battery": 65,
+            "col_weight": 2.3,
+            "col_s_gaming": 8.9,
+            "col_s_gpu": 8.7,
+            "col_s_cpu": 8.4,
+            "col_s_battery": 5.4,
+            "col_s_thermals": 7,
+            "col_s_display": 7.8,
+            "col_s_ram": 7.8,
+            "col_s_io": 7.2,
+            "col_s_port": 6.4,
+            "col_s_build": 6.9,
+            "col_s_aesthetic": 6.8,
+            "col_status": "top",
+            "col_notes": "HX + 5060 gaming shell with better panels than Thin. Noisier; strong for 1080p/1440p high.",
+            "col_url": "https://www.msi.com/Laptop",
+            "col_image": "",
+            "col_config": "i7-HX · RTX 5060 · 16GB · 1TB · QHD+",
+            "col_price_note": "MSI EU shops + Amazon; naming varies Sword/Crosshair by region.",
+            "col_price_eur_min": 1275,
+            "col_price_eur_max": 1710,
+            "col_price_gbp_min": 1126,
+            "col_price_gbp_max": 1509,
+            "col_price_aud_min": 2111,
+            "col_price_aud_max": 2831,
+            "col_detail": {
+              "series": "MSI Crosshair / Sword 16 (RTX 5060)",
+              "model_name": "MSI Crosshair / Sword 16 (RTX 5060)",
+              "brand": "msi",
+              "os": "Windows 11 Home",
+              "price_eur": 1449,
+              "price_gbp": 1279,
+              "price_aud": 2399,
+              "price_note": "MSI EU shops + Amazon; naming varies Sword/Crosshair by region.",
+              "priced_config": "i7-HX · RTX 5060 · 16GB · 1TB · QHD+",
+              "availability": {
+                "status": "retail",
+                "generation": "50-series",
+                "model_year": 2025,
+                "note": "MSI EU shops + Amazon; naming varies Sword/Crosshair by region.",
+                "checked": "2026-08"
+              },
+              "price_range": {
+                "EUR": {
+                  "min": 1275,
+                  "max": 1710
+                },
+                "GBP": {
+                  "min": 1126,
+                  "max": 1509
+                },
+                "AUD": {
+                  "min": 2111,
+                  "max": 2831
+                }
+              },
+              "display": {
+                "size_in": 16,
+                "resolution": "High-res (QHD/3K class)",
+                "refresh_hz": 165,
+                "panel": "IPS-level LCD (OLED on some SKUs)",
+                "aspect": "16:10 class",
+                "brightness_nits": "≈250–400 class",
+                "color_gamut": "SKU-dependent",
+                "finish": "Anti-glare typical",
+                "touch": "No"
+              },
+              "processor": {
+                "model": "i7-HX class",
+                "family": "Intel H/HX",
+                "cores": "SKU-dependent",
+                "threads": "SKU-dependent",
+                "tdp_w": "45–55+ class",
+                "iGPU": "Intel Graphics"
+              },
+              "graphics": {
+                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "vram_gb": 8,
+                "vram_type": "GDDR7",
+                "bus": "128-bit class",
+                "tgp_typical_w": "45–140",
+                "architecture": "Blackwell (laptop)",
+                "dlss": "DLSS 4 class",
+                "ray_tracing": "Yes",
+                "features": [
+                  "Frame Generation / MFG (SKU)",
+                  "Reflex",
+                  "AV1"
+                ],
+                "tgp_this_chassis_w": "≈115–140 W"
+              },
+              "memory": {
+                "installed": "16GB DDR5",
+                "type": "DDR5 SO-DIMM typical",
+                "slots": 2,
+                "max_gb": 32,
+                "soldered": "Usually upgradable"
+              },
+              "storage": {
+                "primary": "1 TB M.2 NVMe SSD",
+                "interface": "PCIe 4.0 x4 typical",
+                "extra_slots": "Often 1–2× M.2",
+                "expandable": "Yes"
+              },
+              "battery": {
+                "capacity_wh": 65,
+                "cells": "3–4 cell typical",
+                "adapter_w": 180,
+                "estimated_web_h": "3–5.5",
+                "estimated_game_h": "1.0–1.8",
+                "estimate_note": "Class estimate for this pack size — plug in for AAA"
+              },
+              "chassis": {
+                "weight_kg": 2.3,
+                "weight_lbs": 5.1,
+                "dimensions_mm": "≈ class dimensions",
+                "material": "Plastic gaming chassis",
+                "color": "Black / grey",
+                "keyboard": "Backlit chiclet",
+                "touchpad": "Precision multi-touch"
+              },
+              "connectivity": {
+                "wifi": "Wi-Fi 6 / 6E class",
+                "bluetooth": "5.1–5.3",
+                "ethernet": "Often RJ-45",
+                "webcam": "720p–1080p",
+                "card_reader": "SKU-dependent"
+              },
+              "ports": [
+                "USB-A",
+                "USB-C",
+                "HDMI",
+                "Audio jack",
+                "DC-in"
+              ],
+              "cooling": "Dual-fan gaming cooling",
+              "notes": "HX + 5060 gaming shell with better panels than Thin. Noisier; strong for 1080p/1440p high.",
+              "link": "https://www.msi.com/Laptop",
+              "disclaimer": "Price, FPS, and battery are for the priced config. Availability changes weekly — use buy links to confirm live stock.",
+              "buy_guide": "EU: Geizhals first. UK: Scan / Currys / Amazon.co.uk / brand store. Prefer VAT-included local sellers.",
+              "buy_links": [
+                {
+                  "region": "Official",
+                  "retailer": "msi",
+                  "kind": "official",
+                  "label": "Official store",
+                  "url": "https://www.msi.com/Laptop",
+                  "note": "Configurators + student promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Geizhals",
+                  "kind": "compare",
+                  "label": "Compare EU prices",
+                  "url": "https://geizhals.eu/?fs=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Best EU stock check"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Amazon.de",
+                  "kind": "shop",
+                  "label": "Amazon.de",
+                  "url": "https://www.amazon.de/s?k=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "Wide stock"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Amazon.co.uk",
+                  "kind": "shop",
+                  "label": "Amazon.co.uk",
+                  "url": "https://www.amazon.co.uk/s?k=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "UK retail"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Scan",
+                  "kind": "shop",
+                  "label": "Scan Computers",
+                  "url": "https://www.scan.co.uk/search?q=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)",
+                  "note": "UK specialist"
+                },
+                {
+                  "region": "UK",
+                  "retailer": "Currys",
+                  "kind": "shop",
+                  "label": "Currys",
+                  "url": "https://www.currys.co.uk/search?q=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)",
+                  "note": "High-street promos"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Alternate",
+                  "kind": "shop",
+                  "label": "Alternate",
+                  "url": "https://www.alternate.de/listing.xhtml?q=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)%20NVIDIA%20GeForce%20RTX%205060%20Laptop%20GPU",
+                  "note": "DE/NL pricing"
+                },
+                {
+                  "region": "EU",
+                  "retailer": "Coolblue",
+                  "kind": "shop",
+                  "label": "Coolblue",
+                  "url": "https://www.coolblue.nl/en/search?query=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)",
+                  "note": "NL/BE/DE"
+                }
+              ],
+              "performance": {
+                "gpu_class": "rtx5060",
+                "chassis_class": "gaming",
+                "gaming": {
+                  "preset": "1080p High–Ultra · DLSS where typical",
+                  "assumes": "Priced config: i7-HX · RTX 5060 · 16GB · 1TB · QHD+",
+                  "bound": "≈115–140 W",
+                  "note": "FPS for this priced config only — i7-HX · RTX 5060 · 16GB · 1TB · QHD+. Bound: ≈115–140 W. Not a lab test.",
+                  "games": [
+                    {
+                      "name": "Baldur's Gate 3",
+                      "settings": "Ultra, DLSS",
+                      "fps": 82,
+                      "note": ""
+                    },
+                    {
+                      "name": "Cyberpunk 2077",
+                      "settings": "Ultra, DLSS",
+                      "fps": 78,
+                      "note": ""
+                    },
+                    {
+                      "name": "Elden Ring",
+                      "settings": "Max",
+                      "fps": 68,
+                      "note": ""
+                    },
+                    {
+                      "name": "Fortnite",
+                      "settings": "Epic",
+                      "fps": 165,
+                      "note": ""
+                    },
+                    {
+                      "name": "Valorant",
+                      "settings": "High",
+                      "fps": 270,
+                      "note": ""
+                    },
+                    {
+                      "name": "GTA V",
+                      "settings": "Very High",
+                      "fps": 128,
+                      "note": ""
+                    },
+                    {
+                      "name": "Hogwarts Legacy",
+                      "settings": "Ultra, DLSS",
+                      "fps": 72,
+                      "note": ""
+                    }
+                  ]
+                },
+                "thermals": {
+                  "load_scenario": "30–60 min modern AAA, performance mode, ~25°C room",
+                  "gpu_temp_c": "72–85",
+                  "cpu_temp_c": "80–95",
+                  "keyboard_c": "36–44",
+                  "bottom_c": "40–50",
+                  "idle_dba": "24–30",
+                  "load_dba": "45–54",
+                  "fan_behavior": "Audible under load",
+                  "throttle_risk": "For this chassis TGP: ≈115–140 W",
+                  "tips": "Use on a hard flat surface; elevating rear helps a few °C."
+                }
+              },
+              "images": [],
+              "youtube_search_query": "MSI Crosshair / Sword 16 (RTX 5060) review",
+              "youtube_search": "https://www.youtube.com/results?search_query=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)%20review"
+            }
           }
         }
       ]

@@ -1215,6 +1215,1729 @@
         "note": "Confirmed retail ID is EAN 0199274037734 for Lenovo LOQ 15AHP10 / 83JG00DBUK. No Amazon UK or Amazon DE product URL for the same AMD RTX 5060 config was found in the provided results, so ASINs remain null."
       },
       "sonar_enriched_at": "2026-08-04T15:19:21.229Z"
+    },
+    "lap_auto_acer_rtx5060_acer_nitro_v15_29a7c3": {
+      "model": "Acer Nitro V15",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "best value RTX 5060 gaming laptop UK buy 2026",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:22:34.844Z"
+      },
+      "sonar_enriched_at": "2026-08-04T15:34:35.295Z"
+    },
+    "lap_auto_lenovo_rtx5060_lenovo_legion_5i_gen_10_a087b5": {
+      "model": "Lenovo Legion 5i Gen 10",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "best value RTX 5060 gaming laptop UK buy 2026",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:22:34.856Z"
+      },
+      "sonar_enriched_at": "2026-08-04T15:34:49.546Z"
+    },
+    "lap_auto_lenovo_rtx5060_lenovo_loq_15irx10_021dcc": {
+      "model": "Lenovo LOQ 15IRX10",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83JE000EUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo LOQ 15 RTX 5060 16GB Amazon UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:22:51.518Z"
+      },
+      "sonar_enriched_at": "2026-08-04T15:35:05.259Z"
+    },
+    "lap_auto_lenovo_rtx5060_lenovo_loq_15ahp10_2bcc7f": {
+      "model": "Lenovo LOQ 15AHP10",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83JG0096UK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo LOQ 15 RTX 5060 16GB Amazon UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:22:51.531Z"
+      },
+      "sonar_enriched_at": "2026-08-04T15:35:18.802Z"
+    },
+    "lap_auto_lenovo_rtx5050_loq_essential_15_6_gaming_laptop_4ae8bf": {
+      "model": "LOQ Essential 15.6\" Gaming Laptop",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83SC000HUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo LOQ 15 RTX 5050 UK price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:23:05.202Z"
+      },
+      "sonar_enriched_at": "2026-08-04T15:35:30.580Z"
+    },
+    "lap_auto_hp_rtx5050_loq_15ahp10_gaming_laptop_acbd41": {
+      "model": "LOQ 15AHP10 Gaming Laptop",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "198158558044",
+      "mpn": "83JG0008UK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo LOQ 15 RTX 5050 UK price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:35:45.013Z",
+        "note": "No Amazon UK/DE product URL was available in the provided results, so no ASIN could be evidenced. The EAN 198158558044 was explicitly shown on a retailer spec page for the matching Ryzen 7/RTX 5050 LOQ 15AHP10 family, but the exact Ryzen 5/512GB listing could still be a regional variant. MPN 83JG0036PB was visible on a matching retailer page for the Ryzen 5 220 / 16GB / 512GB / RTX 5050 SKU."
+      },
+      "sonar_enriched_at": "2026-08-04T15:35:45.014Z"
+    },
+    "lap_auto_lenovo_rtx5050_loq_15irx10_gaming_laptop_98be3a": {
+      "model": "LOQ 15IRX10 Gaming Laptop",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "00198156206954",
+      "mpn": "15IRX10",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo LOQ 15 RTX 5050 UK price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:23:05.225Z"
+      }
+    },
+    "lap_auto_asus_rtx5060_asus_tuf_gaming_a15_9c7d2f": {
+      "model": "ASUS TUF Gaming A15",
+      "asin": {
+        "uk": "B09TN55PPM",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "FA507VR",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/ASUS-FA507VR-7-7435H-GeForce-Windows/dp/B09TN55PPM",
+      "listing_url": "https://www.amazon.co.uk/ASUS-FA507VR-7-7435H-GeForce-Windows/dp/B09TN55PPM",
+      "search_query": "ASUS TUF Gaming A15 RTX 5060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:23:26.145Z"
+      }
+    },
+    "lap_auto_asus_rtx5060_asus_tuf_gaming_a16_2025_fa608pm_rv_eaa68c": {
+      "model": "ASUS TUF Gaming A16 (2025) FA608PM-RV009W",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "FA608PM-RV009W",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "ASUS TUF A16 RTX 5060 Amazon UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:23:38.979Z"
+      }
+    },
+    "lap_auto_asus_rtx5060_asus_tuf_a16_gaming_laptop_a613e6": {
+      "model": "ASUS TUF A16 Gaming Laptop",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "ASUS TUF A16 RTX 5060 Amazon UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:23:38.991Z"
+      }
+    },
+    "lap_auto_asus_rtx5060_asus_v16_v3607vm_rp007w_a86215": {
+      "model": "ASUS V16 V3607VM-RP007W",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "90NB16K1-M00280",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "ASUS V16 V3607 RTX 5060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:23:50.036Z"
+      }
+    },
+    "lap_auto_asus_rtx5060_asus_gaming_v16_v3607vm_3bdafb": {
+      "model": "ASUS Gaming V16 V3607VM",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "V3607VM-RP007W",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "ASUS V16 V3607 RTX 5060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:23:50.048Z"
+      }
+    },
+    "lap_auto_asus_rtx5060_asus_rog_zephyrus_g14_ga403gm_sy017_5695f4": {
+      "model": "ASUS ROG Zephyrus G14 GA403GM-SY017W",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "GA403GM-SY017W",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "ASUS V16 V3607 RTX 5060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:23:50.060Z"
+      }
+    },
+    "lap_auto_msi_rtx4050_msi_thin_15_b13ve_2021uk_b40024": {
+      "model": "MSI Thin 15 B13VE-2021UK",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "9S7-16R831-2021",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "MSI Thin 15 RTX 4050 dual channel UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:24:06.993Z"
+      }
+    },
+    "lap_auto_msi_rtx4050_msi_thin_15_b12ve_1251uk_6926b2": {
+      "model": "MSI Thin 15 B12VE-1251UK",
+      "asin": {
+        "uk": "B0CTKV8X3P",
+        "de": "B0CTKV8X3P"
+      },
+      "ean": "",
+      "mpn": "B12VE-1251UK",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/MSI-Thin-Inch-Gaming-Laptop/dp/B0CTKV8X3P",
+      "listing_url": "https://www.amazon.co.uk/MSI-Thin-Inch-Gaming-Laptop/dp/B0CTKV8X3P",
+      "search_query": "MSI Thin 15 RTX 4050 dual channel UK",
+      "auto_draft": true,
+      "price_verified": true,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": true,
+        "at": "2026-08-04T15:24:14.780Z"
+      }
+    },
+    "lap_auto_msi_rtx4050_cyborg_15_a13v_0297d0": {
+      "model": "Cyborg 15 A13V",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "A13VEK-123UK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "MSI Cyborg 15 RTX 4050 UK deal",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:24:29.519Z"
+      }
+    },
+    "lap_auto_msi_rtx4050_cyborg_15_2023_2024_retail_config_827109": {
+      "model": "Cyborg 15 (2023/2024 retail config)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "5051865436046",
+      "mpn": "8569512",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "MSI Cyborg 15 RTX 4050 UK deal",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:24:29.532Z"
+      }
+    },
+    "lap_auto_msi_rtx4050_cyborg_ai_15_a1vek_002uk_5687b0": {
+      "model": "Cyborg AI 15 A1VEK-002UK",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "A1VEK-002UK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "MSI Cyborg 15 RTX 4050 UK deal",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:24:29.545Z"
+      }
+    },
+    "lap_auto_hp_rtx4050_hp_victus_15_fa1003sa_2abfff": {
+      "model": "HP Victus 15-fa1003sa",
+      "asin": {
+        "uk": "B0CLDZ8WHP",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "9D1T6EA#ABU",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/dp/B0CLDZ8WHP",
+      "listing_url": "https://www.amazon.co.uk/dp/B0CLDZ8WHP",
+      "search_query": "HP Victus 15 RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": true,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": true,
+        "at": "2026-08-04T15:25:04.175Z"
+      }
+    },
+    "lap_auto_hp_rtx4050_hp_victus_15_fb3003sa_86df3d": {
+      "model": "HP Victus 15-fb3003sa",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "15-fb3003sa",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/s?k=HP+Victus+15-fb3003sa",
+      "listing_url": "https://www.amazon.co.uk/s?k=HP+Victus+15-fb3003sa",
+      "search_query": "HP Victus 15 RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:25:04.187Z"
+      }
+    },
+    "lap_auto_hp_rtx4050_hp_victus_15_fa1001sf_2eacfa": {
+      "model": "HP VICTUS 15-fa1001sf",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "15-fa1001sf",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "HP Victus 15 RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:25:04.199Z"
+      }
+    },
+    "lap_auto_hp_rtx4050_hp_victus_15_fa2300na_3dd3f1": {
+      "model": "HP VICTUS 15-FA2300NA",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "15-fa2300na",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "HP Victus 15 RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "low",
+        "verified": false,
+        "at": "2026-08-04T15:25:04.211Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_legion_5_16irx9_c50036": {
+      "model": "Legion 5 16IRX9",
+      "asin": {
+        "uk": "B0C8FXHVBW",
+        "de": "B0D31WQB2X"
+      },
+      "ean": "",
+      "mpn": "83DG00DSUK",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/dp/B0C8FXHVBW",
+      "listing_url": "https://www.amazon.co.uk/dp/B0C8FXHVBW",
+      "search_query": "Lenovo Legion 5 RTX 4060 UK street price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:25:29.731Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_legion_5_gaming_laptop_1413d2": {
+      "model": "Legion 5 Gaming Laptop",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83DG00DSUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Legion 5 RTX 4060 UK street price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:25:29.743Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_legion_5_nvidia_rtx_4060_16gb_16_a0c870": {
+      "model": "Legion 5 NVIDIA RTX 4060 16GB 16.0 WQXGA 240Hz Gaming Laptop",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "unknown",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Legion 5 RTX 4060 UK street price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:25:29.755Z"
+      }
+    },
+    "lap_auto_asus_rtx4050_asus_tuf_gaming_f16_fx607vu_rl033w_9c6bd7": {
+      "model": "ASUS TUF Gaming F16 FX607VU-RL033W",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "FX607VU-RL033W",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "ASUS TUF F16 RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:25:41.894Z"
+      }
+    },
+    "lap_auto_asus_rtx4050_asus_tuf_gaming_a16_fa607nug_rl116w_c43e5b": {
+      "model": "ASUS TUF Gaming A16 FA607NUG-RL116W",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "FA607NUG-RL116W",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "ASUS TUF F16 RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:25:41.906Z"
+      }
+    },
+    "lap_auto_asus_rtx4050_asus_tuf_gaming_fa507nur_bc94a9": {
+      "model": "ASUS TUF Gaming FA507NUR",
+      "asin": {
+        "uk": "B0DBQH9197",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/ASUS-FA507NUR-7-7435H-GeForce-Windows/dp/B0DBQH9197",
+      "listing_url": "https://www.amazon.co.uk/ASUS-FA507NUR-7-7435H-GeForce-Windows/dp/B0DBQH9197",
+      "search_query": "best RTX 4050 laptop under 900 GBP UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:26:05.067Z"
+      }
+    },
+    "lap_auto_asus_rtx4050_asus_v16_16in_gaming_laptop_bundle_6c43a9": {
+      "model": "ASUS V16 16in Gaming Laptop Bundle",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "best RTX 4050 laptop under 900 GBP UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:26:05.080Z"
+      }
+    },
+    "lap_auto_acer_rtx4050_acer_nitro_16_an16_51_56vr_7ba9d5": {
+      "model": "Acer Nitro 16 AN16-51-56VR",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "AN16-51-56VR",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "best RTX 4050 laptop under 900 GBP UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:26:05.092Z"
+      }
+    },
+    "lap_auto_hp_rtx4050_hp_victus_gaming_15_ryzen_5_8640h_con_1d5d9a": {
+      "model": "HP Victus Gaming 15 (Ryzen 5 8640H config)",
+      "asin": {
+        "uk": "",
+        "de": "B0CVHFNBFY"
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.de/HP-Display-GeForce-Windows-Schwarz/dp/B0CVHFNBFY",
+      "listing_url": "https://www.amazon.de/HP-Display-GeForce-Windows-Schwarz/dp/B0CVHFNBFY",
+      "search_query": "best RTX 4050 laptop under 900 GBP UK",
+      "auto_draft": true,
+      "price_verified": true,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": true,
+        "at": "2026-08-04T15:26:13.302Z"
+      }
+    },
+    "lap_auto_oem_apple_m4_macbook_pro_14_2024_df38bd": {
+      "model": "MacBook Pro 14 (2024)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "MacBook Pro 14 M4 16GB 512GB UK ASIN",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:26:26.366Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16irp8_dcbb9c": {
+      "model": "Lenovo Yoga Pro 9 16IRP8",
+      "asin": {
+        "uk": "B0CHW86G5V",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83BY000KUK",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/Lenovo-Yoga-16IRP8-Inch-Laptop/dp/B0CHW86G5V",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-Yoga-16IRP8-Inch-Laptop/dp/B0CHW86G5V",
+      "search_query": "Lenovo Yoga Pro 9i RTX 4060 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:26:48.969Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16imh9_16fbbe": {
+      "model": "Lenovo Yoga Pro 9 16IMH9",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83DN001FUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i RTX 4060 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:26:48.982Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_yoga_pro_9i_16_gen_9_523276": {
+      "model": "Yoga Pro 9i 16 Gen 9",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83DN0007US",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:27:02.199Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_yoga_pro_9_14irp8_e6f3df": {
+      "model": "Yoga Pro 9 14IRP8",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83BU000RGE",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:27:02.212Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_yoga_pro_9_16irp8_83by000kuk_3bc568": {
+      "model": "Yoga Pro 9 16IRP8 / 83BY000KUK",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83BY000KUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i 16 RTX 4060 32GB UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:27:19.762Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_yoga_pro_9i_16_gen_8_e15996": {
+      "model": "Yoga Pro 9i 16 Gen 8",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83BY000KUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i 16 RTX 4060 32GB UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "low",
+        "verified": false,
+        "at": "2026-08-04T15:27:19.775Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_yoga_pro_9i_16imh9_5152f5": {
+      "model": "Yoga Pro 9i 16IMH9",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83BY000KUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i 2025 Core Ultra RTX 4060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:27:48.488Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_pro_9i_gen_10_aura_edition_16_fb47e8": {
+      "model": "Yoga Pro 9i Gen 10 Aura Edition 16",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83L00009US",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i Aura Edition UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:28:03.636Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_pro_9i_aura_edition_16_ff19ae": {
+      "model": "Yoga Pro 9i Aura Edition 16",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83L00009US variant",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i Aura Edition UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:28:03.649Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_pro_9i_gen_11_aura_edition_16_4b5fb1": {
+      "model": "Yoga Pro 9i Gen 11 Aura Edition 16",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83SFCTO1WWGB2",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 9i Aura Edition UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:28:03.661Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_lenovo_yoga_pro_7i_gen_9_14_inch_acebc5": {
+      "model": "Lenovo Yoga Pro 7i Gen 9 (14-inch Intel)",
+      "asin": {
+        "uk": "",
+        "de": "B0CSZ1HH6V"
+      },
+      "ean": "",
+      "mpn": "83E2000UUK",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.de/Lenovo-Laptop-Display-GeForce-Premium/dp/B0CSZ1HH6V",
+      "listing_url": "https://www.amazon.de/Lenovo-Laptop-Display-GeForce-Premium/dp/B0CSZ1HH6V",
+      "search_query": "Lenovo Yoga Pro 7i RTX 4050 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:28:24.844Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_lenovo_yoga_pro_7_14irh8_14_5_inc_c33281": {
+      "model": "Lenovo Yoga Pro 7 14IRH8 (14.5-inch)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "0196804363615",
+      "mpn": "82Y7004PUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 7i RTX 4050 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:28:24.857Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_yoga_pro_7i_14imh9_fdb823": {
+      "model": "Yoga Pro 7i 14IMH9",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83E200BFUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 7i RTX 4060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:28:37.719Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_yoga_pro_7_14imh9_fef1ea": {
+      "model": "Yoga Pro 7 14IMH9",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "14IMH9",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 7i RTX 4060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:28:37.732Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_yoga_pro_7i_14_gen_9_abf188": {
+      "model": "Yoga Pro 7i 14 Gen 9",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83E2000UUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 7i 2024 16 inch RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:29:18.992Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_yoga_pro_7i_gen_9_14_intel_0e0ae4": {
+      "model": "Yoga Pro 7i Gen 9 14\" Intel",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83E2000UUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 7i Core Ultra 7 RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:29:31.615Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7i_gen_11_aura_edition_14_i_2d4afd": {
+      "model": "Yoga Slim 7i Gen 11 Aura Edition 14-inch",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83R0CTO1WWGB3 / 83JXCTO1WWGB1",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7i Aura Edition UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:29:48.244Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7i_ultra_aura_edition_gen_1_65431c": {
+      "model": "Yoga Slim 7i Ultra Aura Edition Gen 11 14.5-inch",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7i Aura Edition UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:29:48.258Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7_14_824514": {
+      "model": "Yoga Slim 7 14",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83CV00EMUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7 14 Core Ultra UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:30:02.192Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7i_14_4b592f": {
+      "model": "Yoga Slim 7i 14",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83JX001KUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7 14 Core Ultra UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:30:02.205Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7i_ultra_gen_11_aura_editio_2fe642": {
+      "model": "Yoga Slim 7i Ultra Gen 11 Aura Edition 14",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7 14 Core Ultra UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:30:02.218Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7x_14_67fc9a": {
+      "model": "Yoga Slim 7X 14\"",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83ED000KUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7x Snapdragon X Elite UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:30:15.933Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7x_gen_11_14_c0b10f": {
+      "model": "Yoga Slim 7X Gen 11 14\"",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83QRCTO1WWGB4",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7x Snapdragon X Elite UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:30:15.948Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_lenovo_yoga_slim_7_carbon_14acn6_fa1953": {
+      "model": "Lenovo Yoga Slim 7 Carbon 14ACN6",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "Yoga Slim 7 Carbon 14ACN6",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7 Carbon 14 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:30:26.449Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_slim_7i_gen_9_14_inch_intel_8dfbcd": {
+      "model": "Yoga Slim 7i Gen 9 (14-inch Intel)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83CVX00RR1",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Slim 7i Gen 9 UK 16GB",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:30:38.761Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_7i_2_in_1_16_gen_10_3e6d68": {
+      "model": "Yoga 7i 2-in-1 16 (Gen 10)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83JT000GUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga 7i 16 2-in-1 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:30:50.664Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_7_16_2_in_1_00cf33": {
+      "model": "Yoga 7 16 2-in-1",
+      "asin": {
+        "uk": "B0CFZH815C",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/Lenovo-Yoga-inch-Laptop-Touchscreen/dp/B0CFZH815C",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-Yoga-inch-Laptop-Touchscreen/dp/B0CFZH815C",
+      "search_query": "Lenovo Yoga 7i 16 2-in-1 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:30:59.708Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_7_14_2_in_1_ecee2b": {
+      "model": "Yoga 7 14 2-in-1",
+      "asin": {
+        "uk": "B0D9NXS1T9",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83JQ001WUK / 83DJ00HLUK / 83DJ000DUK",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/Lenovo-14IML9-1920x1200-DisplayHDR-Touchscreen/dp/B0D9NXS1T9",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-14IML9-1920x1200-DisplayHDR-Touchscreen/dp/B0D9NXS1T9",
+      "search_query": "Lenovo Yoga 7 14 2-in-1 Core Ultra UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:31:25.071Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_7_2_in_1_gen_10_14ill10_7c2ea0": {
+      "model": "Yoga 7 2-in-1 Gen 10 14ILL10",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83JQ001WUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga 7 14 2-in-1 Core Ultra UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:31:25.090Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_7i_2_in_1_gen_10_14_inch_intel_edd41b": {
+      "model": "Yoga 7i 2-in-1 Gen 10 (14-inch Intel)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83JQCTO1WWGB3",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga 7i 2-in-1 2024 UK price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:31:40.009Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_7i_2_in_1_gen_11_aura_edition_14_759b95": {
+      "model": "Yoga 7i 2-in-1 Gen 11 Aura Edition (14-inch Intel)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga 7i 2-in-1 2024 UK price",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:31:40.026Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_9i_14_2_in_1_0e14a4": {
+      "model": "Yoga 9i 14 2-in-1",
+      "asin": {
+        "uk": "B08XK1HZ66",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/Lenovo-Yoga-9i-Touchscreen-Thunderbolt/dp/B08XK1HZ66",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-Yoga-9i-Touchscreen-Thunderbolt/dp/B08XK1HZ66",
+      "search_query": "Lenovo Yoga 9i 2-in-1 14 UK Amazon",
+      "auto_draft": true,
+      "price_verified": true,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": true,
+        "at": "2026-08-04T15:32:00.305Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_9i_14_inch_2_in_1_laptop_3b948b": {
+      "model": "Yoga 9i 14 Inch 2-in-1 Laptop",
+      "asin": {
+        "uk": "B08HJ32VN6",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/Lenovo-Yoga-9i-14-Laptop/dp/B08HJ32VN6",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-Yoga-9i-14-Laptop/dp/B08HJ32VN6",
+      "search_query": "Lenovo Yoga 9i 2-in-1 14 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:32:08.744Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_9i_2_in_1_gen_11_aura_edition_14_ac596f": {
+      "model": "Yoga 9i 2-in-1 Gen 11 Aura Edition (14\" Intel)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83SE000VGE",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/de/de/p/laptops/yoga/yoga-2-in-1-series/lenovo-yoga-9i-2-in-1-gen-11-aura-edition-14-inch-intel/83secto1wwgb3",
+      "listing_url": "https://www.lenovo.com/de/de/p/laptops/yoga/yoga-2-in-1-series/lenovo-yoga-9i-2-in-1-gen-11-aura-edition-14-inch-intel/83secto1wwgb3",
+      "search_query": "Lenovo Yoga 9i 2-in-1 14 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:32:08.758Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_9i_2_in_1_gen_10_aura_edition_14_7fce08": {
+      "model": "Yoga 9i 2-in-1 Gen 10 Aura Edition (14\" Intel)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83LCCTO1WWGB4",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga 9i 2-in-1 14 UK Amazon",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:32:08.774Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_9i_2_in_1_aura_edition_14_gen_10_e5341a": {
+      "model": "Yoga 9i 2-in-1 Aura Edition (14\", Gen 10)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga 9i 2-in-1 Aura Edition UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:32:23.779Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_book_9i_gen_10_14_inch_a86f91": {
+      "model": "Yoga Book 9i Gen 10 (14-inch)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "len101y0054",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Book 9i dual screen UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:32:39.938Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_book_9i_gen_8_13_inch_e940ab": {
+      "model": "Yoga Book 9i Gen 8 (13-inch)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "len101y0028",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Book 9i dual screen UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:32:39.954Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_yoga_book_9i_2024_5e41a8": {
+      "model": "Yoga Book 9i (2024)",
+      "asin": {
+        "uk": "B0CKNZJCC3",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.com/Lenovo-Yoga-Screen-Touch-Laptop/dp/B0CKNZJCC3",
+      "listing_url": "https://www.amazon.com/Lenovo-Yoga-Screen-Touch-Laptop/dp/B0CKNZJCC3",
+      "search_query": "Lenovo Yoga Book 9i dual screen UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "low",
+        "verified": false,
+        "at": "2026-08-04T15:32:48.235Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4060_yoga_pro_9i_gen_8_16_intel_78abbd": {
+      "model": "Yoga Pro 9i Gen 8 (16″ Intel)",
+      "asin": {
+        "uk": "B0DB1Z9839",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "16IMH9",
+      "geizhals_id": "",
+      "official_url": "https://www.amazon.co.uk/dp/B0DB1Z9839",
+      "listing_url": "https://www.amazon.co.uk/dp/B0DB1Z9839",
+      "search_query": "Lenovo Yoga Pro 9i 16 3.2K Mini LED RTX 4060 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:33:08.648Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_yoga_pro_7_14imh8_7a8ef0": {
+      "model": "Yoga Pro 7 14IMH8",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "82Y7004PUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga Pro 7i 14 2.8K OLED RTX 4050 UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:33:24.375Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_lenovo_yoga_pro_9i_16_07a972": {
+      "model": "Lenovo Yoga Pro 9i 16",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "Yoga Pro 9i 16IMH9",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "best Lenovo Yoga laptop with RTX UK 2025 2026",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:33:40.595Z"
+      }
+    },
+    "lap_auto_lenovo_gpu_lenovo_yoga_7_2_in_1_16_gen_10_0fc1ee": {
+      "model": "Lenovo Yoga 7 2-in-1 16 Gen 10",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "Yoga 7 2-in-1 16 Gen 10",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "best Lenovo Yoga laptop with RTX UK 2025 2026",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "low",
+        "verified": false,
+        "at": "2026-08-04T15:33:40.611Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_loq_15iax9e_245512": {
+      "model": "LOQ 15IAX9E",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga creator laptop RTX 4050 under 1500 GBP UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "medium",
+        "verified": false,
+        "at": "2026-08-04T15:33:54.612Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_lenovo_loq_15i_15_6in_42499e": {
+      "model": "Lenovo LOQ 15i 15.6in",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "470/4821",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga creator laptop RTX 4050 under 1500 GBP UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:33:54.627Z"
+      }
+    },
+    "lap_auto_lenovo_rtx4050_lenovo_loq_15_6in_r7_9c6726": {
+      "model": "Lenovo LOQ 15.6in R7",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "83S0000RUK",
+      "geizhals_id": "",
+      "official_url": "",
+      "listing_url": "",
+      "search_query": "Lenovo Yoga creator laptop RTX 4050 under 1500 GBP UK",
+      "auto_draft": true,
+      "price_verified": false,
+      "resolve_meta": {
+        "source": "sonar_discover",
+        "auto": true,
+        "confidence": "high",
+        "verified": false,
+        "at": "2026-08-04T15:33:54.642Z"
+      }
     }
   }
 }

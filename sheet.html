@@ -1503,17 +1503,46 @@ button:disabled {
   .header .btn span.hide-sm { display: none; }
   .board-column { flex: 0 0 240px; max-width: 240px; }
   .finder-inner { padding: 16px var(--page-pad) 72px; }
-  .header { gap: 6px; padding: 0 10px; }
+  .header { gap: 8px; padding: 0 10px; }
   .header-sep { display: none; }
-  .currency-toggle button { padding: 5px 7px; font-size: 11.5px; }
-  .mode-switch button { padding: 5px 9px; font-size: 11.5px; }
-  .logo { font-size: 13.5px; }
+  .currency-toggle button { padding: 6px 8px; font-size: 13px; min-height: 36px; }
+  .logo { font-size: 14px; font-weight: 700; }
+  .logo-mark { width: 24px; height: 24px; font-size: 12px; }
 }
 
 @media (max-width: 640px) {
-  :root { --header-h: 50px; --page-pad: 12px; }
+  :root { --header-h: 52px; --page-pad: 12px; }
   html, body, #app { max-width: 100vw; overflow-x: hidden; }
   #app { grid-template-columns: 1fr; }
+  /* Public header: logo + currency + theme only */
+  #app[data-mode="finder"] .header {
+    gap: 8px;
+    padding: 0 10px;
+    padding-left: max(10px, env(safe-area-inset-left));
+    padding-right: max(10px, env(safe-area-inset-right));
+  }
+  #app[data-mode="finder"] .logo-title {
+    font-size: 14px;
+    max-width: min(42vw, 11rem);
+  }
+  #app[data-mode="finder"] .header-actions {
+    gap: 6px;
+    margin-left: auto;
+  }
+  #app[data-mode="finder"] .currency-toggle {
+    border-radius: 10px;
+  }
+  #app[data-mode="finder"] .currency-toggle button {
+    min-width: 2.4rem;
+    min-height: 40px;
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+  #app[data-mode="finder"] #btn-theme {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
   .sidebar {
     position: fixed;
     left: 0; top: var(--header-h); bottom: 0;
@@ -1696,10 +1725,8 @@ button:disabled {
   .compare-top .share-btn,
   .compare-top .btn { min-height: var(--touch-min); }
 
-  .header-actions { gap: 4px; }
-  .logo span.finder-only-hdr,
-  .logo span.sheet-only-hdr { max-width: 9ch; overflow: hidden; text-overflow: ellipsis; }
-  #currency-toggle button { min-width: 0; }
+  .header-actions { gap: 6px; }
+  #currency-toggle button { min-width: 2.2rem; }
 
   /* Neo: smaller hard shadows so they don't cause horizontal scroll */
   [data-theme="neo"] .finder-step,
@@ -1724,9 +1751,12 @@ button:disabled {
   }
 }
 
-@media (max-width: 560px) {
-  .mode-switch button { padding: 5px 7px; }
-  .currency-toggle button { padding: 4px 5px; font-size: 11px; }
+@media (max-width: 380px) {
+  #app[data-mode="finder"] .logo-title { display: none; }
+  #app[data-mode="finder"] .currency-toggle button {
+    min-width: 2rem;
+    padding: 6px 6px;
+  }
 }
 
 /* Conditional formatting cells */
@@ -1738,7 +1768,7 @@ button:disabled {
   outline-offset: -2px;
 }
 
-/* ═══ Finder mode (simple picker) ═══ */
+/* ═══ Finder mode (public picker — default) ═══ */
 #app[data-mode="finder"] {
   grid-template-columns: 1fr;
   grid-template-rows: var(--header-h) 1fr;
@@ -1746,12 +1776,38 @@ button:disabled {
 #app[data-mode="finder"] .sidebar,
 #app[data-mode="finder"] .workspace { display: none !important; }
 #app[data-mode="finder"] .finder-view { display: flex; }
-#app[data-mode="finder"] .header .sheet-only-hdr { display: none; }
+#app[data-mode="finder"] .header .sheet-only-hdr { display: none !important; }
 #app[data-mode="sheet"] .finder-view { display: none; }
-#app[data-mode="sheet"] .finder-only-hdr { display: none; }
+#app[data-mode="sheet"] .logo-title { display: none; }
+#app[data-mode="sheet"] .mode-switch { display: inline-flex !important; }
 
+.header {
+  min-width: 0;
+}
+.logo {
+  min-width: 0;
+  flex-shrink: 1;
+}
+.logo-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header-actions {
+  flex-shrink: 0;
+  min-width: 0;
+}
+.currency-toggle {
+  flex-shrink: 0;
+}
+.currency-toggle button {
+  min-width: 2.25rem;
+  padding: 6px 8px;
+  font-weight: 700;
+}
+
+/* Mode switch only visible in ?edit=1 catalog mode */
 .mode-switch {
-  display: inline-flex;
+  display: none;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -3414,17 +3470,15 @@ button:disabled {
     <button class="btn-icon sheet-only-hdr" id="btn-toggle-sidebar" title="Toggle sidebar (\)" aria-label="Toggle sidebar">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
-    <div class="logo">
+    <div class="logo" id="app-logo" title="Laptop pick">
       <div class="logo-mark">S</div>
-      <span class="finder-only-hdr">Laptop pick</span>
-      <span class="sheet-only-hdr">Sheet</span>
+      <span class="logo-title">Laptop pick</span>
     </div>
-    <div class="header-sep"></div>
-    <div class="mode-switch" id="mode-switch" title="Switch view">
+    <!-- Mode switch removed from public UI. Catalog edit: add ?edit=1 to the URL. -->
+    <div class="mode-switch sheet-only-hdr" id="mode-switch" title="Switch view" hidden>
       <button type="button" data-mode="finder" class="active">Find</button>
       <button type="button" data-mode="sheet">Edit data</button>
     </div>
-    <div class="header-sep sheet-only-hdr"></div>
     <div class="file-status sheet-only-hdr" id="file-status" title="Workspace data file">
       <span class="file-dot" aria-hidden="true"></span>
       <span class="file-name" id="file-name">No file linked</span>
@@ -3438,7 +3492,6 @@ button:disabled {
       <button class="btn btn-ghost btn-icon sheet-only-hdr" id="btn-redo" title="Redo (Ctrl+Y)" disabled aria-label="Redo">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 7v6h-6"/><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6.7 3L21 13"/></svg>
       </button>
-      <div class="header-sep sheet-only-hdr"></div>
       <button class="btn btn-ghost sheet-only-hdr" id="btn-open" title="Open data.json (Ctrl+O)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
         <span class="hide-sm">Open</span>
@@ -3451,11 +3504,10 @@ button:disabled {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
       </button>
       <input type="file" id="open-file" accept=".json,application/json,.csv,text/csv" hidden />
-      <div class="header-sep"></div>
       <div class="currency-toggle" id="currency-toggle" title="Prices in EUR, GBP, or AUD">
-        <button type="button" data-currency="EUR" id="btn-cur-eur">EUR €</button>
-        <button type="button" data-currency="GBP" id="btn-cur-gbp">GBP £</button>
-        <button type="button" data-currency="AUD" id="btn-cur-aud">AUD $</button>
+        <button type="button" data-currency="EUR" id="btn-cur-eur">€</button>
+        <button type="button" data-currency="GBP" id="btn-cur-gbp">£</button>
+        <button type="button" data-currency="AUD" id="btn-cur-aud">A$</button>
       </div>
       <button class="btn btn-ghost btn-icon" id="btn-theme" title="Theme: Light · click for Dark" aria-label="Cycle theme" data-theme="light">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="theme-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -21901,13 +21953,31 @@ button:disabled {
     };
   }
 
+  function editModeAllowed() {
+    try {
+      return new URLSearchParams(location.search || "").get("edit") === "1";
+    } catch {
+      return false;
+    }
+  }
+
   function setUiMode(mode) {
-    const m = mode === "sheet" ? "sheet" : "finder";
+    // Public site is finder-only unless ?edit=1 is present
+    const m = editModeAllowed() && mode === "sheet" ? "sheet" : "finder";
     Store.data.uiMode = m;
     document.getElementById("app").setAttribute("data-mode", m);
     document.querySelectorAll("#mode-switch button").forEach((b) => {
       b.classList.toggle("active", b.dataset.mode === m);
     });
+    const ms = document.getElementById("mode-switch");
+    if (ms) {
+      if (editModeAllowed()) {
+        ms.hidden = false;
+        ms.style.display = "";
+      } else {
+        ms.hidden = true;
+      }
+    }
     try {
       const p = JSON.parse(localStorage.getItem(PREFS_KEY) || "{}");
       p.uiMode = m;
@@ -22340,13 +22410,18 @@ button:disabled {
 
     // Theme button icon state
     document.documentElement.setAttribute("data-theme", Store.data.theme || "light");
-    const mode = Store.data.uiMode === "sheet" ? "sheet" : "finder";
+    // Public builds stay on finder unless ?edit=1
+    const mode = editModeAllowed() && Store.data.uiMode === "sheet" ? "sheet" : "finder";
+    if (!editModeAllowed() && Store.data.uiMode === "sheet") Store.data.uiMode = "finder";
     document.getElementById("app").setAttribute("data-mode", mode);
     document.querySelectorAll("#mode-switch button").forEach((b) => {
       b.classList.toggle("active", b.dataset.mode === mode);
     });
+    const ms = document.getElementById("mode-switch");
+    if (ms) ms.hidden = !editModeAllowed();
     updateFileStatusUI();
     updateCurrencyToggleUI();
+    updateThemeButtonUI(Store.data.theme || "light");
 
     // Always refresh finder (cheap) so currency switch updates it
     renderFinder();
@@ -22620,6 +22695,10 @@ button:disabled {
 
     document.querySelectorAll("#mode-switch button[data-mode]").forEach((btn) => {
       btn.addEventListener("click", () => {
+        if (!editModeAllowed()) {
+          toast("Catalog edit is off — open with ?edit=1 to manage data", "info");
+          return;
+        }
         setUiMode(btn.dataset.mode);
         renderApp();
       });
@@ -22832,6 +22911,12 @@ button:disabled {
   Store.subscribe(renderApp);
   Store.init().then(() => {
     const fromUrl = applyFinderFromUrl();
+    // Public default: finder only. Catalog tools require ?edit=1
+    if (editModeAllowed()) {
+      setUiMode(Store.data.uiMode === "sheet" ? "sheet" : "finder");
+    } else {
+      setUiMode("finder");
+    }
     updateCurrencyToggleUI();
     renderApp();
     updateFileStatusUI();
@@ -22846,6 +22931,7 @@ button:disabled {
     FileBackend.dirty = true;
     Store.applyTheme();
     applyFinderFromUrl();
+    setUiMode("finder");
     renderApp();
     updateFileStatusUI();
     toast("Started with empty workspace", "info");

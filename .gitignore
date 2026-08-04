@@ -7,3 +7,6 @@ Thumbs.db
 node_modules/
 .env
 tools/out/
+
+.env.bak
+

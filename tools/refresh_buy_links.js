@@ -26,13 +26,15 @@ function cleanQuery(model, gpuShort) {
   return { modelQ: base, fullQ: `${base} ${gpu}`.trim(), gpu };
 }
 
-function buildBuyLinks(model, brand, gpuModel, gpuId) {
+function buildBuyLinks(model, brand, gpuModel, gpuId, skuMap = {}) {
   const gpuShort =
     gpuModel ||
     (gpuId ? String(gpuId).replace(/^rtx/i, "RTX ").replace(/^rx/i, "RX ") : "");
   const { modelQ, fullQ, gpu } = cleanQuery(model, gpuShort);
   const enc = (s) => encodeURIComponent(s);
   const brandKey = String(brand || "").toLowerCase();
+  const asinUk = (skuMap.asin_uk || "").trim();
+  const asinDe = (skuMap.asin_de || "").trim();
 
   const official = {
     asus: `https://www.asus.com/uk/searchresult?searchType=products&searchKey=${enc(modelQ)}`,
@@ -84,17 +86,25 @@ function buildBuyLinks(model, brand, gpuModel, gpuId) {
       region: "EU",
       retailer: "Amazon.de",
       kind: "shop",
-      label: "Amazon.de",
-      url: `https://www.amazon.de/s?k=${enc(fullQ)}`,
-      note: "Check seller is Amazon or high-rated",
+      label: asinDe ? "Amazon.de · exact ASIN" : "Amazon.de",
+      url: asinDe
+        ? `https://www.amazon.de/dp/${asinDe}`
+        : `https://www.amazon.de/s?k=${enc(fullQ)}`,
+      note: asinDe
+        ? "SKU-linked listing (price verification target)"
+        : "Check seller is Amazon or high-rated",
     },
     {
       region: "UK",
       retailer: "Amazon.co.uk",
       kind: "shop",
-      label: "Amazon.co.uk",
-      url: `https://www.amazon.co.uk/s?k=${enc(fullQ)}`,
-      note: "Prime returns; avoid random marketplace 3P",
+      label: asinUk ? "Amazon.co.uk · exact ASIN" : "Amazon.co.uk",
+      url: asinUk
+        ? `https://www.amazon.co.uk/dp/${asinUk}`
+        : `https://www.amazon.co.uk/s?k=${enc(fullQ)}`,
+      note: asinUk
+        ? "SKU-linked listing (price verification target)"
+        : "Prime returns; avoid random marketplace 3P",
     },
     {
       region: "UK",
@@ -175,7 +185,8 @@ for (const row of sheet.rows) {
     c.col_model,
     c.col_brand || det.brand,
     det.graphics?.model,
-    c.col_gpu
+    c.col_gpu,
+    det.sku_map || {}
   );
   det.buy_guide =
     "Live stock: Geizhals (EU) or Idealo/Google Shopping (UK) first, then a VAT-local shop. Avoid grey import if you need easy warranty.";

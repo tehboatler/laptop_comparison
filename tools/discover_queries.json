@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "purpose": "Seed search terms for automated laptop discovery (EU/UK value + current-gen).",
+    "how_to_edit": "Add plain search strings. Prefer brand + series + GPU. Avoid vague 'gaming laptop'."
+  },
+  "queries": [
+    "best value RTX 5060 gaming laptop UK buy 2026",
+    "Lenovo LOQ 15 RTX 5060 16GB Amazon UK",
+    "Lenovo LOQ 15 RTX 5050 UK price",
+    "ASUS TUF Gaming A15 RTX 5060 UK",
+    "ASUS TUF A16 RTX 5060 Amazon UK",
+    "ASUS V16 V3607 RTX 5060 UK",
+    "MSI Thin 15 RTX 4050 dual channel UK",
+    "MSI Cyborg 15 RTX 4050 UK deal",
+    "Acer Nitro V 15 RTX 4050 UK",
+    "HP Victus 15 RTX 4050 UK",
+    "Lenovo Legion 5 RTX 4060 UK street price",
+    "ASUS TUF F16 RTX 4050 UK",
+    "best RTX 4050 laptop under 900 GBP UK",
+    "MacBook Pro 14 M4 16GB 512GB UK ASIN"
+  ]
+}

@@ -34,7 +34,9 @@ function sleep(ms) {
  * @param {string} opts.country e.g. de, gb, uk (API may use gb)
  * @param {string} opts.topic e.g. product_and_offers, search_results
  * @param {string} opts.key gtin | term | asin | mpn | identifier
- * @param {string[]} opts.values
+ * @param {string[]|string} opts.values
+ * @param {number} [opts.max_pages] search pagination (search_results)
+ * @param {number} [opts.max_age] cache freshness (API: minutes on most topics)
  */
 async function createJob(opts) {
   const t = token();
@@ -44,14 +46,23 @@ async function createJob(opts) {
   // PriceAPI often uses "gb" for UK
   const countryNorm = country === "uk" ? "gb" : country;
 
+  const valuesArr = Array.isArray(opts.values)
+    ? opts.values.map(String)
+    : String(opts.values || "")
+        .split(/\n/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+
   const body = {
     source: opts.source,
     country: countryNorm,
     topic: opts.topic || "product_and_offers",
     key: opts.key,
-    values: opts.values.map(String),
-    max_age: opts.max_age != null ? opts.max_age : 3600, // seconds; 0 = realtime (costs more)
+    // JSON API accepts array; form samples use newline-joined strings
+    values: valuesArr,
+    max_age: opts.max_age != null ? opts.max_age : 1440,
   };
+  if (opts.max_pages != null) body.max_pages = opts.max_pages;
 
   const url = `${BASE}/jobs?token=${encodeURIComponent(t)}`;
   const res = await fetch(url, {
@@ -90,17 +101,35 @@ async function getJob(jobId) {
 
 async function downloadJob(jobId, format = "json") {
   const t = token();
-  const url = `${BASE}/jobs/${encodeURIComponent(jobId)}/download?token=${encodeURIComponent(t)}&format=${encodeURIComponent(format)}`;
-  const res = await fetch(url, { headers: { accept: "application/json" } });
-  const text = await res.text();
-  if (!res.ok) {
-    throw new Error(`PriceAPI download ${res.status}: ${text.slice(0, 300)}`);
+  // Docs: follow redirects (pre-rendered results may 302)
+  // Prefer /download.json which some clients use
+  const baseUrl = `${BASE}/jobs/${encodeURIComponent(jobId)}/download`;
+  const urls = [
+    `${baseUrl}.${format}?token=${encodeURIComponent(t)}`,
+    `${baseUrl}?token=${encodeURIComponent(t)}&format=${encodeURIComponent(format)}`,
+  ];
+  let lastErr = null;
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, {
+        headers: { accept: "application/json" },
+        redirect: "follow",
+      });
+      const text = await res.text();
+      if (!res.ok) {
+        lastErr = new Error(`PriceAPI download ${res.status}: ${text.slice(0, 300)}`);
+        continue;
+      }
+      try {
+        return JSON.parse(text);
+      } catch {
+        return text;
+      }
+    } catch (e) {
+      lastErr = e;
+    }
   }
-  try {
-    return JSON.parse(text);
-  } catch {
-    return text;
-  }
+  throw lastErr || new Error("PriceAPI download failed");
 }
 
 /**
@@ -157,15 +186,418 @@ async function fetchProductAndOffers({ source, country, key, values, max_age }) 
 }
 
 /**
+ * Free-text product discovery (topic search_results, key term).
+ * Works on amazon / google_shopping for many countries — use this to find ASINs/GTINs.
+ */
+async function fetchSearchResults({
+  source = "amazon",
+  country = "gb",
+  values,
+  max_age,
+  max_pages = 1,
+}) {
+  const { jobId } = await createJob({
+    source,
+    country,
+    topic: "search_results",
+    key: "term",
+    values,
+    max_age: max_age != null ? max_age : 1440,
+    max_pages,
+  });
+  await waitForJob(jobId);
+  process.stdout.write("\n");
+  const results = await downloadJob(jobId, "json");
+  return { jobId, results };
+}
+
+/**
+ * Official Price API v2 download shape:
+ * {
+ *   job_id, status, results: [{
+ *     query: { value, key, topic, ... },
+ *     success: true|false,
+ *     reason?: string,
+ *     content: {
+ *       search_results: [{ id, name, url, ... }],
+ *       // or product / offers / products depending on topic
+ *     }
+ *   }]
+ * }
+ */
+function getResultBlocks(payload) {
+  if (!payload) return [];
+  if (Array.isArray(payload)) return payload;
+  if (Array.isArray(payload.results)) return payload.results;
+  if (Array.isArray(payload.data)) return payload.data;
+  return [];
+}
+
+function attachOffersToProduct(p, offers) {
+  if (!p || !Array.isArray(offers) || !offers.length) return p;
+  p.offers = offers;
+  const prices = offers
+    .map((o) =>
+      Number(
+        typeof o.price === "string"
+          ? o.price.replace(/[^0-9.]/g, "")
+          : o.price ?? o.total_price ?? o.price_with_shipping
+      )
+    )
+    .filter((n) => !isNaN(n) && n > 0);
+  if (prices.length) p.price = Math.min(...prices);
+  if (offers[0]?.currency) p.currency = offers[0].currency;
+  // Backfill ASIN from offer product_id
+  if (!p.asin && offers[0]?.product_id) p.asin = offers[0].product_id;
+  return p;
+}
+
+function extractContentItems(content) {
+  if (!content || typeof content !== "object") return [];
+  // search_results topic
+  if (Array.isArray(content.search_results)) return content.search_results;
+  if (Array.isArray(content.products)) return content.products;
+  if (Array.isArray(content.items)) return content.items;
+  if (Array.isArray(content.results)) return content.results;
+
+  // product_and_offers: content is often the product itself (name/id/eans/offers)
+  if (content.name || content.title || content.asin || content.id || content.buybox) {
+    const p = { ...content };
+    // EANs / GTINs as arrays on Amazon
+    if (!p.ean && Array.isArray(p.eans) && p.eans[0]) p.ean = p.eans[0];
+    if (!p.gtin && Array.isArray(p.gtins) && p.gtins[0]) p.gtin = p.gtins[0];
+    if (!p.mpn && Array.isArray(p.mpns) && p.mpns[0]) p.mpn = p.mpns[0];
+    if (!p.asin && looksLikeAsin(p.id)) p.asin = p.id;
+    // Buybox price when offers empty (Amazon uses min_price on buybox)
+    if (p.price == null && p.buybox) {
+      const bp =
+        p.buybox.price ?? p.buybox.min_price ?? p.buybox.price_with_shipping;
+      if (bp != null) p.price = bp;
+      if (!p.currency && p.buybox.currency) p.currency = p.buybox.currency;
+    }
+    if (Array.isArray(content.offers)) attachOffersToProduct(p, content.offers);
+    return [p];
+  }
+
+  // Nested product object
+  if (content.product && typeof content.product === "object") {
+    const p = { ...content.product };
+    if (Array.isArray(content.offers)) attachOffersToProduct(p, content.offers);
+    return [p];
+  }
+
+  // Offers-only (rare)
+  if (Array.isArray(content.offers)) return content.offers;
+  return [];
+}
+
+/** Flatten downloaded job payload into a list of product-like objects */
+function flattenProducts(results) {
+  if (!results) return [];
+  // Prefer official blocks
+  const blocks = getResultBlocks(results);
+  if (blocks.length) {
+    const out = [];
+    for (const block of blocks) {
+      if (!block || typeof block !== "object") continue;
+      // Skip envelope-only rows (query wrappers without content)
+      if (block.content) {
+        const q =
+          block.query?.value ||
+          block.query?.term ||
+          (typeof block.query === "string" ? block.query : "") ||
+          "";
+        for (const item of extractContentItems(block.content)) {
+          out.push({ ...item, _query: q, _success: block.success });
+        }
+        continue;
+      }
+      // Legacy: block itself is a product
+      if (block.name || block.title || block.asin) out.push(block);
+    }
+    if (out.length) return out;
+  }
+
+  if (Array.isArray(results)) return results;
+  if (Array.isArray(results.products)) return results.products;
+  if (Array.isArray(results.jobs)) {
+    return results.jobs.flatMap((j) => flattenProducts(j));
+  }
+  return [];
+}
+
+function looksLikeAsin(s) {
+  return typeof s === "string" && /^B0[A-Z0-9]{8}$/i.test(s.trim());
+}
+
+/**
+ * Normalize search / product hits into a common shape for matching.
+ */
+function normalizeProductHit(p, { query } = {}) {
+  if (!p || typeof p !== "object") return null;
+  // Skip API envelope rows that aren't products
+  if (p.query && p.content && !p.name && !p.title) return null;
+  if (p.success === false && !p.name && !p.title) return null;
+
+  const title =
+    p.name ||
+    p.title ||
+    p.product_name ||
+    p.product?.name ||
+    p.product?.title ||
+    "";
+  let asin = String(
+    p.asin || p.ASIN || p.product?.asin || p.product_id || ""
+  ).trim();
+  // Amazon search often puts ASIN in `id`
+  if (!asin && looksLikeAsin(p.id)) asin = String(p.id).trim();
+  if (!asin && looksLikeAsin(p.sku)) asin = String(p.sku).trim();
+  // Extract ASIN from Amazon URL
+  if (!asin && p.url) {
+    const m = String(p.url).match(/\/(?:dp|gp\/product|product)\/([A-Z0-9]{10})/i);
+    if (m) asin = m[1];
+  }
+
+  const gtinRaw =
+    p.gtin ||
+    p.ean ||
+    p.GTIN ||
+    p.EAN ||
+    (Array.isArray(p.gtins) ? p.gtins[0] : "") ||
+    p.product?.gtin ||
+    p.product?.ean ||
+    "";
+  const gtin = String(gtinRaw || "")
+    .replace(/\D/g, "")
+    .trim();
+  const priceRaw =
+    p.price ??
+    p.min_price ??
+    p.lowest_price ??
+    p.price_value ??
+    p.product?.price ??
+    p.offers?.[0]?.price ??
+    null;
+  const price = Number(
+    typeof priceRaw === "string" ? priceRaw.replace(/[^0-9.]/g, "") : priceRaw
+  );
+  const currency =
+    p.currency ||
+    p.Currency ||
+    p.product?.currency ||
+    p.offers?.[0]?.currency ||
+    null;
+  const url =
+    p.url ||
+    p.link ||
+    p.product_url ||
+    p.product?.url ||
+    (asin ? `https://www.amazon.co.uk/dp/${asin}` : "") ||
+    "";
+  const image =
+    p.image ||
+    p.image_url ||
+    p.image_urls?.[0] ||
+    p.images?.[0] ||
+    p.product?.image ||
+    null;
+  const id =
+    p.id ||
+    p.product_id ||
+    p.sku ||
+    p.identifier ||
+    asin ||
+    gtin ||
+    null;
+
+  if (!title && !asin && !gtin) return null;
+
+  return {
+    title: String(title),
+    asin: asin || "",
+    gtin: gtin.length >= 8 ? gtin : "",
+    ean: gtin.length >= 8 ? gtin : "",
+    price: !isNaN(price) && price > 0 ? price : null,
+    currency: currency || null,
+    url: String(url || ""),
+    image: image || null,
+    id: id != null ? String(id) : "",
+    mpn: String(p.mpn || p.MPN || p.product?.mpn || "").trim(),
+    query: query || p._query || p.query || p.term || "",
+    raw_keys: Object.keys(p).slice(0, 24),
+  };
+}
+
+/**
+ * Parse search_results (or product) download into product hits.
+ */
+function parseSearchResults(results, { values = [] } = {}) {
+  const hits = [];
+  const blocks = getResultBlocks(results);
+
+  if (blocks.length) {
+    for (const block of blocks) {
+      if (!block || typeof block !== "object") continue;
+      const q =
+        block.query?.value ||
+        block.query?.term ||
+        (typeof block.query === "string" ? block.query : "") ||
+        values[0] ||
+        "";
+      if (block.success === false) {
+        // Surface failures as zero hits for that query (caller can log)
+        continue;
+      }
+      const items = block.content
+        ? extractContentItems(block.content)
+        : block.name || block.title
+          ? [block]
+          : [];
+      for (const item of items) {
+        const hit = normalizeProductHit(item, { query: q });
+        if (hit) hits.push(hit);
+      }
+    }
+  }
+
+  // Fallback for unexpected shapes
+  if (!hits.length) {
+    for (const p of flattenProducts(results)) {
+      const hit = normalizeProductHit(p, {
+        query: p._query || values[0] || "",
+      });
+      if (hit) hits.push(hit);
+    }
+  }
+
+  if (hits.length && values.length === 1) {
+    for (const h of hits) {
+      if (!h.query) h.query = values[0];
+    }
+  }
+
+  return hits;
+}
+
+/** Collect per-query failures from a download payload */
+function parseResultErrors(results) {
+  const errors = [];
+  for (const block of getResultBlocks(results)) {
+    if (block && block.success === false) {
+      const q = block.query?.value || block.query?.term || "?";
+      errors.push(`${q}: ${block.reason || block.comment || "failed"}`);
+    }
+  }
+  return errors;
+}
+
+/**
+ * Summarize product_and_offers download using official content nesting.
+ */
+function summarizeDownload(results, { currencyHint } = {}) {
+  const hits = parseSearchResults(results);
+  if (!hits.length) {
+    // Try offers nested in content blocks
+    const blocks = getResultBlocks(results);
+    let minPrice = null;
+    let currency = currencyHint || null;
+    let offerCount = 0;
+    let shops = [];
+    let sampleTitle = null;
+    for (const block of blocks) {
+      const content = block?.content;
+      if (!content) continue;
+      sampleTitle =
+        sampleTitle ||
+        content.product?.name ||
+        content.product?.title ||
+        content.name ||
+        null;
+      const offers = content.offers || content.product?.offers || [];
+      if (Array.isArray(offers)) {
+        for (const o of offers) {
+          offerCount++;
+          const price = Number(o.price ?? o.total_price ?? o.amount);
+          if (!isNaN(price) && price > 0) {
+            if (minPrice == null || price < minPrice) minPrice = price;
+          }
+          if (o.currency) currency = o.currency;
+          const shop = o.shop_name || o.shop || o.merchant || o.seller;
+          if (shop) shops.push(String(shop));
+        }
+      }
+    }
+    return {
+      products: sampleTitle || offerCount ? 1 : 0,
+      min_price: minPrice,
+      currency,
+      offer_count: offerCount,
+      shops: [...new Set(shops)].slice(0, 8),
+      sample_title: sampleTitle,
+      errors: parseResultErrors(results),
+    };
+  }
+
+  let minPrice = null;
+  let currency = currencyHint || null;
+  let offerCount = 0;
+  const shops = [];
+  for (const h of hits) {
+    if (h.price != null) {
+      if (minPrice == null || h.price < minPrice) minPrice = h.price;
+    }
+    if (h.currency) currency = h.currency;
+  }
+  // Count offers from blocks when available
+  for (const block of getResultBlocks(results)) {
+    const offers = block?.content?.offers;
+    if (Array.isArray(offers)) {
+      offerCount += offers.length;
+      for (const o of offers) {
+        const price = Number(o.price ?? o.total_price);
+        if (!isNaN(price) && price > 0) {
+          if (minPrice == null || price < minPrice) minPrice = price;
+        }
+        if (o.currency) currency = o.currency;
+        const shop = o.shop_name || o.shop || o.merchant;
+        if (shop) shops.push(String(shop));
+      }
+    }
+  }
+  if (!offerCount) offerCount = hits.filter((h) => h.price != null).length;
+
+  return {
+    products: hits.length,
+    min_price: minPrice,
+    currency,
+    offer_count: offerCount,
+    shops: [...new Set(shops)].slice(0, 8),
+    sample_title: hits[0]?.title || null,
+    errors: parseResultErrors(results),
+  };
+}
+
+/**
  * Normalize various result shapes into a simple snapshot for our catalog
  */
 function summarizeResults(results, { currencyHint } = {}) {
-  // Results may be array of products, or { results: [...] }, or nested offers
+  // Prefer official v2 nesting; fall back to legacy flat list
+  const modern = summarizeDownload(results, { currencyHint });
+  if (modern.products || modern.offer_count || modern.min_price != null) {
+    return modern;
+  }
+
   const list = Array.isArray(results)
     ? results
     : results?.results || results?.data || results?.products || [];
   if (!Array.isArray(list) || !list.length) {
-    return { products: 0, min_price: null, currency: currencyHint || null, sample: null };
+    return {
+      products: 0,
+      min_price: null,
+      currency: currencyHint || null,
+      sample: null,
+      errors: parseResultErrors(results),
+    };
   }
 
   let minPrice = null;
@@ -175,18 +607,22 @@ function summarizeResults(results, { currencyHint } = {}) {
   let shops = [];
 
   for (const p of list) {
+    // Skip envelope rows
+    if (p?.content && !p.name && !p.title) continue;
     sampleTitle =
       sampleTitle ||
       p.name ||
       p.title ||
       p.product_name ||
       p.product?.name ||
+      p.content?.product?.name ||
       null;
     const offers =
       p.offers ||
       p.Offers ||
       p.shops ||
       p.product?.offers ||
+      p.content?.offers ||
       (p.price != null ? [p] : []);
     if (Array.isArray(offers)) {
       for (const o of offers) {
@@ -218,6 +654,7 @@ function summarizeResults(results, { currencyHint } = {}) {
     offer_count: offerCount,
     shops: [...new Set(shops)].slice(0, 8),
     sample_title: sampleTitle,
+    errors: parseResultErrors(results),
   };
 }
 
@@ -228,6 +665,14 @@ module.exports = {
   downloadJob,
   waitForJob,
   fetchProductAndOffers,
+  fetchSearchResults,
+  flattenProducts,
+  normalizeProductHit,
+  parseSearchResults,
+  parseResultErrors,
+  summarizeDownload,
   summarizeResults,
+  getResultBlocks,
+  extractContentItems,
   token,
 };

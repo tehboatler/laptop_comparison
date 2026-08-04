@@ -1,115 +1,167 @@
-# Catalog operations (best judgement)
+# Catalog ops — jobs to be done
 
-## One-click sync
+Keep this **simple and free**. Paid price APIs are optional and off by default.
+
+## The only workflow you need
+
+### A) Fully automated (Sonar — if you accept the API cost)
+
+```
+1. DISCOVER     Sonar finds sellable EU/UK configs
+2. IDs + PRICE  ASIN/EAN format-checked + street price research-verified against listing
+3. DRAFTS       written into catalog (col_status=draft)
+4. PUBLISH      npm run catalog:sync
+5. PROMOTE      change draft → consider/top when you trust the row
+```
 
 ```bash
+npm run catalog:sonar:discover          # whole seed list in tools/discover_queries.json
+npm run catalog:sonar:discover:dry      # candidates only (no data.json writes)
 npm run catalog:sync
 ```
 
-This always:
-1. Ensures every laptop has a row in `tools/sku_registry.json`
-2. Normalizes chassis grades
-3. Rebuilds live stock-check buy links
-4. Applies SKU map (ASIN/EAN/MPN/official URL) into `data.json`
-5. **If Amazon PA-API keys are set** — pulls title, price, EAN, stock message for mapped ASINs
-6. Validates catalog
-7. Embeds into `sheet.html` + `index.html`
-8. Writes `tools/out/research_queue.csv` + `sync_report.json`
+Seeds: edit `tools/discover_queries.json`.  
+Report: `tools/out/sonar_discover.json`.
 
-### What “official API” means (important)
+**Price honesty:** Sonar “verify” step re-checks ASIN + price via web. That is **research verification**, not a paid live price API. UI may show listing-checked when verify confidence is medium/high. Always open the Amazon chip before buying.
 
-There is **no free universal API** for “every EU laptop, perfect specs, live price”.
+### B) Manual listing (free, highest trust)
 
-| Source | Type | What you get | Access |
-|--------|------|--------------|--------|
-| **metoda Price API** (priceapi.com) | **Recommended** commercial data API | Multi-shop prices from Amazon, Google Shopping, Idealo, Geizhals, etc. by **GTIN/EAN, ASIN, or search term** | Free trial credits, then paid plans |
-| **Amazon PA-API 5.0** | Official Amazon only | Perfect for mapped **ASINs** | Associates + approval (harder) |
-| **Idealo Partner API** | Merchant push API | Not for reading competitor markets | Merchant contract |
-| **Buy-link compare URLs** | Always free | Live stock when user clicks | Built into the app |
+```
+1. POPULATE     paste Amazon URL + price you saw
+2. FLESH OUT    Sonar specs
+3. PUBLISH      sync
+```
 
-### metoda Price API (best fit for this project)
-Same product as **priceapi.com** — branded **metoda Price API**:
-https://www.metoda.com/en/services/priceapi · https://www.priceapi.com/
-
-**Why prefer it over Amazon Associates:**
-- Signup is a normal SaaS trial (token in minutes), not affiliate approval hell  
-- One API covers **UK + DE** shops and comparison sites  
-- Query by **GTIN/EAN** (best), ASIN, or free-text term  
-- Returns multi-offer street prices → great for “is this buyable / what’s the floor?”
-
-**Setup:**
 ```bash
-copy .env.example .env
-# PRICEAPI_TOKEN=your_token_here
-# PRICEAPI_COUNTRY=gb
-# PRICEAPI_SOURCE=google_shopping   # or amazon | idealo | geizhals
-# PRICEAPI_MAX=15                   # credits per sync
+npm run catalog:add -- --url "https://www.amazon.co.uk/dp/B0XXXXXXXX" --gbp 1259 --title "…"
+npm run catalog:sonar -- --id lap_....
 npm run catalog:sync
 ```
 
-**Important (gotcha):**  
-For `google_shopping` + `product_and_offers`, metoda only accepts keys **`gtin`** and **`id`** — **not** free-text `term`.  
-So without EANs in `sku_registry.json`, the API correctly returns 400.  
+### C) Existing catalog maintenance
 
-| Source | Keys that work for product+offers |
-|--------|-----------------------------------|
-| `google_shopping` | `gtin`, `id` |
-| `amazon` | `asin`, `gtin`, `id` |
-| `geizhals` / `idealo` | typically `gtin`, `id` (varies) |
-
-**Practical perfect mapping path:**
-1. Fill **EAN/GTIN** (best) in `tools/sku_registry.json` — from Geizhals product page / Amazon details / barcode  
-2. Or fill **ASIN** and set `PRICEAPI_SOURCE=amazon`  
-3. `npm run catalog:sync` → min price + offer count  
-4. Specs (TGP, dual-channel, chassis) still verified once from reviews — price APIs don’t replace that
-
-### Perfect SKU mapping workflow
-1. `npm run catalog:sync` (generates research queue)
-2. Open `tools/out/research_queue.csv`
-3. For each incomplete row, open Geizhals/Amazon links, copy ASIN from `/dp/B0…`
-4. Paste into `tools/sku_registry.json` under `entries.<id>.asin.uk` (or `.de`)
-5. Optionally paste EAN + manufacturer part number
-6. `npm run catalog:sync` again → Amazon enriches price/stock if keys present
-
-## Goals
-1. Keep **prices / availability / chassis** honest for EU–UK shoppers  
-2. Expand with **currently sellable** value SKUs (prefer 50-series retail)  
-3. Use **buy links as live stock checks** (Geizhals / Idealo / Google Shopping)  
-4. Avoid brittle, ToS-hostile full-site scraping as the main path  
-
-## Weekly routine
 ```bash
+npm run catalog:sonar:ids           # fill missing ASIN/EAN on current rows
+npm run catalog:sonar:unenriched    # specs for rows never Sonar'd
 npm run catalog:sync
-git add -A && git commit -m "catalog sync" && git push
 ```
 
-Plus 15 min human: mark vanished models `aftermarket`, add 2–3 new in-stock SKUs.
+**Retail IDs from Sonar:** filled into `sku_map` + `sku_registry` when confidence is medium/high and the ASIN looks like `B0…` / EAN has a valid length. They are **not** marked listing-checked (`price_verified`) until you open the Amazon page yourself.
 
-## Scraping: feasibility (honest)
+### Sonar batch size (don’t spam the same command)
 
-| Approach | Feasible? | Notes |
-|----------|-----------|--------|
-| **Search URL generators** (what we do) | ✅ Yes | Stable, legal, always “live” when user clicks |
-| **Amazon PA-API** | ✅ Official | Best automated price path once ASINs mapped |
-| **Full scrape Geizhals/Amazon/Scan** | ❌ Poor main strategy | ToS, captchas, HTML churn, bans |
-| **Paid price APIs** | ⚠️ Optional | e.g. PriceAPI for GTIN→Geizhals if you pay |
+Bulk commands process **the whole queue in one run**:
 
-## Chassis grade model
-| Grade | Meaning | UI |
-|-------|---------|-----|
-| `plastic` | Typical gaming plastic shell | “Plastic chassis” |
-| `hybrid` | Metal lid + plastic body (TUF/Legion class) | “Metal lid · plastic body” |
-| `metal` | Mostly metal, not ultra-premium thin | “Metal chassis” |
-| `premium` | CNC / unibody / creator thin | “CNC aluminum” etc. |
+```bash
+npm run catalog:sonar:ids          # every row missing ASIN/EAN
+npm run catalog:sonar:unenriched   # every row never Sonar-enriched
+```
 
-Fields: `col_detail.chassis.grade`, `grade_label`, `material`.
+- Progress **saves after each row** — Ctrl+C and re-run continues with what’s left  
+- Optional cap only if you want: `--max 5`  
+- Unlimited: `--max all` or `SONAR_MAX=0` (default)
 
-## Availability model
+### Rate limits (429) — pacing, not caps
+
+| Env | Default | Meaning |
+|-----|---------|---------|
+| `SONAR_DELAY_MS` | `4000` | Wait between calls |
+| `SONAR_MAX` | `0` (all) | Cap per run; `0`/`all` = no cap |
+| `SONAR_RETRY_MAX` | `5` | Retries on 429 / 5xx |
+| `SONAR_RETRY_BASE_MS` | `20000` | First backoff; grows each retry |
+| `SONAR_FAIL_STOP` | `5` | Stop after N consecutive failures |
+
+```bash
+# Whole ID queue, slower pacing
+$env:SONAR_DELAY_MS=8000; npm run catalog:sonar:ids
+
+# Only 10 this hour
+node tools/sonar_enrich.js noids --max 10
+```
+
+On 429 the client waits and retries. If retries are exhausted, it **stops early with progress saved** — run the same command again later.
+
+
+Or drop JSON files into `tools/inbox/` (see `tools/inbox/_template.json`) then:
+
+```bash
+npm run catalog:import
+npm run catalog:sonar
+npm run catalog:sync
+```
+
+### What “SKU-verified price” means
+
+You open **one** Amazon (or Geizhals) page for the **exact** config → copy the URL and type the price shown.
+
+- ASIN is parsed free from `/dp/B0…`
+- That ID is stored on the row (`sku_registry` + `sku_map`)
+- Buy links include Amazon for that ASIN when possible
+- Sonar **will not overwrite** a verified price
+
+There is no free multi-shop live floor. Users still check Geizhals/Idealo via buy links.
+
+---
+
+## Env (minimal)
+
+```bash
+# .env  (gitignored)
+PERPLEXITY_API_KEY=pplx-...     # for catalog:sonar only
+SONAR_MODEL=sonar               # or sonar-pro
+
+# Optional / legacy (off unless you opt in)
+# CATALOG_PRICEAPI=1
+# CATALOG_RESOLVE=1
+# PRICEAPI_TOKEN=...
+```
+
+---
+
+## Promote a draft
+
+After Sonar looks good:
+
+1. Open `data.json` (or sheet edit mode `?edit=1`)
+2. Set `col_status` from `draft` → `consider` or `top`
+3. Spot-check TGP / dual-channel / battery Wh
+4. `npm run catalog:sync`
+
+---
+
+## What each command costs
+
+| Command | Cost |
+|---------|------|
+| `catalog:add` / `import` | Free |
+| `catalog:sync` (default) | Free |
+| `catalog:sonar` | Perplexity API (you control volume) |
+| `CATALOG_PRICEAPI=1` / `CATALOG_RESOLVE=1` | metoda credits — **avoid** for routine use |
+
+---
+
+## Optional legacy tools
+
+Still in the repo if you ever want them:
+
+- `catalog:resolve` / `catalog:discover` — metoda search (paid)
+- Amazon PA-API — free only with Associates approval
+
+Default recommendation: **ignore them**. URL + human price + Sonar is enough for a static EU/UK finder.
+
+---
+
+## Chassis grades
+
+| Grade | Meaning |
+|-------|---------|
+| `plastic` | Typical gaming plastic shell |
+| `hybrid` | Metal lid + plastic body |
+| `metal` | Mostly metal |
+| `premium` | CNC / unibody |
+
+## Availability
+
 `retail` | `limited` | `clearance` | `aftermarket`  
-Finder default: **Prefer easy-to-buy new stock** hides `aftermarket`.
-
-## Expanding catalogue (playbook)
-1. Prefer **new stock** over legendary last-gen deals  
-2. One row = **one priced config** (CPU · GPU · TGP · RAM · SSD)  
-3. Always set: buy links, availability, chassis grade, battery Wh, TGP this chassis  
-4. Run `validate_catalog.js` before publish  
+Finder “prefer retail” hides `aftermarket`.

@@ -9,28 +9,24 @@
  *   1. Ensure sku_registry.json has an entry for every laptop id
  *   2. normalize chassis grades
  *   3. refresh buy links (live stock-check URLs)
- *   4. apply registry → data.json (ASINs, EANs, official URLs, availability overrides)
- *   5. optional Amazon PA-API price/title/EAN pull for mapped ASINs
+ *   4. optional auto-resolve ASIN/EAN (Price API search_results) when token set
+ *   5. apply registry → data.json + metoda price enrich + optional Amazon PA-API
  *   6. validate catalog
  *   7. embed data.json into sheet.html + index.html
  *   8. write tools/out/sync_report.json + research_queue.csv
  *
- * Official API reality:
- *   • Amazon Product Advertising API 5.0 = the main *official* retail product API
- *     you can actually use for ASINs (requires Associates + PA-API access).
- *   • There is NO free universal API for “all EU laptops + perfect specs”.
- *   • Idealo Partner API is for merchants *pushing* their own offers, not reading competitors.
- *   • Geizhals commercial data is via partners (e.g. PriceAPI), not a free public API.
+ * Default path is FREE (no metoda):
+ *   registry stubs → chassis → buy links → apply SKU map → validate → embed
  *
- * Env for Amazon (optional):
- *   AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY, AMAZON_PARTNER_TAG
- *   AMAZON_HOST=webservices.amazon.co.uk  AMAZON_REGION=eu-west-1
- *   AMAZON_MARKET=uk|de  (default uk)
+ * Recommended JTBD workflow (no paid price API):
+ *   1. npm run catalog:add -- --url "https://amazon.co.uk/dp/B0..." --gbp 1259 --title "..."
+ *   2. npm run catalog:sonar -- --id <id>     # Perplexity: flesh out specs
+ *   3. npm run catalog:sync                   # free publish path
  *
- * Env for metoda Price API / priceapi.com (recommended over Amazon for multi-shop EU):
- *   PRICEAPI_TOKEN   (from https://www.priceapi.com/users/sign_up — trial credits)
- *   PRICEAPI_SOURCE  default google_shopping_uk-ish: google_shopping | amazon | idealo | geizhals
- *   PRICEAPI_COUNTRY default gb (use de for Germany)
+ * Optional paid metoda (opt-in only — burns credits):
+ *   CATALOG_PRICEAPI=1  enable product+offers enrich
+ *   CATALOG_RESOLVE=1   enable ASIN search resolve
+ *   PRICEAPI_TOKEN=...
  */
 const fs = require("fs");
 const path = require("path");
@@ -67,6 +63,10 @@ const {
   hasPriceApiKey,
   fetchProductAndOffers,
   summarizeResults,
+  getResultBlocks,
+  extractContentItems,
+  normalizeProductHit,
+  parseResultErrors,
 } = require("./lib/priceapi");
 
 function runNode(scriptRel) {
@@ -228,10 +228,14 @@ function researchQueue(data, reg) {
   const rows = [];
   for (const row of sheet.rows) {
     const e = reg.entries[row.id] || {};
+    const hasAsin = !!(e.asin?.uk || e.asin?.de);
+    const hasEan = !!(e.ean && String(e.ean).replace(/\D/g, "").length >= 8);
     const missing = [];
-    if (!e.asin?.uk && !e.asin?.de) missing.push("asin");
-    if (!e.ean) missing.push("ean");
+    if (!hasAsin) missing.push("asin");
+    if (!hasEan) missing.push("ean");
     if (!e.mpn) missing.push("mpn");
+    // Priceable if ASIN (amazon) or EAN (google_shopping) — mpn optional
+    const priceable = hasAsin || hasEan;
     const q =
       e.search_query ||
       String(row.cells.col_model || "")
@@ -241,7 +245,11 @@ function researchQueue(data, reg) {
     rows.push({
       id: row.id,
       model: row.cells.col_model,
-      missing: missing.join("|") || "ok",
+      missing: priceable
+        ? missing.length
+          ? `ok(${missing.join("|")})`
+          : "ok"
+        : missing.join("|") || "ok",
       geizhals: `https://geizhals.eu/?fs=${encodeURIComponent(q)}`,
       idealo_uk: `https://www.idealo.co.uk/presisearch?q=${encodeURIComponent(q)}`,
       amazon_uk: `https://www.amazon.co.uk/s?k=${encodeURIComponent(q)}`,
@@ -305,97 +313,100 @@ async function enrichPriceApi(reg) {
 
   // Build work list only with keys this source accepts
   const work = [];
+  const asinFallback = [];
   let skippedNoId = 0;
   for (const [id, e] of Object.entries(reg.entries)) {
     if (e._orphan) continue;
     if (e.ean && allowed.includes("gtin")) {
-      work.push({ id, key: "gtin", value: String(e.ean).replace(/\s/g, "") });
+      work.push({
+        id,
+        key: "gtin",
+        value: String(e.ean).replace(/\s/g, ""),
+        source,
+      });
       continue;
     }
     const asin = (e.asin?.uk || e.asin?.de || "").trim();
     if (asin && allowed.includes("asin")) {
-      work.push({ id, key: "asin", value: asin });
+      work.push({ id, key: "asin", value: asin, source });
       continue;
     }
     if (e.mpn && allowed.includes("mpn")) {
-      work.push({ id, key: "mpn", value: String(e.mpn).trim() });
+      work.push({ id, key: "mpn", value: String(e.mpn).trim(), source });
       continue;
     }
     if (e.geizhals_id && allowed.includes("id")) {
-      work.push({ id, key: "id", value: String(e.geizhals_id).trim() });
+      work.push({ id, key: "id", value: String(e.geizhals_id).trim(), source });
+      continue;
+    }
+    // google_shopping can't use ASIN — queue amazon fallback
+    if (asin && source === "google_shopping") {
+      asinFallback.push({ id, key: "asin", value: asin, source: "amazon" });
       continue;
     }
     skippedNoId++;
   }
 
-  // If user picked google_shopping but has ASINs not EANs, auto-switch those to amazon
-  if (!work.length && source === "google_shopping") {
-    const asinWork = [];
-    for (const [id, e] of Object.entries(reg.entries)) {
-      if (e._orphan) continue;
-      const asin = (e.asin?.uk || e.asin?.de || "").trim();
-      if (asin) asinWork.push({ id, key: "asin", value: asin });
-    }
-    if (asinWork.length) {
-      source = "amazon";
-      work.push(...asinWork);
-      console.log(
-        "\nmetoda Price API: no GTINs for google_shopping — auto-using source=amazon with ASINs"
-      );
-    }
+  if (asinFallback.length) {
+    work.push(...asinFallback);
+    console.log(
+      `\nmetoda Price API: ${asinFallback.length} ASIN-only row(s) → source=amazon fallback`
+    );
   }
 
   const batch = work.slice(0, maxPerRun);
   if (!batch.length) {
     console.log("\nmetoda Price API: nothing to query with valid keys.");
     console.log(
-      `  Source "${source}" only accepts: ${allowedKeysForSource(source).join(", ")}`
+      `  Source "${source}" product_and_offers accepts: ${allowedKeysForSource(source).join(", ")}`
     );
     console.log(
-      `  ${skippedNoId} catalog rows have no EAN/GTIN (and no usable ASIN for this source).`
+      `  ${skippedNoId} catalog rows still have no EAN/ASIN after resolve.`
     );
-    console.log("  Fix: open tools/out/research_queue.csv → find product → paste EAN into");
-    console.log('       tools/sku_registry.json → entries.<id>.ean = "0194…"');
-    console.log("  Then: npm run catalog:sync");
-    console.log("  Tip: EAN is on Geizhals product pages / Amazon product details / box barcode.");
+    console.log("  Fix: npm run catalog:resolve  (or paste EAN into sku_registry.json)");
+    console.log("  Or: PRICEAPI_SOURCE=amazon after ASINs are filled");
     return {
       fetched: 0,
       errors: [
-        "no_valid_identifiers: fill ean (gtin) in sku_registry.json for google_shopping",
+        "no_valid_identifiers: run catalog:resolve or fill ean/asin in sku_registry.json",
       ],
     };
   }
 
   console.log(
-    `\nmetoda Price API: ${batch.length} item(s) via ${source}/${country} (cap ${maxPerRun})…`
+    `\nmetoda Price API: ${batch.length} item(s) for product_and_offers (cap ${maxPerRun})…`
   );
   if (skippedNoId) {
     console.log(
-      `  (skipped ${skippedNoId} rows without EAN/ASIN/MPN usable for this source)`
+      `  (skipped ${skippedNoId} rows without EAN/ASIN/MPN usable yet)`
     );
   }
 
   const errors = [];
   let fetched = 0;
 
-  const byKey = new Map();
+  // Group by source+key so amazon ASIN fallback can run next to google gtin
+  const byJob = new Map();
   for (const w of batch) {
-    if (!byKey.has(w.key)) byKey.set(w.key, []);
-    byKey.get(w.key).push(w);
+    const src = w.source || source;
+    const k = `${src}::${w.key}`;
+    if (!byJob.has(k)) byJob.set(k, []);
+    byJob.get(k).push(w);
   }
 
-  for (const [key, items] of byKey) {
+  for (const [jobKey, items] of byJob) {
+    const [jobSource, key] = jobKey.split("::");
     try {
       const values = items.map((i) => i.value);
-      console.log(`  job key=${key} n=${values.length}`);
+      console.log(`  job source=${jobSource} key=${key} n=${values.length}`);
       const { jobId, results } = await fetchProductAndOffers({
-        source,
+        source: jobSource,
         country,
         key,
         values,
         max_age: process.env.PRICEAPI_MAX_AGE
           ? parseInt(process.env.PRICEAPI_MAX_AGE, 10)
-          : 3600,
+          : 1440,
       });
       const summary = summarizeResults(results, {
         currencyHint: country === "de" || country === "at" ? "EUR" : "GBP",
@@ -403,45 +414,85 @@ async function enrichPriceApi(reg) {
       console.log(
         `  ✓ job ${jobId}: products=${summary.products} min=${summary.currency || ""} ${summary.min_price ?? "?"} offers=${summary.offer_count ?? 0}`
       );
+      if (summary.errors?.length) {
+        console.log(`    block errors: ${summary.errors.slice(0, 3).join("; ")}`);
+      }
 
-      const resultList = Array.isArray(results)
-        ? results
-        : results?.results || results?.data || [];
-
+      // Official v2: one results[] block per requested value
+      const blocks = getResultBlocks(results);
       for (const item of items) {
-        let matched = null;
-        if (Array.isArray(resultList)) {
-          matched =
-            resultList.find((p) => {
-              const ids = [
-                p.gtin,
-                p.ean,
-                p.asin,
-                p.identifier,
-                p.gtins,
-                p.value,
-                p.query,
-                p.id,
-              ]
-                .flat()
-                .filter(Boolean)
-                .map(String);
-              const v = String(item.value);
-              return ids.some((x) => x === v || x.includes(v) || v.includes(x));
-            }) || null;
+        const v = String(item.value);
+        const block =
+          blocks.find((b) => {
+            const qv = String(b?.query?.value || b?.query?.term || "");
+            return qv === v || qv.includes(v) || v.includes(qv);
+          }) ||
+          (blocks.length === items.length
+            ? blocks[items.indexOf(item)]
+            : null);
+
+        let product = null;
+        if (block?.success !== false && block?.content) {
+          const contentItems = extractContentItems(block.content);
+          product = contentItems[0] || null;
         }
-        // 1:1 when single value job, or when count matches values length and order preserved
-        if (!matched && Array.isArray(resultList) && resultList.length === items.length) {
-          matched = resultList[items.indexOf(item)] || null;
+
+        const hit = product
+          ? normalizeProductHit(product, { query: v })
+          : null;
+
+        // Per-item price summary from product + offers
+        let minPrice = hit?.price ?? null;
+        let currency = hit?.currency || summary.currency;
+        let offerCount = 0;
+        const shops = [];
+        const offers = product?.offers || block?.content?.offers || [];
+        if (Array.isArray(offers)) {
+          for (const o of offers) {
+            offerCount++;
+            const price = Number(
+              typeof o.price === "string"
+                ? o.price.replace(/[^0-9.]/g, "")
+                : o.price ?? o.price_with_shipping
+            );
+            if (!isNaN(price) && price > 0) {
+              if (minPrice == null || price < minPrice) minPrice = price;
+            }
+            if (o.currency) currency = o.currency;
+            if (o.shop_name || o.shop) shops.push(String(o.shop_name || o.shop));
+          }
         }
-        const localSummary = matched
-          ? summarizeResults([matched], { currencyHint: summary.currency })
-          : items.length === 1
-            ? summary
-            : { products: 0, min_price: null, currency: summary.currency, offer_count: 0 };
+        // Buybox fallback / offer-count (Amazon often uses min_price)
+        if (block?.content?.buybox) {
+          const bp =
+            block.content.buybox.price ??
+            block.content.buybox.min_price ??
+            block.content.buybox.price_with_shipping;
+          if (minPrice == null && bp != null) {
+            minPrice = Number(String(bp).replace(/[^0-9.]/g, ""));
+          }
+          if (bp != null && !offerCount) offerCount = 1;
+          if (block.content.buybox.currency) {
+            currency = block.content.buybox.currency || currency;
+          }
+          if (block.content.buybox.shop_name) {
+            shops.push(String(block.content.buybox.shop_name));
+          }
+        }
+
+        const localSummary = {
+          products: product || hit ? 1 : 0,
+          min_price: minPrice != null && !isNaN(minPrice) ? minPrice : null,
+          currency: currency || null,
+          offer_count: offerCount,
+          shops: [...new Set(shops)].slice(0, 8),
+          sample_title: hit?.title || product?.name || null,
+          success: block ? block.success !== false : false,
+          reason: block?.success === false ? block.reason : null,
+        };
 
         reg.entries[item.id].priceapi_snapshot = {
-          source,
+          source: jobSource,
           country,
           key,
           query: item.value,
@@ -450,15 +501,62 @@ async function enrichPriceApi(reg) {
           fetched_at: new Date().toISOString(),
         };
         reg.entries[item.id].last_sync = new Date().toISOString();
-        if (localSummary.min_price != null) fetched++;
-        else if (matched || items.length === 1) fetched++;
+
+        // Backfill identifiers from product payload
+        if (product || hit) {
+          const ean =
+            hit?.ean ||
+            hit?.gtin ||
+            product?.ean ||
+            (Array.isArray(product?.eans) ? product.eans[0] : "") ||
+            (Array.isArray(product?.gtins) ? product.gtins[0] : "");
+          if (ean && !reg.entries[item.id].ean) {
+            reg.entries[item.id].ean = String(ean).replace(/\D/g, "");
+          }
+          const mpn =
+            hit?.mpn ||
+            product?.mpn ||
+            (Array.isArray(product?.mpns) ? product.mpns[0] : "");
+          if (mpn && !reg.entries[item.id].mpn) {
+            reg.entries[item.id].mpn = String(mpn);
+          }
+          const asin = hit?.asin || product?.asin || product?.id;
+          if (asin && /^B0[A-Z0-9]{8}$/i.test(String(asin))) {
+            if (!reg.entries[item.id].asin) {
+              reg.entries[item.id].asin = { uk: "", de: "" };
+            }
+            if (country === "de") {
+              if (!reg.entries[item.id].asin.de) {
+                reg.entries[item.id].asin.de = String(asin);
+              }
+            } else if (!reg.entries[item.id].asin.uk) {
+              reg.entries[item.id].asin.uk = String(asin);
+            }
+          }
+        }
+
+        if (localSummary.min_price != null) {
+          fetched++;
+          console.log(
+            `    ✓ ${item.id}: ${currency || ""} ${minPrice} (${offerCount} offers) ${(localSummary.sample_title || "").slice(0, 50)}`
+          );
+        } else if (block?.success === false) {
+          errors.push(`${item.id}: ${block.reason || "failed"}`);
+          console.log(`    ✗ ${item.id}: ${block.reason || "failed"}`);
+        } else {
+          console.log(`    · ${item.id}: no price in payload`);
+        }
+      }
+      // surface remaining parse errors
+      for (const err of parseResultErrors(results)) {
+        if (!errors.includes(err)) errors.push(err);
       }
     } catch (err) {
-      errors.push(`${key}: ${err.message}`);
+      errors.push(`${jobKey}: ${err.message}`);
       console.warn("  ✗", err.message);
       if (/Allowed values/i.test(err.message)) {
         console.warn(
-          "  → This source does not accept that key. Use EAN (gtin) in sku_registry.json."
+          "  → This source does not accept that key. Prefer EAN (gtin) or source=amazon + ASIN."
         );
       }
     }
@@ -546,6 +644,28 @@ async function main() {
   saveJson(regPath, reg);
   console.log(`\nSKU registry: ${total} laptops, +${added} new stub entries`);
 
+  // 1b) Optional discover new laptops (seed queries → candidates / drafts)
+  let discover = { ran: false, fresh: 0, applied: 0 };
+  if (process.env.CATALOG_DISCOVER === "1") {
+    console.log("\n→ tools/discover_laptops.js (CATALOG_DISCOVER=1)");
+    try {
+      const disc = require("./discover_laptops");
+      const dres = await disc.main();
+      discover = {
+        ran: true,
+        fresh: dres?.fresh || 0,
+        applied: dres?.applied || 0,
+      };
+      data = loadJson(dataPath);
+      reg = loadJson(regPath);
+      const again = ensureRegistry(data, reg);
+      saveJson(regPath, reg);
+      if (again.added) console.log(`  registry +${again.added} after discover`);
+    } catch (err) {
+      console.warn("  discover failed:", err.message);
+    }
+  }
+
   // 2–3) Local transforms
   runNode("tools/normalize_chassis.js");
   runNode("tools/refresh_buy_links.js");
@@ -554,9 +674,32 @@ async function main() {
   data = loadJson(dataPath);
   reg = loadJson(regPath);
 
-  // 4a) metoda Price API (preferred multi-shop enrichment)
-  const priceapi = await enrichPriceApi(reg);
-  saveJson(regPath, reg);
+  // 3b) Optional metoda resolve — OPT-IN only (CATALOG_RESOLVE=1)
+  let resolve = { ran: false, resolved: 0 };
+  if (process.env.CATALOG_RESOLVE === "1" && hasPriceApiKey()) {
+    console.log("\n→ tools/resolve_identifiers.js (CATALOG_RESOLVE=1, uses metoda credits)");
+    try {
+      const resMod = require("./resolve_identifiers");
+      const rres = await resMod.main();
+      resolve = { ran: true, resolved: rres?.resolved || 0 };
+      reg = loadJson(regPath);
+    } catch (err) {
+      console.warn("  resolve failed:", err.message);
+    }
+  }
+
+  // 4a) metoda prices — OPT-IN only (CATALOG_PRICEAPI=1)
+  let priceapi = { fetched: 0, errors: [] };
+  if (process.env.CATALOG_PRICEAPI === "1") {
+    priceapi = await enrichPriceApi(reg);
+    saveJson(regPath, reg);
+  } else if (hasPriceApiKey()) {
+    console.log(
+      "\nmetoda Price API: idle (set CATALOG_PRICEAPI=1 to spend credits)"
+    );
+  } else {
+    console.log("\nPrice refresh: free mode (SKU prices from inbox / human / Sonar)");
+  }
 
   // 4b) Amazon PA-API (optional, ASIN-mapped only)
   const amazon = await enrichAmazon(reg);
@@ -578,12 +721,15 @@ async function main() {
   data = loadJson(dataPath);
   reg = loadJson(regPath);
   const queue = researchQueue(data, reg);
-  const incomplete = queue.filter((r) => r.missing !== "ok");
+  const incomplete = queue.filter((r) => !String(r.missing).startsWith("ok"));
   fs.writeFileSync(path.join(outDir, "research_queue.csv"), toCsv(queue));
+  const finalTotal = researchQueue(data, reg).length;
   const report = {
     ran_at: new Date().toISOString(),
-    laptops: total,
+    laptops: finalTotal,
     registry_stubs_added: added,
+    resolve: resolve,
+    discover: discover,
     metoda_price_api: {
       credentials: hasPriceApiKey(),
       fetched: priceapi.fetched,
@@ -597,38 +743,31 @@ async function main() {
       errors: amazon.errors,
     },
     incomplete_sku_maps: incomplete.length,
-    next_steps: !hasPriceApiKey()
-      ? [
-          "Easiest automation: sign up at https://www.priceapi.com/users/sign_up (metoda Price API)",
-          "Copy token into .env as PRICEAPI_TOKEN=...",
-          "Optionally set PRICEAPI_COUNTRY=gb and PRICEAPI_SOURCE=google_shopping (or amazon, idealo, geizhals)",
-          "npm run catalog:sync",
-          "For perfect matching, fill EAN/GTIN in tools/sku_registry.json (better than free-text search)",
-        ]
-      : incomplete.length
-        ? [
-            "Open tools/out/research_queue.csv",
-            "Fill EAN (best) or ASIN in tools/sku_registry.json for tighter matching",
-            "Re-run: npm run catalog:sync",
-          ]
-        : ["SKU maps look complete — re-run weekly to refresh prices"],
+    next_steps: [
+      "Add laptop: npm run catalog:add -- --url \"https://amazon.co.uk/dp/B0...\" --gbp 999 --title \"...\"",
+      "Flesh out:  npm run catalog:sonar -- --id <id>",
+      "Publish:    npm run catalog:sync",
+      incomplete.length
+        ? "Missing ASIN/EAN: paste Amazon /dp/ URL via catalog:add or fill sku_registry"
+        : "SKU maps priceable — re-run catalog:sync weekly for buy links",
+    ],
   };
   saveJson(path.join(outDir, "sync_report.json"), report);
 
   console.log("\n══════════════════════════════════════════════");
-  console.log(` Done. Incomplete SKU maps: ${incomplete.length}/${total}`);
+  console.log(` Done. Incomplete SKU maps: ${incomplete.length}/${finalTotal}`);
+  if (resolve.ran) console.log(` Auto-resolved identifiers: ${resolve.resolved}`);
+  if (discover.ran) {
+    console.log(
+      ` Discover: ${discover.fresh} new candidates, ${discover.applied} drafts applied`
+    );
+  }
   console.log(` Report: tools/out/sync_report.json`);
   console.log(` Queue:  tools/out/research_queue.csv`);
-  if (!hasPriceApiKey()) {
-    console.log("\n Recommended: metoda Price API (easier than Amazon Associates)");
-    console.log("  1. https://www.priceapi.com/users/sign_up  (free trial credits)");
-    console.log("  2. Copy token → .env  PRICEAPI_TOKEN=...");
-    console.log("  3. Optional: PRICEAPI_COUNTRY=gb  PRICEAPI_SOURCE=google_shopping");
-    console.log("  4. npm run catalog:sync");
-  }
-  if (!hasAmazonCreds()) {
-    console.log("\n Optional: Amazon PA-API (Associates) for ASIN-perfect Amazon rows");
-  }
+  console.log("\n Free JTBD workflow:");
+  console.log('  1. npm run catalog:add -- --url "https://www.amazon.co.uk/dp/B0..." --gbp 1259 --title "..."');
+  console.log("  2. npm run catalog:sonar -- --id <id>   # PERPLEXITY_API_KEY");
+  console.log("  3. npm run catalog:sync                 # buy links + embed");
   console.log("══════════════════════════════════════════════\n");
 }
 

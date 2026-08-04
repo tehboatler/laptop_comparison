@@ -17,14 +17,49 @@
     "lap_lenovo_loq_5060": {
       "model": "Lenovo LOQ 15 (RTX 5060)",
       "asin": {
-        "uk": "",
+        "uk": "B0GLJBGR5D",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "199271846148",
+      "mpn": "Core i7-13700HX",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/loq/",
-      "search_query": "Lenovo LOQ 15 RTX 5060 16GB"
+      "search_query": "Lenovo LOQ 15 RTX 5060 16GB",
+      "resolve_checked_at": "2026-08-04T14:10:49.881Z",
+      "resolve_meta": {
+        "source": "amazon",
+        "country": "gb",
+        "query": "Lenovo LOQ 15 RTX 5060 16GB",
+        "title": "LOQ Gen 10 | 15.6\" inch FHD Gaming Laptop | Intel Core i7-13700HX | NVIDIA GeForce RTX 5060 | 144 Hz | 16 GB RAM | 1 TB SSD | Wi-Fi 6 | Windows 11 Home | White Backlit Keyboard | Luna Grey",
+        "score": 1.2,
+        "job_id": "6a71f436a898bb1243470a0b",
+        "at": "2026-08-04T14:16:31.881Z",
+        "auto": true
+      },
+      "last_sync": "2026-08-04T14:19:07.379Z",
+      "priceapi_snapshot": {
+        "source": "amazon",
+        "country": "gb",
+        "key": "asin",
+        "query": "B0GLJBGR5D",
+        "job_id": "6a71f4d5c9017e1443c1e560",
+        "products": 1,
+        "min_price": 1259.98,
+        "currency": "GBP",
+        "offer_count": 5,
+        "shops": [
+          "Amazon",
+          "Elfloyy",
+          "BOX UK",
+          "MoreCoCo",
+          "AIMTECH"
+        ],
+        "sample_title": "Lenovo LOQ Gen 10 | 15.6\" inch FHD Gaming Laptop | Intel Core i7-13700HX | NVIDIA GeForce RTX 5060 | 144 Hz | 16 GB RAM | 1 TB SSD | Wi-Fi 6 | Windows 11 Home | White Backlit Keyboard | Luna Grey",
+        "success": true,
+        "reason": null,
+        "fetched_at": "2026-08-04T14:19:07.378Z"
+      },
+      "sonar_enriched_at": "2026-08-04T14:40:55.074Z"
     },
     "lap_lenovo_loq_5050": {
       "model": "Lenovo LOQ 15 (RTX 5050)",
@@ -36,7 +71,10 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/loq/",
-      "search_query": "Lenovo LOQ 15 RTX 5050"
+      "search_query": "Lenovo LOQ 15 RTX 5050",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:10:53.858Z",
+      "sonar_enriched_at": "2026-08-04T15:14:59.433Z"
     },
     "lap_asus_tuf_a16_5060": {
       "model": "ASUS TUF Gaming A16 (RTX 5060)",
@@ -44,11 +82,21 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387969113",
+      "mpn": "FA608PM-RV009W",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
-      "search_query": "ASUS TUF A16 RTX 5060"
+      "search_query": "ASUS TUF A16 RTX 5060",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:11:09.999Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:17:02.162Z",
+        "note": "Real retail identifiers were verified for FA608PM-RV009W (MPN and EAN). No real Amazon.co.uk or Amazon.de product URL/ASIN for the exact target config was present in the supplied results, so ASIN fields are null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:17:02.162Z"
     },
     "lap_asus_zephyrus_g14_4060": {
       "model": "ASUS ROG Zephyrus G14 (RTX 4060) — last gen",
@@ -56,36 +104,104 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387658680",
+      "mpn": "GA403UV-QS021W",
       "geizhals_id": "",
       "official_url": "",
       "search_query": "Zephyrus G14 RTX 4060",
-      "availability_override": "aftermarket"
+      "availability_override": "aftermarket",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:11:28.921Z",
+      "sonar_enriched_at": "2026-08-04T15:10:35.205Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:10:35.205Z",
+        "note": "Real retail identifier confirmed: MPN GA403UV-QS021W and EAN 4711387658680 from Currys; no fully verified Amazon UK/DE ASIN for the exact Ryzen 9 8945HS + RTX 4060 G14 was present in the provided results, so ASIN fields are left null to avoid guessing."
+      }
     },
     "lap_apple_mbp14_m4": {
       "model": "Apple MacBook Pro 14 M4",
       "asin": {
-        "uk": "",
+        "uk": "B0DT1YQ1D1",
         "de": ""
       },
-      "ean": "",
+      "ean": "753389500141",
       "mpn": "MX2E3B/A",
       "geizhals_id": "",
       "official_url": "https://www.apple.com/uk/shop/buy-mac/macbook-pro/14-inch",
-      "search_query": "MacBook Pro 14 M4 16GB 512GB"
+      "search_query": "MacBook Pro 14 M4 16GB 512GB",
+      "resolve_checked_at": "2026-08-04T14:11:45.379Z",
+      "resolve_meta": {
+        "source": "amazon",
+        "country": "gb",
+        "query": "MacBook Pro 14 M4 16GB 512GB",
+        "title": "2024 Apple MacBook Pro with Apple M4 Chip with 10CPU & 10GPU (14-inch, 16GB RAM, 512GB SSD Storage) (QWERTY UK) Silver (Renewed)",
+        "score": 1.2,
+        "job_id": "6a71f43fc545991431d5341d",
+        "at": "2026-08-04T14:16:35.874Z",
+        "auto": true
+      },
+      "last_sync": "2026-08-04T14:19:07.379Z",
+      "priceapi_snapshot": {
+        "source": "amazon",
+        "country": "gb",
+        "key": "asin",
+        "query": "B0DT1YQ1D1",
+        "job_id": "6a71f4d5c9017e1443c1e560",
+        "products": 1,
+        "min_price": 1235,
+        "currency": "GBP",
+        "offer_count": 0,
+        "shops": [],
+        "sample_title": "2024 Apple MacBook Pro with Apple M4 Chip with 10CPU & 10GPU (14-inch, 16GB RAM, 512GB SSD Storage) (QWERTY UK) Silver (Renewed)",
+        "success": true,
+        "reason": null,
+        "fetched_at": "2026-08-04T14:19:07.379Z"
+      },
+      "sonar_enriched_at": "2026-08-04T15:01:39.971Z"
     },
     "lap_msi_thin15_4050": {
       "model": "MSI Thin 15 (RTX 4050)",
       "asin": {
-        "uk": "",
+        "uk": "B0BSLLF6F6",
         "de": ""
       },
       "ean": "",
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Thin 15"
+      "search_query": "MSI Thin 15",
+      "resolve_checked_at": "2026-08-04T14:12:24.019Z",
+      "resolve_meta": {
+        "source": "amazon",
+        "country": "gb",
+        "query": "MSI Thin 15",
+        "title": "MSI Thin 15 Gaming laptop | Intel Core i7-13620H | NVIDIA GeForce RTX 4050 | 15.6\" FHD 144Hz Panel | 16GB RAM | 512GB SSD | Windows 11 Home Plus | Cosmos Grey",
+        "score": 1.1700000000000002,
+        "job_id": "6a71f443f921c8002237ada3",
+        "at": "2026-08-04T14:16:39.887Z",
+        "auto": true
+      },
+      "last_sync": "2026-08-04T14:19:07.380Z",
+      "priceapi_snapshot": {
+        "source": "amazon",
+        "country": "gb",
+        "key": "asin",
+        "query": "B0BSLLF6F6",
+        "job_id": "6a71f4d5c9017e1443c1e560",
+        "products": 0,
+        "min_price": null,
+        "currency": "GBP",
+        "offer_count": 0,
+        "shops": [],
+        "sample_title": null,
+        "success": false,
+        "reason": "error",
+        "fetched_at": "2026-08-04T14:19:07.380Z"
+      },
+      "sonar_enriched_at": "2026-08-04T14:41:29.138Z"
     },
     "lap_msi_thin15_3050": {
       "model": "MSI Thin 15 (RTX 3050)",
@@ -97,7 +213,10 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Thin 15"
+      "search_query": "MSI Thin 15",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:12:31.619Z",
+      "sonar_enriched_at": "2026-08-04T15:08:30.069Z"
     },
     "lap_asus_v16_4050": {
       "model": "ASUS V16 V3607 (RTX 4050)",
@@ -105,11 +224,21 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387887912",
+      "mpn": "V3607VU-RP038W",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/",
-      "search_query": "ASUS V16 V3607"
+      "search_query": "ASUS V16 V3607",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:12:42.101Z",
+      "sonar_enriched_at": "2026-08-04T15:02:28.139Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:02:28.138Z",
+        "note": "EAN 4711387887912 is explicitly shown on the Argos listing for ASUS V16 V3607VU-RP198W. I could not verify a real Amazon UK/DE product URL or ASIN from the provided results, and I did not find an exact retail listing for the Core 7 240H + RTX 4050 configuration. The closest real retail MPN found for the same GPU class is V3607VU-RP038W, but it uses Core 5 210H rather than Core 7 240H."
+      }
     },
     "lap_asus_v16_5060": {
       "model": "ASUS V16 V3607 (RTX 5060)",
@@ -118,10 +247,20 @@
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "90NB16K1-M00280",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/",
-      "search_query": "ASUS V16 V3607"
+      "search_query": "ASUS V16 V3607",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:12:46.022Z",
+      "sonar_enriched_at": "2026-08-04T15:08:40.165Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:02:36.417Z",
+        "note": "No real Amazon or Geizhals retail identifier was confirmed in the supplied results. The only directly evidenced retail ID is ASUS part number 90NB16K1-M00280 for V3607VM-RP007W, but it is a 1TB SKU rather than the requested 512GB configuration."
+      }
     },
     "lap_lenovo_loq_4050": {
       "model": "Lenovo LOQ 15 (RTX 4050)",
@@ -129,23 +268,43 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "0197531141644",
+      "mpn": "83DV0041RM",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo LOQ 15"
+      "search_query": "Lenovo LOQ 15",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:13:27.374Z",
+      "sonar_enriched_at": "2026-08-04T15:08:52.958Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:08:52.958Z",
+        "note": "EAN/MPN are tied to a real retail/spec page for a Lenovo LOQ 15 RTX 4050 i5-13450HX 16GB 512GB configuration; no verifiable Amazon UK/DE ASIN or product URL was found in the supplied results, so ASIN fields remain null.[8][3]"
+      }
     },
     "lap_lenovo_loq_4060": {
       "model": "Lenovo LOQ 15 (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B0D7925SJQ",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "0198153498758",
+      "mpn": "83DV00K6UK",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo LOQ 15"
+      "search_query": "Lenovo LOQ 15",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:13:31.259Z",
+      "sonar_enriched_at": "2026-08-04T15:02:57.164Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:02:57.164Z",
+        "note": "ASIN and MPN are directly supported by the Amazon.co.uk product page for 83DV00K6UK; EAN 0198153498758 is supported by the eBay retail listing for the same model. No real Amazon.de or German EAN for the exact same SKU was verified in the supplied results."
+      }
     },
     "lap_asus_tuf_f16_4050": {
       "model": "ASUS TUF Gaming F16 (RTX 4050)",
@@ -153,11 +312,21 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387866979",
+      "mpn": "90NR0N06-M00760",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/",
-      "search_query": "ASUS TUF Gaming F16"
+      "search_query": "ASUS TUF Gaming F16",
+      "resolve_candidates": [],
+      "resolve_checked_at": "2026-08-04T14:13:39.083Z",
+      "sonar_enriched_at": "2026-08-04T15:04:03.828Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:04:03.828Z",
+        "note": "Real listing identifiers were confirmed for UK retail configs, but no Amazon.co.uk or Amazon.de product page with a matching ASIN was available in the provided results. The strongest confirmed identifiers are FX607VU-RL033W / EAN 4711387866979 / MPN 90NR0N06-M00760, with FX607VU-RL016W / GTIN 4711387868966 as another close match. The exact Core 7-class UK/EU listing requested was not directly verified."
+      }
     },
     "lap_acer_nitro_v15_4050": {
       "model": "Acer Nitro V 15 (RTX 4050)",
@@ -166,22 +335,38 @@
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "NH.QUAEK.003",
       "geizhals_id": "",
       "official_url": "https://www.acer.com/gb-en/laptops",
-      "search_query": "Acer Nitro V 15"
+      "search_query": "Acer Nitro V 15",
+      "sonar_enriched_at": "2026-08-04T15:09:03.362Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:04:10.513Z",
+        "note": "Real UK retail identifier found (MPN NH.QUAEK.003) for the matching Acer Nitro V15 i5-13420H/RTX 4050/16GB/512GB config. No real Amazon UK/DE product URL or ASIN was evidenced in the supplied results, so those fields remain null."
+      }
     },
     "lap_hp_victus_15_4050": {
       "model": "HP Victus 15 (RTX 4050)",
       "asin": {
-        "uk": "",
+        "uk": "B0C6B2NH71",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "019749767448",
+      "mpn": "876Y7EA#ABU",
       "geizhals_id": "",
       "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
-      "search_query": "HP Victus 15"
+      "search_query": "HP Victus 15",
+      "sonar_enriched_at": "2026-08-04T15:09:16.099Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:09:16.099Z",
+        "note": "ASIN and EAN are directly supported for the closest matching UK retail listing 15-fa1001sa. The exact i5 Victus 15 RTX 4050 SKU requested was not separately verified, so this is the closest real retail identifier match rather than an exact one."
+      }
     },
     "lap_dell_g15_4050": {
       "model": "Dell G15 (RTX 4050)",
@@ -193,7 +378,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.dell.com/en-uk/shop/laptops",
-      "search_query": "Dell G15"
+      "search_query": "Dell G15",
+      "sonar_enriched_at": "2026-08-04T15:09:26.985Z"
     },
     "lap_msi_cyborg15_4050": {
       "model": "MSI Cyborg 15 (RTX 4050)",
@@ -201,23 +387,39 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "4711377436083",
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Cyborg 15"
+      "search_query": "MSI Cyborg 15",
+      "sonar_enriched_at": "2026-08-04T15:09:40.330Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:09:40.330Z",
+        "note": "A real UK retail match was found on Very (EAN 4711377436083) and Currys (item 10298482), but no verified Amazon.co.uk or Amazon.de product URL for the same exact retail config was found in the supplied results."
+      }
     },
     "lap_msi_katana15_4060": {
       "model": "MSI Katana 15 (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B0DB678XGR",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711377166027",
+      "mpn": "9S7-158571-1819",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Katana 15"
+      "search_query": "MSI Katana 15",
+      "sonar_enriched_at": "2026-08-04T15:09:52.818Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:09:52.817Z",
+        "note": "ASIN UK is directly visible in the Amazon.co.uk product URL for MSI Katana 15 B13VFK-1819UK. EAN and MPN are directly shown on Scan. No real Amazon.de or other German retail listing for the exact matching config was verified in the provided results, so asin_de and amazon_de_url are null."
+      }
     },
     "lap_lenovo_legion5_4060": {
       "model": "Lenovo Legion 5 15 (RTX 4060)",
@@ -229,31 +431,48 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo Legion 5 15"
+      "search_query": "Lenovo Legion 5 15",
+      "sonar_enriched_at": "2026-08-04T15:10:04.537Z"
     },
     "lap_lenovo_ideapad_g3_3050": {
       "model": "Lenovo IdeaPad Gaming 3 (RTX 3050)",
       "asin": {
-        "uk": "",
+        "uk": "B096M4V5Q3",
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "82K200C5UK",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo IdeaPad Gaming 3"
+      "search_query": "Lenovo IdeaPad Gaming 3",
+      "sonar_enriched_at": "2026-08-04T15:10:15.051Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:10:15.050Z",
+        "note": "B096M4V5Q3 is a real Amazon UK ASIN found on a live Amazon product URL, but it is for an AMD Ryzen 5 / RTX 3050 Ti variant, not the exact Intel Core i5 / RTX 3050 configuration requested. No verified German ASIN/EAN for the exact requested config appeared in the provided results, so asin_de and ean are null."
+      }
     },
     "lap_asus_tuf_a15_4060": {
       "model": "ASUS TUF A15 (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B0BN3Y7MZW",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387540121",
+      "mpn": "FA507NV-LP023W",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/",
-      "search_query": "ASUS TUF A15"
+      "search_query": "ASUS TUF A15",
+      "sonar_enriched_at": "2026-08-04T15:10:25.059Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:10:25.059Z",
+        "note": "Confirmed UK Amazon ASIN from a real product URL. Confirmed MPN FA507NV-LP023W from Scan. Confirmed EAN 4711387540121 from the retail comparison page for the Ryzen 7 / RTX 4060 TUF A15 family. No verified Amazon.de listing or exact 1TB SKU identifier was present in the supplied results."
+      }
     },
     "lap_acer_nitro16_4050": {
       "model": "Acer Nitro 16 (RTX 4050)",
@@ -265,7 +484,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.acer.com/gb-en/laptops",
-      "search_query": "Acer Nitro 16"
+      "search_query": "Acer Nitro 16",
+      "sonar_enriched_at": "2026-08-04T15:10:48.384Z"
     },
     "lap_hp_omen16_4060": {
       "model": "HP Omen 16 (RTX 4060)",
@@ -277,7 +497,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
-      "search_query": "HP Omen 16"
+      "search_query": "HP Omen 16",
+      "sonar_enriched_at": "2026-08-04T15:10:59.308Z"
     },
     "lap_dell_g16_4060": {
       "model": "Dell G16 (RTX 4060)",
@@ -289,55 +510,89 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.dell.com/en-uk/shop/laptops",
-      "search_query": "Dell G16"
+      "search_query": "Dell G16",
+      "sonar_enriched_at": "2026-08-04T15:11:09.755Z"
     },
     "lap_gigabyte_g5_4050": {
       "model": "Gigabyte G5 (RTX 4050)",
       "asin": {
-        "uk": "",
+        "uk": "B0CV18423W",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4719331758226",
+      "mpn": "G5 MF5-H2UK354KH",
       "geizhals_id": "",
       "official_url": "",
-      "search_query": "Gigabyte G5"
+      "search_query": "Gigabyte G5",
+      "sonar_enriched_at": "2026-08-04T15:11:20.495Z",
+      "listing_url": "https://www.amazon.co.uk/Gigabyte-G5-i7-13620H-Warranty-MF5-H2UK354KH/dp/B0CV18423W",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:11:20.495Z",
+        "note": "ASIN and EAN are for a verified Gigabyte G5 MF5 RTX 4050 retail listing (G5 MF5-H2UK354KH). The exact queried i5/512GB configuration was not directly found, so no exact EU/UK listing ID could be confirmed for that specific spec."
+      }
     },
     "lap_asus_vivobook16x_4050": {
       "model": "ASUS Vivobook 16X (RTX 4050)",
       "asin": {
-        "uk": "",
+        "uk": "B0BV5WFV7X",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387634158",
+      "mpn": "K3605ZU-N1058W",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/",
-      "search_query": "ASUS Vivobook 16X"
+      "search_query": "ASUS Vivobook 16X",
+      "sonar_enriched_at": "2026-08-04T15:11:33.446Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:11:33.446Z",
+        "note": "asin_uk is directly visible on a real Amazon.co.uk product URL for the matching RTX 4050 / i7-12650H Vivobook 16X listing. EAN/MPN come from a separate UK retail/spec listing for a related Vivobook 16X SKU (K3605VU-RP314W), so they are not a perfect one-to-one match for the exact Amazon SKU. No verified Amazon.de ASIN or exact German listing was found in the supplied results."
+      }
     },
     "lap_msi_sword16_4060": {
       "model": "MSI Sword 16 HX (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B0DFWVMS4V",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711377190138",
+      "mpn": "9S7-15P214-003",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Sword 16 HX"
+      "search_query": "MSI Sword 16 HX",
+      "sonar_enriched_at": "2026-08-04T15:11:46.991Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:11:46.991Z",
+        "note": "asin_uk is directly evidenced by the Amazon.co.uk URL. ean and mpn are directly evidenced for the 003UK retail SKU by Scan and CyberPower. The closest matching Amazon UK retail listing in the supplied results is B14VFKG-056UK / ASIN B0DFWVMS4V; no Amazon.de or confirmed German EAN was found in the provided results."
+      }
     },
     "lap_acer_helios_neo_4060": {
       "model": "Acer Predator Helios Neo 16 (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B0C4FFSP27",
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "NH.QLUEK.001",
       "geizhals_id": "",
       "official_url": "https://www.acer.com/gb-en/laptops",
-      "search_query": "Acer Predator Helios Neo 16"
+      "search_query": "Acer Predator Helios Neo 16",
+      "sonar_enriched_at": "2026-08-04T15:11:58.581Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:11:58.581Z",
+        "note": "ASIN B0C4FFSP27 was found on a real Amazon.co.uk product URL for Acer Predator Helios Neo 16 PHN16-71 / NH.QLUEK.001 with RTX 4060, i7-13700HX, 16GB, 1TB, and 165Hz WQXGA. I did not find a verified Amazon.de ASIN or a retail EAN for this exact UK/DE RTX 4060 listing in the provided results, so those remain null."
+      }
     },
     "lap_lenovo_loq_15_3050": {
       "model": "Lenovo LOQ 15 (RTX 3050 6GB)",
@@ -349,7 +604,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo LOQ 15"
+      "search_query": "Lenovo LOQ 15",
+      "sonar_enriched_at": "2026-08-04T15:00:00.163Z"
     },
     "lap_asus_v16_3050": {
       "model": "ASUS V16 V3607 (RTX 3050 6GB)",
@@ -358,10 +614,18 @@
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "90NB15V1-M008A0",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/",
-      "search_query": "ASUS V16 V3607"
+      "search_query": "ASUS V16 V3607",
+      "sonar_enriched_at": "2026-08-04T15:12:25.842Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:12:25.841Z",
+        "note": "Verified retail identifiers available for the exact match are ASUS model V3607VJ-RP134WS and MPN 90NB15V1-M008A0. No real Amazon UK/DE ASIN or EAN could be confirmed from the provided results, so those fields are null."
+      }
     },
     "lap_hp_victus16_4050": {
       "model": "HP Victus 16 (RTX 4050)",
@@ -370,10 +634,18 @@
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "A2DE8EA#ABU",
       "geizhals_id": "",
       "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
-      "search_query": "HP Victus 16"
+      "search_query": "HP Victus 16",
+      "sonar_enriched_at": "2026-08-04T15:12:38.507Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:12:38.507Z",
+        "note": "No Amazon ASINs were found in the provided results, and no EAN was visible for the closest confirmed Intel Victus 16 RTX 4050 listing. The only real identifier recovered was the MPN A2DE8EA#ABU for HP Victus 16-r1004na. The user-targeted Intel i5 / 512GB / 16GB / RTX 4050 / 16.1-inch config remains unconfirmed at the retail-ID level."
+      }
     },
     "lap_msi_thin15_4060": {
       "model": "MSI Thin 15 (RTX 4060)",
@@ -385,7 +657,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Thin 15"
+      "search_query": "MSI Thin 15",
+      "sonar_enriched_at": "2026-08-04T15:12:50.674Z"
     },
     "lap_lenovo_loq_16_4060": {
       "model": "Lenovo LOQ 16 (RTX 4060)",
@@ -397,43 +670,68 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo LOQ 16"
+      "search_query": "Lenovo LOQ 16",
+      "sonar_enriched_at": "2026-08-04T15:13:03.134Z"
     },
     "lap_razer_blade14_4060": {
       "model": "Razer Blade 14 (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B0C361JQJN",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "8887910010006",
+      "mpn": "RZ09-0482VWH3-R3W1",
       "geizhals_id": "",
       "official_url": "https://www.razer.com/",
-      "search_query": "Razer Blade 14"
+      "search_query": "Razer Blade 14",
+      "sonar_enriched_at": "2026-08-04T15:13:16.164Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:13:16.164Z",
+        "note": "The closest real retail identifier found for the RTX 4060 16GB/1TB Blade 14 is MPN RZ09-0482VWH3-R3W1 with barcode/EAN 8887910010006 from PCParts, and the same config is corroborated by Scan and Laptops Direct. A Trusted Reviews page for the 2023 RTX 4060 Blade 14 includes ASIN B0C361JQJN, but that Amazon UK ASIN is not directly tied in the provided results to the RTX 4060 listing URL, so it should be treated with caution as a possible listing identifier rather than a fully verified SKU-to-ASIN match."
+      }
     },
     "lap_asus_zephyrus_g16_4070": {
       "model": "ASUS ROG Zephyrus G16 (RTX 4070)",
       "asin": {
-        "uk": "",
+        "uk": "B0CLPBS1T3",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387379912",
+      "mpn": "GU605MI-QR078W",
       "geizhals_id": "",
       "official_url": "https://rog.asus.com/",
-      "search_query": "ASUS ROG Zephyrus G16"
+      "search_query": "ASUS ROG Zephyrus G16",
+      "sonar_enriched_at": "2026-08-04T15:13:28.853Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:13:28.853Z",
+        "note": "asin_uk is evidenced by the real Amazon.co.uk /dp/B0CLPBS1T3 URL [1]. ean and mpn are evidenced by pcparts.uk for GU605MI-QR078W [8]. No verified Amazon.de listing or German ASIN was present in the provided results, so asin_de and amazon_de_url are null."
+      }
     },
     "lap_msi_stealth16_4060": {
       "model": "MSI Stealth 16 Studio (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B09XTRY818",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711377067638",
+      "mpn": "9S7-15F212-011",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Stealth 16 Studio"
+      "search_query": "MSI Stealth 16 Studio",
+      "sonar_enriched_at": "2026-08-04T15:13:40.701Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:13:40.700Z",
+        "note": "The UK Amazon ASIN B09XTRY818 is tied to the MSI Stealth 16 Studio A13VF-011UK product page in the provided search result. The EAN 4711377067638 and MPN 9S7-15F212-011 are explicitly listed by Scan and corroborated by other retailer/spec pages. No real Amazon.de listing or German retail identifier was provided in the search results, so asin_de remains null."
+      }
     },
     "lap_lenovo_yoga_pro9i_4060": {
       "model": "Lenovo Yoga Pro 9i (RTX 4060)",
@@ -441,11 +739,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "197531372253",
+      "mpn": "83DN0007US",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/",
-      "search_query": "Lenovo Yoga Pro 9i"
+      "search_query": "Lenovo Yoga Pro 9i",
+      "sonar_enriched_at": "2026-08-04T15:13:51.494Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:13:51.494Z",
+        "note": "Verified EAN/MPN were found for a real retail listing matching the same CPU/GPU/config class, but no real Amazon UK/DE product URL with a matching ASIN was provided in the search results, so ASIN fields remain null."
+      }
     },
     "lap_asus_proart_p16_4060": {
       "model": "ASUS ProArt P16 (RTX 4060)",
@@ -453,11 +759,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "197105613935",
+      "mpn": "H7606WV-P16.R3704060",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/proart/",
-      "search_query": "ASUS ProArt P16"
+      "search_query": "ASUS ProArt P16",
+      "sonar_enriched_at": "2026-08-04T15:14:02.696Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:14:02.696Z",
+        "note": "Exact RTX 4060 ProArt P16 retail identifier verified on Best Buy: model H7606WV-P16.R3704060, UPC 197105613935. No verified Amazon.co.uk or Amazon.de laptop listing found for this exact configuration, so ASINs remain null."
+      }
     },
     "lap_dell_xps14_2026": {
       "model": "Dell XPS 14 (2026, strong iGPU)",
@@ -469,7 +783,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.dell.com/",
-      "search_query": "Dell XPS 14"
+      "search_query": "Dell XPS 14",
+      "sonar_enriched_at": "2026-08-04T15:14:14.121Z"
     },
     "lap_hp_omnibook_ultra14": {
       "model": "HP OmniBook Ultra 14",
@@ -481,19 +796,28 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.hp.com/",
-      "search_query": "HP OmniBook Ultra 14"
+      "search_query": "HP OmniBook Ultra 14",
+      "sonar_enriched_at": "2026-08-04T15:14:24.659Z"
     },
     "lap_asus_tuf_a14_4060": {
       "model": "ASUS TUF Gaming A14 (RTX 4060)",
       "asin": {
-        "uk": "",
+        "uk": "B09T9JH2D3",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387680513",
+      "mpn": "FA401WV-RG011W",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/",
-      "search_query": "ASUS TUF Gaming A14"
+      "search_query": "ASUS TUF Gaming A14",
+      "sonar_enriched_at": "2026-08-04T15:14:37.066Z",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:14:37.066Z",
+        "note": "ASIN B09T9JH2D3 was surfaced by a price-tracking page for an ASUS TUF A14 FA401UV RTX 4060 listing, but no Amazon product page was present in the provided results, so this ASIN should be treated as provisional and lower-confidence. The EAN and MPN are well supported for FA401WV-RG011W by Laptop Outlet and Currys business. No real Amazon.de listing was found in the provided results."
+      }
     },
     "lap_framework_16": {
       "model": "Framework Laptop 16 (RX 7700S module)",
@@ -505,7 +829,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://frame.work/",
-      "search_query": "Framework Laptop 16"
+      "search_query": "Framework Laptop 16",
+      "sonar_enriched_at": "2026-08-04T15:14:48.013Z"
     },
     "lap_asus_tuf_a15_5060": {
       "model": "ASUS TUF A15 (RTX 5060)",
@@ -517,7 +842,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
-      "search_query": "ASUS TUF A15"
+      "search_query": "ASUS TUF A15",
+      "sonar_enriched_at": "2026-08-04T15:15:08.503Z"
     },
     "lap_acer_nitro_v15_5060": {
       "model": "Acer Nitro V 15 (RTX 5060)",
@@ -525,11 +851,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711474539458",
+      "mpn": "NH.QZAEK.004",
       "geizhals_id": "",
       "official_url": "https://www.acer.com/gb-en/laptops",
-      "search_query": "Acer Nitro V 15"
+      "search_query": "Acer Nitro V 15",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:15:21.047Z",
+        "note": "EAN 4711474539458 was explicitly shown on an offer page for the Acer Nitro V15 Gaming Laptop RTX 5060 i7 variant, and MPN NH.QZAEK.004 was shown on a retailer page. No real Amazon.co.uk or Amazon.de product URL with a verifiable ASIN was present in the supplied results, so ASINs remain null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:15:21.047Z"
     },
     "lap_msi_thin15_5060": {
       "model": "MSI Thin 15 (RTX 5060)",
@@ -541,7 +875,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Thin 15"
+      "search_query": "MSI Thin 15",
+      "sonar_enriched_at": "2026-08-04T15:15:32.630Z"
     },
     "lap_asus_zephyrus_g14_5060": {
       "model": "ASUS ROG Zephyrus G14 (2025, RTX 5060)",
@@ -549,11 +884,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387969182",
+      "mpn": "GA403UM-QS006W",
       "geizhals_id": "",
       "official_url": "https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2025/",
-      "search_query": "ASUS ROG Zephyrus G14"
+      "search_query": "ASUS ROG Zephyrus G14",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:15:44.313Z",
+        "note": "No Amazon.co.uk or Amazon.de product URL with a real dp/ ASIN was present in the provided results, so no ASINs can be verified. The verified retail identifier available is EAN 4711387969182 for ASUS/Scan SKU GA403UM-QS006W."
+      },
+      "sonar_enriched_at": "2026-08-04T15:15:44.313Z"
     },
     "lap_hp_victus_15_5060": {
       "model": "HP Victus 15 (RTX 5060)",
@@ -565,7 +908,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
-      "search_query": "HP Victus 15"
+      "search_query": "HP Victus 15",
+      "sonar_enriched_at": "2026-08-04T15:15:55.207Z"
     },
     "lap_lenovo_legion5_5060": {
       "model": "Lenovo Legion 5 15 (RTX 5060)",
@@ -574,10 +918,18 @@
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "83M0000EUK",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo Legion 5 15"
+      "search_query": "Lenovo Legion 5 15",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:16:04.222Z",
+        "note": "Verified retail identifier found: Lenovo part number 83M0000EUK for Legion 5 15 R7-24GB-1TB-RTX 5060. No real Amazon.co.uk or Amazon.de ASIN was present in the provided results, so ASIN fields are left null. No EAN was visible for this exact Lenovo UK listing in the provided results."
+      },
+      "sonar_enriched_at": "2026-08-04T15:16:04.223Z"
     },
     "lap_asus_tuf_f16_5060": {
       "model": "ASUS TUF Gaming F16 (RTX 5060)",
@@ -589,7 +941,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
-      "search_query": "ASUS TUF Gaming F16"
+      "search_query": "ASUS TUF Gaming F16",
+      "sonar_enriched_at": "2026-08-04T15:16:15.158Z"
     },
     "lap_msi_crosshair_16_5060": {
       "model": "MSI Crosshair / Sword 16 (RTX 5060)",
@@ -597,11 +950,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711377318792",
+      "mpn": "9S7-15P421-009",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Crosshair / Sword 16"
+      "search_query": "MSI Crosshair / Sword 16",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:16:25.375Z",
+        "note": "Verified retail identifier from Scan: MPN 9S7-15P421-009 and GTIN/EAN 4711377318792. No real Amazon.co.uk or Amazon.de product URL for this exact laptop config was found in the provided results, so ASINs remain null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:16:25.375Z"
     },
     "lap_lenovo_loq_17_5050": {
       "model": "Lenovo LOQ 17 (RTX 5050)",
@@ -609,11 +970,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "0199273285525",
+      "mpn": "83JH00CDUK",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/loq/",
-      "search_query": "Lenovo LOQ 17"
+      "search_query": "Lenovo LOQ 17",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:16:36.997Z",
+        "note": "No real Amazon product URL was provided in the results, so no ASIN could be verified. The only directly evidenced retail identifiers are EAN 0199273285525 and MPN 83JH00CDUK for the UK i7/16GB/1TB RTX 5050 LOQ 17.3 listing; the exact i5-HX retail variant was not identified in the supplied results."
+      },
+      "sonar_enriched_at": "2026-08-04T15:16:36.998Z"
     },
     "lap_asus_tuf_a16_5050": {
       "model": "ASUS TUF Gaming A16 (RTX 5050)",
@@ -621,11 +990,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387969120",
+      "mpn": "FA608UH-RV027W / 90NR0KS1-M002K0",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
-      "search_query": "ASUS TUF Gaming A16"
+      "search_query": "ASUS TUF Gaming A16",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:16:49.302Z",
+        "note": "No real Amazon.co.uk or Amazon.de product URL for this exact retail config was present in the provided results, so ASINs were not invented. The EAN 4711387969120 and MPN FA608UH-RV027W were explicitly shown on retailer/spec pages for the same matching configuration."
+      },
+      "sonar_enriched_at": "2026-08-04T15:16:49.302Z"
     },
     "lap_asus_tuf_f16_5050": {
       "model": "ASUS TUF Gaming F16 (RTX 5050)",
@@ -637,7 +1014,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
-      "search_query": "ASUS TUF Gaming F16"
+      "search_query": "ASUS TUF Gaming F16",
+      "sonar_enriched_at": "2026-08-04T15:17:14.568Z"
     },
     "lap_acer_nitro_v16_5050": {
       "model": "Acer Nitro V 16 AI (RTX 5050)",
@@ -645,11 +1023,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "4711474539045",
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.acer.com/gb-en/laptops",
-      "search_query": "Acer Nitro V 16 AI"
+      "search_query": "Acer Nitro V 16 AI",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:17:26.047Z",
+        "note": "No real Amazon UK/DE product URL in the provided results, so no ASIN could be verified. EAN is verified from Argos. MPN could not be verified from the snippets provided."
+      },
+      "sonar_enriched_at": "2026-08-04T15:17:26.047Z"
     },
     "lap_msi_katana15_5050": {
       "model": "MSI Katana 15 HX (RTX 5050)",
@@ -661,7 +1047,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Katana 15 HX"
+      "search_query": "MSI Katana 15 HX",
+      "sonar_enriched_at": "2026-08-04T15:17:36.086Z"
     },
     "lap_msi_cyborg_a15_5050": {
       "model": "MSI Cyborg A15 (RTX 5050)",
@@ -670,10 +1057,18 @@
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "B2RWEKG-021UK",
       "geizhals_id": "",
       "official_url": "https://www.msi.com/Laptop",
-      "search_query": "MSI Cyborg A15"
+      "search_query": "MSI Cyborg A15",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:17:47.675Z",
+        "note": "No real Amazon.co.uk or Amazon.de listing URL/ASIN was evidenced in the provided search results. The closest confirmed retail SKU is MSI Cyborg 15 B2RWEKG-021UK (also seen as 9S7-15Q342-021), but I cannot safely map that to an ASIN or EAN from the supplied sources."
+      },
+      "sonar_enriched_at": "2026-08-04T15:17:47.675Z"
     },
     "lap_gigabyte_a16_5060": {
       "model": "Gigabyte G6 / A16 (RTX 5060)",
@@ -681,11 +1076,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4719331765323",
+      "mpn": "GAMING A16 CVHI3UK894SH",
       "geizhals_id": "",
       "official_url": "https://www.gigabyte.com/Laptop",
-      "search_query": "Gigabyte G6 / A16"
+      "search_query": "Gigabyte G6 / A16",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:17:59.503Z",
+        "note": "EAN and MPN are verified from the Argos retail listing. No real Amazon.co.uk or Amazon.de product URL was verified in the provided results, so ASIN fields are left null rather than guessed."
+      },
+      "sonar_enriched_at": "2026-08-04T15:17:59.503Z"
     },
     "lap_lenovo_legion_pro5_5070": {
       "model": "Lenovo Legion Pro 5 16 (RTX 5070)",
@@ -693,11 +1096,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "199271645970",
+      "mpn": "83LT003XUK",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/laptops/",
-      "search_query": "Lenovo Legion Pro 5 16"
+      "search_query": "Lenovo Legion Pro 5 16",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:18:12.590Z",
+        "note": "Real UK retail identifier verified for a close match, but no Amazon ASIN or exact i7-HX RTX 5070 retail listing was confirmed in the supplied results."
+      },
+      "sonar_enriched_at": "2026-08-04T15:18:12.590Z"
     },
     "lap_hp_omen16_5070": {
       "model": "HP Omen 16 (RTX 5070)",
@@ -709,7 +1120,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
-      "search_query": "HP Omen 16"
+      "search_query": "HP Omen 16",
+      "sonar_enriched_at": "2026-08-04T15:18:23.681Z"
     },
     "lap_alienware_16_5060": {
       "model": "Alienware 16 / 16X (RTX 5060)",
@@ -717,11 +1129,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "5397184967416",
+      "mpn": "P1CHK",
       "geizhals_id": "",
       "official_url": "https://www.dell.com/en-uk/shop/laptops",
-      "search_query": "Alienware 16 / 16X"
+      "search_query": "Alienware 16 / 16X",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:18:35.954Z",
+        "note": "Verified retail identifier evidence is strongest for Dell/retailer SKU and EAN, not Amazon ASIN. Because no Amazon product URL with a visible B0 ASIN was provided in the search results, ASINs are left null to avoid inventing identifiers."
+      },
+      "sonar_enriched_at": "2026-08-04T15:18:35.954Z"
     },
     "lap_asus_strix_g16_5060": {
       "model": "ASUS ROG Strix G16 (RTX 5060)",
@@ -729,11 +1149,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711636028189",
+      "mpn": "G615LM-S5062W",
       "geizhals_id": "",
       "official_url": "https://rog.asus.com/",
-      "search_query": "ASUS ROG Strix G16"
+      "search_query": "ASUS ROG Strix G16",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "high",
+        "at": "2026-08-04T15:18:46.546Z",
+        "note": "EAN and MPN are directly evidenced from the Scan UK listing. No Amazon.co.uk or Amazon.de product URL with a verified ASIN was present in the provided results, so ASINs remain null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:18:46.546Z"
     },
     "lap_asus_v16_5050": {
       "model": "ASUS V16 V3607 (RTX 5050)",
@@ -741,11 +1169,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "4711387969212",
+      "mpn": "V3607VH-RP011W",
       "geizhals_id": "",
       "official_url": "https://www.asus.com/uk/laptops/for-gaming/all-series/asus-v16-v3607/",
-      "search_query": "ASUS V16 V3607"
+      "search_query": "ASUS V16 V3607",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:18:57.749Z",
+        "note": "Real retail identifier confirmed for the closest matching UK listing: V3607VH-RP011W / EAN 4711387969212. No real Amazon URL or ASIN was evidenced in the provided results, so Amazon IDs remain null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:18:57.749Z"
     },
     "lap_hp_victus16_5060": {
       "model": "HP Victus 16 (RTX 5060)",
@@ -757,7 +1193,8 @@
       "mpn": "",
       "geizhals_id": "",
       "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
-      "search_query": "HP Victus 16"
+      "search_query": "HP Victus 16",
+      "sonar_enriched_at": "2026-08-04T15:19:09.103Z"
     },
     "lap_lenovo_loq_15_amd_5060": {
       "model": "Lenovo LOQ 15 AMD (RTX 5060)",
@@ -765,11 +1202,19 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
-      "mpn": "",
+      "ean": "0199274037734",
+      "mpn": "83JG00DBUK",
       "geizhals_id": "",
       "official_url": "https://www.lenovo.com/gb/en/loq/",
-      "search_query": "Lenovo LOQ 15 AMD"
+      "search_query": "Lenovo LOQ 15 AMD",
+      "resolve_meta": {
+        "source": "sonar",
+        "auto": true,
+        "confidence": "medium",
+        "at": "2026-08-04T15:19:21.229Z",
+        "note": "Confirmed retail ID is EAN 0199274037734 for Lenovo LOQ 15AHP10 / 83JG00DBUK. No Amazon UK or Amazon DE product URL for the same AMD RTX 5060 config was found in the provided results, so ASINs remain null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:19:21.229Z"
     }
   }
 }

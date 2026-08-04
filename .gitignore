@@ -5,3 +5,5 @@ Thumbs.db
 .netlify
 .vercel
 node_modules/
+.env
+tools/out/

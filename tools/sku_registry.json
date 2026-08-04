@@ -1,0 +1,775 @@
+{
+  "_meta": {
+    "purpose": "Perfect SKU mapping for each catalog row. Fill ASIN/EAN/MPN as you verify listings.",
+    "how_to_fill": [
+      "1. Find the exact retail listing (Amazon UK/DE, Lenovo.com, Scan…)",
+      "2. Copy ASIN from Amazon URL (/dp/B0XXXXXXX)",
+      "3. Copy EAN/GTIN from Geizhals or product box if available",
+      "4. Copy manufacturer part number (e.g. 83JG00…, FA507…)",
+      "5. Run: npm run catalog:sync"
+    ],
+    "apis": {
+      "amazon_paapi": "Set AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY, AMAZON_PARTNER_TAG, AMAZON_HOST (e.g. webservices.amazon.co.uk), AMAZON_REGION (eu-west-1)",
+      "priceapi": "Optional paid: PRICEAPI_KEY for Geizhals product_matching by GTIN — see https://priceapi.com"
+    }
+  },
+  "entries": {
+    "lap_lenovo_loq_5060": {
+      "model": "Lenovo LOQ 15 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/loq/",
+      "search_query": "Lenovo LOQ 15 RTX 5060 16GB"
+    },
+    "lap_lenovo_loq_5050": {
+      "model": "Lenovo LOQ 15 (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/loq/",
+      "search_query": "Lenovo LOQ 15 RTX 5050"
+    },
+    "lap_asus_tuf_a16_5060": {
+      "model": "ASUS TUF Gaming A16 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+      "search_query": "ASUS TUF A16 RTX 5060"
+    },
+    "lap_asus_zephyrus_g14_4060": {
+      "model": "ASUS ROG Zephyrus G14 (RTX 4060) — last gen",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "search_query": "Zephyrus G14 RTX 4060",
+      "availability_override": "aftermarket"
+    },
+    "lap_apple_mbp14_m4": {
+      "model": "Apple MacBook Pro 14 M4",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "MX2E3B/A",
+      "geizhals_id": "",
+      "official_url": "https://www.apple.com/uk/shop/buy-mac/macbook-pro/14-inch",
+      "search_query": "MacBook Pro 14 M4 16GB 512GB"
+    },
+    "lap_msi_thin15_4050": {
+      "model": "MSI Thin 15 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Thin 15"
+    },
+    "lap_msi_thin15_3050": {
+      "model": "MSI Thin 15 (RTX 3050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Thin 15"
+    },
+    "lap_asus_v16_4050": {
+      "model": "ASUS V16 V3607 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/",
+      "search_query": "ASUS V16 V3607"
+    },
+    "lap_asus_v16_5060": {
+      "model": "ASUS V16 V3607 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/",
+      "search_query": "ASUS V16 V3607"
+    },
+    "lap_lenovo_loq_4050": {
+      "model": "Lenovo LOQ 15 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo LOQ 15"
+    },
+    "lap_lenovo_loq_4060": {
+      "model": "Lenovo LOQ 15 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo LOQ 15"
+    },
+    "lap_asus_tuf_f16_4050": {
+      "model": "ASUS TUF Gaming F16 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/",
+      "search_query": "ASUS TUF Gaming F16"
+    },
+    "lap_acer_nitro_v15_4050": {
+      "model": "Acer Nitro V 15 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.acer.com/gb-en/laptops",
+      "search_query": "Acer Nitro V 15"
+    },
+    "lap_hp_victus_15_4050": {
+      "model": "HP Victus 15 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+      "search_query": "HP Victus 15"
+    },
+    "lap_dell_g15_4050": {
+      "model": "Dell G15 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.dell.com/en-uk/shop/laptops",
+      "search_query": "Dell G15"
+    },
+    "lap_msi_cyborg15_4050": {
+      "model": "MSI Cyborg 15 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Cyborg 15"
+    },
+    "lap_msi_katana15_4060": {
+      "model": "MSI Katana 15 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Katana 15"
+    },
+    "lap_lenovo_legion5_4060": {
+      "model": "Lenovo Legion 5 15 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo Legion 5 15"
+    },
+    "lap_lenovo_ideapad_g3_3050": {
+      "model": "Lenovo IdeaPad Gaming 3 (RTX 3050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo IdeaPad Gaming 3"
+    },
+    "lap_asus_tuf_a15_4060": {
+      "model": "ASUS TUF A15 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/",
+      "search_query": "ASUS TUF A15"
+    },
+    "lap_acer_nitro16_4050": {
+      "model": "Acer Nitro 16 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.acer.com/gb-en/laptops",
+      "search_query": "Acer Nitro 16"
+    },
+    "lap_hp_omen16_4060": {
+      "model": "HP Omen 16 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+      "search_query": "HP Omen 16"
+    },
+    "lap_dell_g16_4060": {
+      "model": "Dell G16 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.dell.com/en-uk/shop/laptops",
+      "search_query": "Dell G16"
+    },
+    "lap_gigabyte_g5_4050": {
+      "model": "Gigabyte G5 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "",
+      "search_query": "Gigabyte G5"
+    },
+    "lap_asus_vivobook16x_4050": {
+      "model": "ASUS Vivobook 16X (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/",
+      "search_query": "ASUS Vivobook 16X"
+    },
+    "lap_msi_sword16_4060": {
+      "model": "MSI Sword 16 HX (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Sword 16 HX"
+    },
+    "lap_acer_helios_neo_4060": {
+      "model": "Acer Predator Helios Neo 16 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.acer.com/gb-en/laptops",
+      "search_query": "Acer Predator Helios Neo 16"
+    },
+    "lap_lenovo_loq_15_3050": {
+      "model": "Lenovo LOQ 15 (RTX 3050 6GB)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo LOQ 15"
+    },
+    "lap_asus_v16_3050": {
+      "model": "ASUS V16 V3607 (RTX 3050 6GB)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/",
+      "search_query": "ASUS V16 V3607"
+    },
+    "lap_hp_victus16_4050": {
+      "model": "HP Victus 16 (RTX 4050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+      "search_query": "HP Victus 16"
+    },
+    "lap_msi_thin15_4060": {
+      "model": "MSI Thin 15 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Thin 15"
+    },
+    "lap_lenovo_loq_16_4060": {
+      "model": "Lenovo LOQ 16 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo LOQ 16"
+    },
+    "lap_razer_blade14_4060": {
+      "model": "Razer Blade 14 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.razer.com/",
+      "search_query": "Razer Blade 14"
+    },
+    "lap_asus_zephyrus_g16_4070": {
+      "model": "ASUS ROG Zephyrus G16 (RTX 4070)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://rog.asus.com/",
+      "search_query": "ASUS ROG Zephyrus G16"
+    },
+    "lap_msi_stealth16_4060": {
+      "model": "MSI Stealth 16 Studio (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Stealth 16 Studio"
+    },
+    "lap_lenovo_yoga_pro9i_4060": {
+      "model": "Lenovo Yoga Pro 9i (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/",
+      "search_query": "Lenovo Yoga Pro 9i"
+    },
+    "lap_asus_proart_p16_4060": {
+      "model": "ASUS ProArt P16 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/proart/",
+      "search_query": "ASUS ProArt P16"
+    },
+    "lap_dell_xps14_2026": {
+      "model": "Dell XPS 14 (2026, strong iGPU)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.dell.com/",
+      "search_query": "Dell XPS 14"
+    },
+    "lap_hp_omnibook_ultra14": {
+      "model": "HP OmniBook Ultra 14",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.hp.com/",
+      "search_query": "HP OmniBook Ultra 14"
+    },
+    "lap_asus_tuf_a14_4060": {
+      "model": "ASUS TUF Gaming A14 (RTX 4060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/",
+      "search_query": "ASUS TUF Gaming A14"
+    },
+    "lap_framework_16": {
+      "model": "Framework Laptop 16 (RX 7700S module)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://frame.work/",
+      "search_query": "Framework Laptop 16"
+    },
+    "lap_asus_tuf_a15_5060": {
+      "model": "ASUS TUF A15 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+      "search_query": "ASUS TUF A15"
+    },
+    "lap_acer_nitro_v15_5060": {
+      "model": "Acer Nitro V 15 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.acer.com/gb-en/laptops",
+      "search_query": "Acer Nitro V 15"
+    },
+    "lap_msi_thin15_5060": {
+      "model": "MSI Thin 15 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Thin 15"
+    },
+    "lap_asus_zephyrus_g14_5060": {
+      "model": "ASUS ROG Zephyrus G14 (2025, RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2025/",
+      "search_query": "ASUS ROG Zephyrus G14"
+    },
+    "lap_hp_victus_15_5060": {
+      "model": "HP Victus 15 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+      "search_query": "HP Victus 15"
+    },
+    "lap_lenovo_legion5_5060": {
+      "model": "Lenovo Legion 5 15 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo Legion 5 15"
+    },
+    "lap_asus_tuf_f16_5060": {
+      "model": "ASUS TUF Gaming F16 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+      "search_query": "ASUS TUF Gaming F16"
+    },
+    "lap_msi_crosshair_16_5060": {
+      "model": "MSI Crosshair / Sword 16 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Crosshair / Sword 16"
+    },
+    "lap_lenovo_loq_17_5050": {
+      "model": "Lenovo LOQ 17 (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/loq/",
+      "search_query": "Lenovo LOQ 17"
+    },
+    "lap_asus_tuf_a16_5050": {
+      "model": "ASUS TUF Gaming A16 (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+      "search_query": "ASUS TUF Gaming A16"
+    },
+    "lap_asus_tuf_f16_5050": {
+      "model": "ASUS TUF Gaming F16 (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/for-gaming/tuf-gaming/",
+      "search_query": "ASUS TUF Gaming F16"
+    },
+    "lap_acer_nitro_v16_5050": {
+      "model": "Acer Nitro V 16 AI (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.acer.com/gb-en/laptops",
+      "search_query": "Acer Nitro V 16 AI"
+    },
+    "lap_msi_katana15_5050": {
+      "model": "MSI Katana 15 HX (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Katana 15 HX"
+    },
+    "lap_msi_cyborg_a15_5050": {
+      "model": "MSI Cyborg A15 (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.msi.com/Laptop",
+      "search_query": "MSI Cyborg A15"
+    },
+    "lap_gigabyte_a16_5060": {
+      "model": "Gigabyte G6 / A16 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.gigabyte.com/Laptop",
+      "search_query": "Gigabyte G6 / A16"
+    },
+    "lap_lenovo_legion_pro5_5070": {
+      "model": "Lenovo Legion Pro 5 16 (RTX 5070)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/laptops/",
+      "search_query": "Lenovo Legion Pro 5 16"
+    },
+    "lap_hp_omen16_5070": {
+      "model": "HP Omen 16 (RTX 5070)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+      "search_query": "HP Omen 16"
+    },
+    "lap_alienware_16_5060": {
+      "model": "Alienware 16 / 16X (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.dell.com/en-uk/shop/laptops",
+      "search_query": "Alienware 16 / 16X"
+    },
+    "lap_asus_strix_g16_5060": {
+      "model": "ASUS ROG Strix G16 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://rog.asus.com/",
+      "search_query": "ASUS ROG Strix G16"
+    },
+    "lap_asus_v16_5050": {
+      "model": "ASUS V16 V3607 (RTX 5050)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.asus.com/uk/laptops/for-gaming/all-series/asus-v16-v3607/",
+      "search_query": "ASUS V16 V3607"
+    },
+    "lap_hp_victus16_5060": {
+      "model": "HP Victus 16 (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.hp.com/gb-en/shop/vwa/laptops",
+      "search_query": "HP Victus 16"
+    },
+    "lap_lenovo_loq_15_amd_5060": {
+      "model": "Lenovo LOQ 15 AMD (RTX 5060)",
+      "asin": {
+        "uk": "",
+        "de": ""
+      },
+      "ean": "",
+      "mpn": "",
+      "geizhals_id": "",
+      "official_url": "https://www.lenovo.com/gb/en/loq/",
+      "search_query": "Lenovo LOQ 15 AMD"
+    }
+  }
+}

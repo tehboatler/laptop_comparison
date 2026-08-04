@@ -1,0 +1,16 @@
+{
+  "name": "laptop-comparison",
+  "private": true,
+  "version": "1.4.0",
+  "description": "Budget laptop finder — static app + catalog ops",
+  "scripts": {
+    "catalog:sync": "node tools/sync_catalog.js",
+    "catalog:validate": "node tools/validate_catalog.js",
+    "catalog:chassis": "node tools/normalize_chassis.js",
+    "catalog:buys": "node tools/refresh_buy_links.js",
+    "catalog:embed": "node tools/embed_data.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

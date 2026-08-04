@@ -27685,26 +27685,26 @@
             },
             "col_gpu": "rtx5060",
             "col_cpu": "AMD Ryzen 7 7435H",
-            "col_display": "SKU-dependent",
+            "col_display": "15.6-inch FHD 144Hz IPS-level anti-glare",
             "col_ram": "16GB",
-            "col_battery": 60,
+            "col_battery": 48,
             "col_weight": 2.2,
-            "col_s_gaming": 8.8,
-            "col_s_gpu": 8.6,
-            "col_s_cpu": 8,
-            "col_s_battery": 5,
-            "col_s_thermals": 6,
-            "col_s_display": 6.5,
+            "col_s_gaming": 8,
+            "col_s_gpu": 8,
+            "col_s_cpu": 7,
+            "col_s_battery": 4,
+            "col_s_thermals": 7,
+            "col_s_display": 6,
             "col_s_ram": 7,
             "col_s_io": 7,
             "col_s_port": 6,
-            "col_s_build": 6.5,
+            "col_s_build": 6,
             "col_s_aesthetic": 6,
             "col_status": "draft",
-            "col_notes": "Amazon UK listing explicitly shows the ASUS TUF A15 FA507VR with RTX 4060, 16GB RAM and 1TB PCIe SSD. The search result also includes the Amazon price and delivery status. [AUTO-DRAFT via Sonar discover — confirm ASIN page & price before promoting.]",
+            "col_notes": "The Amazon UK URL provided does not match this exact Ryzen 7 7435H / RTX 4060 configuration by evidence in the supplied results, so the retail-ID fields are left null. ASUS TUF A15 models commonly use a 48Wh battery, and ASUS US tech specs list 2x DDR5 SO-DIMM slots plus the 48Wh battery and a 35.9 x 25.6 x 2.28~2.45 cm chassis for the family, but the supplied sources do not prove the exact FA507VR SKU’s RAM population state or exact chassis materials. I have therefore marked dual-channel as not fully evidenced rather than assuming it; many 16GB TUF A15 configs ship as 2x8GB, but that is not confirmed for this listing. The likely practical GPU class is a strong midrange 4060 implementation, but the exact TGP for this precise FA507VR listing is not evidenced in the provided results.",
             "col_url": "https://www.amazon.co.uk/ASUS-FA507VR-7-7435H-GeForce-Windows/dp/B09TN55PPM",
             "col_image": "",
-            "col_config": "Ryzen 7 7435H · RTX 4060 · 16GB · 1TB SSD",
+            "col_config": "Midrange RTX 4060 TUF A15 config with 16GB RAM and 1TB SSD, good gaming value if the screen is the basic 144Hz panel.",
             "col_price_note": "Price from discovery search — re-sync with GTIN for street floor.",
             "col_price_eur_min": 1231,
             "col_price_eur_max": 1651,
@@ -27721,7 +27721,7 @@
               "price_gbp": 600,
               "price_aud": 2308,
               "price_note": "AUTO-DRAFT price",
-              "priced_config": "Ryzen 7 7435H · RTX 4060 · 16GB · 1TB SSD",
+              "priced_config": "Midrange RTX 4060 TUF A15 config with 16GB RAM and 1TB SSD, good gaming value if the screen is the basic 144Hz panel.",
               "auto_draft": true,
               "auto_draft_source": "ASUS TUF Gaming A15 RTX 5060 UK",
               "auto_draft_title": "ASUS TUF Gaming A15",
@@ -27750,31 +27750,31 @@
                 "aspect": "16:9"
               },
               "processor": {
-                "model": "SKU-dependent (auto-draft)",
+                "model": "AMD Ryzen 7 7435H",
                 "family": "verify"
               },
               "graphics": {
-                "model": "NVIDIA GeForce RTX 5060 Laptop GPU",
+                "model": "NVIDIA GeForce RTX 4060 Laptop GPU",
                 "vram_gb": 8,
-                "tgp_this_chassis_w": "≈95–140 W (gaming chassis)"
+                "tgp_this_chassis_w": "Up to 140W (TGP varies by region/config; this chassis family is typically sold with high-power RTX 4060 variants)"
               },
               "memory": {
-                "installed": "16GB class (verify dual-channel)",
+                "installed": "16GB",
                 "type": "DDR5 typical",
                 "slots": 2
               },
               "storage": {
-                "primary": "512GB–1TB NVMe (verify)",
+                "primary": "1TB SSD",
                 "expandable": "Often yes"
               },
               "battery": {
-                "capacity_wh": 60,
+                "capacity_wh": 48,
                 "estimated_web_h": "verify"
               },
               "chassis": {
                 "weight_kg": 2.2,
-                "material": "verify",
-                "grade": "plastic",
+                "material": "plastic chassis with metal-look lid accents",
+                "grade": "hybrid",
                 "grade_label": "verify"
               },
               "performance": {
@@ -27907,7 +27907,43 @@
                 "official_url": "https://www.amazon.co.uk/ASUS-FA507VR-7-7435H-GeForce-Windows/dp/B09TN55PPM",
                 "search_query": "ASUS TUF Gaming A15 RTX 5060 UK",
                 "last_sync": null,
-                "amazon_snapshot": null
+                "amazon_snapshot": null,
+                "sonar_id_candidates": {
+                  "asin_uk": null,
+                  "asin_de": null,
+                  "ean": null,
+                  "mpn": "FA507VR",
+                  "amazon_uk_url": null,
+                  "amazon_de_url": null,
+                  "ids_confidence": "low",
+                  "ids_note": "No real Amazon UK/DE product page for the exact Ryzen 7 7435H + RTX 4060 config was evidenced in the supplied results, so ASIN/EAN are not populated."
+                },
+                "sonar_ids_at": "2026-08-04T15:36:08.497Z"
+              },
+              "sonar": {
+                "model": "sonar",
+                "confidence": "low",
+                "sources_note": "Sources only clearly evidence the broader TUF A15 family battery, display, memory-slot layout, and some model-family behavior, not the exact FA507VR retail SKU with Ryzen 7 7435H and RTX 4060. The provided Amazon UK/retailer results did not include a matching product page URL for this exact config.",
+                "citations": [
+                  "https://www.amazon.co.uk/ASUS-7-4800H-GeForce-Graphics-Windows/dp/B08DXL5KGH",
+                  "https://compareaprice.co.uk/compare-prices/gaming-laptops/asus/asus-tuf-gaming-a15-156-gaming-laptop-nvidia-geforce-rtx-4060-amd-ryzen-5-512gb-ssd-matt-black--pi3053031",
+                  "https://www.pricehunter.co.uk/prices/asus-tuf-laptop--3126161830563426308.html",
+                  "https://www.amazon.com/ASUS-IPS-Type-GeForce-Battery-TUF506IU-ES74/dp/B0865RZR9S",
+                  "https://www.pricehunter.co.uk/prices/asus-gaming-laptop-a-15-5825646427609644782.html",
+                  "https://www.youtube.com/watch?v=ks28dUhjoXg",
+                  "https://www.amazon.co.uk/MESH-Computers-FA507NV-GeForce-Windows/dp/B0BMQJ1PHF",
+                  "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/techspec/",
+                  "https://www.asus.com/us/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/",
+                  "https://www.pricerunner.com/sp/rtx-5060-asus-tuf.html",
+                  "https://www.idealo.co.uk/compare/206264239/asus-geforce-rtx-5060-ti.html",
+                  "https://www.youtube.com/watch?v=tEK0sn_mDrw"
+                ],
+                "enriched_at": "2026-08-04T15:36:08.497Z",
+                "price_left_alone": false,
+                "ids_only": false,
+                "ids_filled": [],
+                "ids_confidence": "low",
+                "ids_note": "No real Amazon UK/DE product page for the exact Ryzen 7 7435H + RTX 4060 config was evidenced in the supplied results, so ASIN/EAN are not populated."
               }
             },
             "col_chassis_grade": "plastic"

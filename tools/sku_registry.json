@@ -1398,7 +1398,8 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:23:26.145Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:36:08.497Z"
     },
     "lap_auto_asus_rtx5060_asus_tuf_gaming_a16_2025_fa608pm_rv_eaa68c": {
       "model": "ASUS TUF Gaming A16 (2025) FA608PM-RV009W",

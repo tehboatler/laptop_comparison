@@ -1589,17 +1589,27 @@ button:disabled {
     padding-left: 38px;
   }
   .finder-sticky {
-    margin: 0 0 12px;
-    padding: 8px 10px;
-    gap: 6px;
+    margin: 0 0 10px;
+    padding: 5px 6px 5px 8px;
+    gap: 5px;
     top: 0;
+    max-height: 40px;
+    border-radius: 10px;
+  }
+  .finder-sticky .st-label { display: none; } /* free horizontal space */
+  .finder-sticky .st-pill {
+    font-size: 11px;
+    padding: 2px 7px;
   }
   .finder-sticky .st-jump {
     margin-left: 0;
-    width: 100%;
-    text-align: center;
-    min-height: var(--touch-min);
+    width: auto;
+    min-height: 0;
+    padding: 5px 8px;
+    font-size: 11px;
   }
+  .finder-sticky .st-jump .st-jump-full { display: none; }
+  .finder-sticky .st-jump .st-jump-short { display: inline; }
   .budget-chip,
   .must-chip,
   .toggle-pill,
@@ -1859,38 +1869,58 @@ button:disabled {
   line-height: 1.55;
 }
 
-/* Sticky choice summary */
+/* Sticky choice summary — keep thin so content stays visible */
 .finder-sticky {
   position: sticky;
   top: 0;
   z-index: 15;
-  margin: 0 -6px 16px;
-  padding: 10px 12px;
-  background: color-mix(in srgb, var(--bg-elevated) 92%, transparent);
+  margin: 0 0 12px;
+  padding: 6px 8px 6px 10px;
+  background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
   backdrop-filter: blur(12px);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 8px 12px;
+  gap: 6px;
   box-shadow: var(--shadow);
+  min-height: 0;
+  max-height: 44px;
 }
 .finder-sticky .st-label {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .06em;
+  letter-spacing: .05em;
   color: var(--text-muted);
+  flex-shrink: 0;
 }
+.finder-sticky .st-pills {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  mask-image: linear-gradient(90deg, #000 85%, transparent);
+}
+.finder-sticky .st-pills::-webkit-scrollbar { display: none; height: 0; }
 .finder-sticky .st-pill {
-  font-size: 12.5px;
+  font-size: 11.5px;
   font-weight: 650;
-  padding: 5px 10px;
+  padding: 3px 8px;
   border-radius: 999px;
   background: var(--accent-soft);
   color: var(--accent);
   border: 1px solid transparent;
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1.25;
 }
 .finder-sticky .st-pill.muted {
   background: var(--bg);
@@ -1898,19 +1928,24 @@ button:disabled {
   border-color: var(--border);
 }
 .finder-sticky .st-jump {
-  margin-left: auto;
-  font-size: 12.5px;
+  margin-left: 0;
+  flex-shrink: 0;
+  font-size: 11.5px;
   font-weight: 700;
   color: var(--accent);
-  padding: 6px 12px;
+  padding: 5px 9px;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg-elevated);
+  white-space: nowrap;
+  line-height: 1.2;
 }
 .finder-sticky .st-jump:hover {
   border-color: var(--accent);
   background: var(--accent-soft);
 }
+.finder-sticky .st-jump .st-jump-full { display: inline; }
+.finder-sticky .st-jump .st-jump-short { display: none; }
 
 .finder-step {
   background: var(--bg-elevated);
@@ -22179,12 +22214,20 @@ button:disabled {
     });
     const musts = f.musts || {};
     const mustActive = [musts.light && "≤2 kg", musts.battery4 && "≥4 h light", musts.dualChannel && "Dual-channel", musts.gpu4050 && "RTX 4050+"].filter(Boolean);
+    // Compact sticky summary — avoid stacking a wall of pills on small screens
+    const prioShort = (f.priorities || []).slice(0, 2).map((k, i) => {
+      const m = FINDER_METRICS.find((x) => x.key === k);
+      const lab = m ? m.label : k;
+      // Drop ranking numbers / long labels in the bar
+      return lab.replace(/^Gaming performance$/i, "Gaming").replace(/^Looks pro$/i, "Looks");
+    });
+    const mustShort = mustActive.slice(0, 2);
     const stickyPills = [
       `<span class="st-pill">${escapeHtml(formatMoney(budget, currency))}</span>`,
-      f.underBudgetOnly ? `<span class="st-pill muted">Under only</span>` : "",
-      ...prioLabels.map((l) => `<span class="st-pill muted">${escapeHtml(l)}</span>`),
-      ...mustActive.map((l) => `<span class="st-pill muted">${escapeHtml(l)}</span>`),
-      f.shortlist?.length ? `<span class="st-pill">${f.shortlist.length} shortlisted</span>` : "",
+      f.underBudgetOnly ? `<span class="st-pill muted">≤ budget</span>` : "",
+      ...prioShort.map((l) => `<span class="st-pill muted">${escapeHtml(l)}</span>`),
+      ...mustShort.map((l) => `<span class="st-pill muted">${escapeHtml(l)}</span>`),
+      f.shortlist?.length ? `<span class="st-pill">★ ${f.shortlist.length}</span>` : "",
     ].filter(Boolean).join("");
 
     const step1Done = !!f.useCase || f.priorities?.length;
@@ -22210,10 +22253,15 @@ button:disabled {
         <p>Set budget, priorities, and hard must-haves. Shortlist up to 3 to compare side-by-side — share a link with your exact settings.</p>
       </div>
 
-      <div class="finder-sticky" id="finder-sticky">
-        <span class="st-label">Your picks</span>
-        ${stickyPills || `<span class="st-pill muted">Set budget & priorities below</span>`}
-        <button type="button" class="st-jump" id="finder-jump-results">See results ↓</button>
+      <div class="finder-sticky" id="finder-sticky" aria-label="Your current picks">
+        <span class="st-label">Picks</span>
+        <div class="st-pills">
+          ${stickyPills || `<span class="st-pill muted">Set budget below</span>`}
+        </div>
+        <button type="button" class="st-jump" id="finder-jump-results" title="Jump to results">
+          <span class="st-jump-full">Results ↓</span>
+          <span class="st-jump-short">↓</span>
+        </button>
       </div>
 
       <section class="finder-step" id="step-use">

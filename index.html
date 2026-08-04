@@ -2,26 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Laptop pick — budget finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet" />
 <style>
 /* ═══════════════════════════════════════════════════════════
-   Design tokens & base
+   Design tokens & base (theme provider via data-theme)
+   Themes: light | dark | neo
    ═══════════════════════════════════════════════════════════ */
 :root {
   --font: "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-mono: "Cascadia Code", "Fira Code", "Consolas", monospace;
   --radius: 8px;
   --radius-sm: 5px;
+  --radius-lg: 16px;
+  --border-w: 1px;
   --shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.08);
   --shadow-lg: 0 8px 30px rgba(0,0,0,.18);
+  --shadow-press: none;
   --transition: 140ms ease;
   --sidebar-w: 240px;
   --header-h: 52px;
   --toolbar-h: 44px;
   --row-h: 36px;
+  --touch-min: 44px;
+  --page-pad: 18px;
+  --secondary: #d4a017;
+  --muted-surface: #e8ebf0;
 
-  /* Light */
+  /* Light (default) */
   --bg: #f4f5f7;
   --bg-elevated: #ffffff;
   --bg-hover: #eef0f3;
@@ -46,6 +57,8 @@
   --tag-bg: #e8ebf0;
   --kanban-col: #ebedf1;
   --rating: #f0b429;
+  --on-accent: #ffffff;
+  --pattern: none;
 }
 
 [data-theme="dark"] {
@@ -66,6 +79,8 @@
   --danger-soft: rgba(240,113,120,.14);
   --success: #4ec98a;
   --warning: #e0b84a;
+  --secondary: #e0b84a;
+  --muted-surface: #2c323d;
   --selection: rgba(91,138,255,.22);
   --cell-focus: #5b8aff;
   --scrollbar: #3a4150;
@@ -73,12 +88,57 @@
   --tag-bg: #2c323d;
   --kanban-col: #1e232c;
   --rating: #f0b429;
+  --on-accent: #ffffff;
+  --pattern: none;
+}
+
+/* Neo-brutalism — high saturation light canvas, hard ink structure */
+[data-theme="neo"] {
+  --font: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --border-w: 3px;
+  --shadow: 4px 4px 0 0 #000000;
+  --shadow-lg: 8px 8px 0 0 #000000;
+  --shadow-press: 2px 2px 0 0 #000000;
+  --transition: 100ms linear;
+  --bg: #FFFDF5;
+  --bg-elevated: #FFFFFF;
+  --bg-hover: #FFF8E7;
+  --bg-active: #FFD93D;
+  --bg-input: #FFFFFF;
+  --border: #000000;
+  --border-subtle: #000000;
+  --text: #000000;
+  --text-secondary: #000000;
+  --text-muted: #1a1a1a;
+  --accent: #FF6B6B;
+  --accent-hover: #ff5252;
+  --accent-soft: #FF6B6B33;
+  --danger: #FF6B6B;
+  --danger-soft: #FF6B6B33;
+  --success: #22c55e;
+  --warning: #FFD93D;
+  --secondary: #FFD93D;
+  --muted-surface: #C4B5FD;
+  --selection: rgba(255,107,107,.25);
+  --cell-focus: #000000;
+  --scrollbar: #000000;
+  --modal-backdrop: rgba(0,0,0,.55);
+  --tag-bg: #C4B5FD;
+  --kanban-col: #FFF8E7;
+  --rating: #FFD93D;
+  --on-accent: #000000;
+  --pattern:
+    radial-gradient(circle, rgba(0,0,0,.07) 1.2px, transparent 1.3px);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
   height: 100%;
+  max-width: 100%;
   font-family: var(--font);
   font-size: 13.5px;
   color: var(--text);
@@ -86,6 +146,18 @@ html, body {
   line-height: 1.4;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+[data-theme="neo"] body,
+[data-theme="neo"] #app {
+  background-color: var(--bg);
+  background-image: var(--pattern);
+  background-size: 18px 18px;
+}
+[data-theme="neo"] {
+  font-weight: 700;
 }
 
 button, input, select, textarea {
@@ -185,13 +257,15 @@ button:disabled {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   padding: 6px 11px;
+  min-height: 34px;
   border-radius: var(--radius-sm);
   border: 1px solid transparent;
   font-size: 13px;
   font-weight: 500;
-  transition: background var(--transition), border-color var(--transition), color var(--transition);
+  transition: background var(--transition), border-color var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
   white-space: nowrap;
 }
 
@@ -1197,20 +1271,253 @@ button:disabled {
   box-shadow: var(--shadow);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  :root { --sidebar-w: 200px; }
-  .search-box { min-width: 120px; }
-  .header .btn span.hide-sm { display: none; }
-  .board-column { flex: 0 0 240px; max-width: 240px; }
+/* ═══════════════════════════════════════════════════════════
+   Neo-brutalism surface polish (tokens already remapped)
+   ═══════════════════════════════════════════════════════════ */
+[data-theme="neo"] .header {
+  border-bottom: 3px solid #000;
+  box-shadow: 0 4px 0 0 #000;
+}
+[data-theme="neo"] .logo {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -.03em;
+}
+[data-theme="neo"] .logo-mark {
+  border: 3px solid #000;
+  border-radius: 0;
+  background: var(--secondary);
+  color: #000;
+  box-shadow: 3px 3px 0 0 #000;
+}
+[data-theme="neo"] .btn,
+[data-theme="neo"] .btn-icon,
+[data-theme="neo"] .shortlist-btn,
+[data-theme="neo"] .share-btn,
+[data-theme="neo"] .compare-open-btn,
+[data-theme="neo"] .st-jump,
+[data-theme="neo"] .budget-chip,
+[data-theme="neo"] .priority-chip,
+[data-theme="neo"] .must-chip,
+[data-theme="neo"] .usecase-chip,
+[data-theme="neo"] .toggle-pill,
+[data-theme="neo"] .btn-open-detail {
+  border: 3px solid #000 !important;
+  border-radius: 0 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  box-shadow: 4px 4px 0 0 #000;
+  background: #fff;
+}
+[data-theme="neo"] .btn-primary,
+[data-theme="neo"] .btn-open-detail,
+[data-theme="neo"] .compare-open-btn.has-items {
+  background: var(--accent) !important;
+  color: #000 !important;
+}
+[data-theme="neo"] .budget-chip.active,
+[data-theme="neo"] .priority-chip.active,
+[data-theme="neo"] .must-chip.active,
+[data-theme="neo"] .usecase-chip.active,
+[data-theme="neo"] .toggle-pill:has(input:checked),
+[data-theme="neo"] .shortlist-btn.on {
+  background: var(--secondary) !important;
+  color: #000 !important;
+}
+[data-theme="neo"] .btn:hover:not(:disabled),
+[data-theme="neo"] .shortlist-btn:hover,
+[data-theme="neo"] .share-btn:hover,
+[data-theme="neo"] .compare-open-btn:hover,
+[data-theme="neo"] .budget-chip:hover,
+[data-theme="neo"] .priority-chip:hover,
+[data-theme="neo"] .must-chip:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 0 #000;
+}
+[data-theme="neo"] .btn:active:not(:disabled),
+[data-theme="neo"] .shortlist-btn:active,
+[data-theme="neo"] .share-btn:active,
+[data-theme="neo"] .compare-open-btn:active,
+[data-theme="neo"] .btn-open-detail:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 0 #000;
+}
+[data-theme="neo"] .mode-switch,
+[data-theme="neo"] .currency-toggle {
+  border: 3px solid #000;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 3px 3px 0 0 #000;
+  padding: 0;
+}
+[data-theme="neo"] .mode-switch button.active,
+[data-theme="neo"] .currency-toggle button.active {
+  background: var(--accent);
+  color: #000;
+  box-shadow: none;
+  border-radius: 0;
+}
+[data-theme="neo"] .finder-step,
+[data-theme="neo"] .finder-sticky,
+[data-theme="neo"] .hero-pick,
+[data-theme="neo"] .alt-card,
+[data-theme="neo"] .match-card,
+[data-theme="neo"] .buy-block,
+[data-theme="neo"] .batt-endurance,
+[data-theme="neo"] .batt-card,
+[data-theme="neo"] .checklist-box,
+[data-theme="neo"] .decision-row,
+[data-theme="neo"] .play-bound,
+[data-theme="neo"] .thermal-card,
+[data-theme="neo"] .detail-sheet,
+[data-theme="neo"] .compare-sheet {
+  border: 3px solid #000 !important;
+  border-radius: 0 !important;
+  box-shadow: 8px 8px 0 0 #000;
+  background: #fff;
+}
+[data-theme="neo"] .finder-sticky {
+  box-shadow: 4px 4px 0 0 #000;
+  backdrop-filter: none;
+  background: #fff;
+}
+[data-theme="neo"] .hero-pick {
+  background: #fff;
+  background-image: linear-gradient(135deg, #fff 60%, var(--muted-surface) 60%);
+}
+[data-theme="neo"] .hero-pick::before {
+  border: 3px solid #000;
+  border-radius: 0;
+  background: var(--accent);
+  color: #000;
+  box-shadow: 3px 3px 0 0 #000;
+  transform: rotate(-2deg);
+}
+[data-theme="neo"] .finder-hero h1,
+[data-theme="neo"] .finder-step-label h2,
+[data-theme="neo"] .finder-results-head h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -.04em;
+}
+[data-theme="neo"] .finder-step-num {
+  border: 3px solid #000;
+  border-radius: 0;
+  background: var(--secondary);
+  color: #000;
+  box-shadow: 3px 3px 0 0 #000;
+}
+[data-theme="neo"] .finder-step-num.done { background: var(--success); }
+[data-theme="neo"] .st-pill {
+  border: 2px solid #000;
+  border-radius: 999px;
+  background: var(--muted-surface);
+  color: #000;
+}
+[data-theme="neo"] .st-pill.muted { background: #fff; }
+[data-theme="neo"] .hero-price,
+[data-theme="neo"] .budget-target,
+[data-theme="neo"] .detail-price-lg,
+[data-theme="neo"] .match-price,
+[data-theme="neo"] .alt-price {
+  font-weight: 900;
+}
+[data-theme="neo"] .match-badge,
+[data-theme="neo"] .match-badge.under,
+[data-theme="neo"] .match-badge.over {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: var(--secondary);
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+[data-theme="neo"] .decision-row.buy { background: color-mix(in srgb, var(--success) 22%, #fff); border-left: 6px solid #000 !important; }
+[data-theme="neo"] .decision-row.skip { background: color-mix(in srgb, var(--accent) 22%, #fff); border-left: 6px solid #000 !important; }
+[data-theme="neo"] .decision-row.watch { background: color-mix(in srgb, var(--secondary) 35%, #fff); border-left: 6px solid #000 !important; }
+[data-theme="neo"] .batt-card.light .b-hours { color: #000; }
+[data-theme="neo"] .batt-card.game .b-hours { color: #000; }
+[data-theme="neo"] .batt-card.light { background: color-mix(in srgb, var(--success) 18%, #fff); }
+[data-theme="neo"] .batt-card.game { background: color-mix(in srgb, var(--secondary) 40%, #fff); }
+[data-theme="neo"] .buy-link {
+  border: 3px solid #000;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 0 #000;
+  background: #fff;
+}
+[data-theme="neo"] .buy-link:hover {
+  background: var(--secondary);
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 0 #000;
+}
+[data-theme="neo"] .buy-link.kind-compare { background: var(--muted-surface); }
+[data-theme="neo"] .detail-tab.active {
+  background: var(--accent);
+  color: #000;
+  border: 3px solid #000;
+  border-bottom: none;
+  border-radius: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+[data-theme="neo"] .detail-chrome,
+[data-theme="neo"] .detail-top,
+[data-theme="neo"] .compare-top {
+  border-bottom: 3px solid #000;
+  background: var(--secondary);
+  box-shadow: none;
+}
+[data-theme="neo"] .detail-body,
+[data-theme="neo"] .compare-body { background: var(--bg); }
+[data-theme="neo"] .hero-pick:hover,
+[data-theme="neo"] .alt-card:hover,
+[data-theme="neo"] .match-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 10px 10px 0 0 #000;
+}
+[data-theme="neo"] input[type="range"] {
+  accent-color: #000;
+}
+[data-theme="neo"] .finder-view {
+  background:
+    radial-gradient(circle, rgba(0,0,0,.07) 1.2px, transparent 1.3px),
+    var(--bg);
+  background-size: 18px 18px, auto;
 }
 
-@media (max-width: 560px) {
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="neo"] .btn:hover:not(:disabled),
+  [data-theme="neo"] .btn:active:not(:disabled),
+  [data-theme="neo"] .hero-pick:hover,
+  [data-theme="neo"] .alt-card:hover,
+  [data-theme="neo"] .match-card:hover {
+    transform: none;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root { --sidebar-w: 200px; --page-pad: 14px; --header-h: 52px; }
+  .search-box { min-width: 100px; }
+  .header .btn span.hide-sm { display: none; }
+  .board-column { flex: 0 0 240px; max-width: 240px; }
+  .finder-inner { padding: 16px var(--page-pad) 72px; }
+  .header { gap: 6px; padding: 0 10px; }
+  .header-sep { display: none; }
+  .currency-toggle button { padding: 5px 7px; font-size: 11.5px; }
+  .mode-switch button { padding: 5px 9px; font-size: 11.5px; }
+  .logo { font-size: 13.5px; }
+}
+
+@media (max-width: 640px) {
+  :root { --header-h: 50px; --page-pad: 12px; }
+  html, body, #app { max-width: 100vw; overflow-x: hidden; }
   #app { grid-template-columns: 1fr; }
   .sidebar {
     position: fixed;
     left: 0; top: var(--header-h); bottom: 0;
-    width: min(280px, 85vw);
+    width: min(280px, 88vw);
     z-index: 50;
     transform: translateX(-100%);
     transition: transform 200ms ease;
@@ -1224,6 +1531,202 @@ button:disabled {
   #app.sidebar-collapsed .sidebar {
     transform: translateX(-100%);
   }
+
+  .finder-view {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .finder-inner {
+    padding: 12px var(--page-pad) calc(88px + env(safe-area-inset-bottom, 0px));
+    max-width: 100%;
+  }
+  .finder-hero h1 {
+    font-size: clamp(1.35rem, 6.5vw, 1.75rem);
+  }
+  .finder-hero p { font-size: 14px; }
+  .finder-step {
+    padding: 14px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+  }
+  .finder-step-label {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .finder-step-label .hint {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 38px;
+  }
+  .finder-sticky {
+    margin: 0 0 12px;
+    padding: 8px 10px;
+    gap: 6px;
+    top: 0;
+  }
+  .finder-sticky .st-jump {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    min-height: var(--touch-min);
+  }
+  .budget-chip,
+  .must-chip,
+  .toggle-pill,
+  .priority-chip,
+  .usecase-chip {
+    min-height: var(--touch-min);
+  }
+  .budget-chips { gap: 8px; }
+  .budget-chip { padding: 10px 14px; font-size: 13px; }
+  .priority-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .priority-chip {
+    min-height: 72px;
+    padding: 12px 10px 10px;
+  }
+  .priority-chip .p-sub { display: none; }
+  .usecase-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .must-grid { gap: 8px; }
+  .must-chip { font-size: 12px; padding: 10px 12px; }
+
+  .finder-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .finder-toolbar .spacer { display: none; }
+  .share-btn,
+  .compare-open-btn {
+    width: 100%;
+    min-height: var(--touch-min);
+    justify-content: center;
+  }
+
+  .hero-pick {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+    padding: 14px;
+    padding-top: 42px;
+  }
+  .hero-img-wrap { max-height: 200px; }
+  .hero-copy h3 { font-size: 1.15rem; margin-top: 0; }
+  .hero-price { font-size: 1.25rem; }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .hero-actions > * {
+    width: 100%;
+    min-height: var(--touch-min);
+    justify-content: center;
+  }
+  .decision-box { gap: 8px; }
+  .decision-row { padding: 10px 12px; }
+  .decision-row ul { font-size: 12.5px; }
+
+  .alt-grid { grid-template-columns: 1fr !important; gap: 10px; }
+  .match-card {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+    padding: 12px;
+  }
+  .match-card .match-rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  .match-card {
+    position: relative;
+  }
+  .match-card .match-thumb {
+    grid-column: 1 !important;
+    width: 100% !important;
+    height: 140px !important;
+  }
+  .match-side {
+    grid-column: 1 !important;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 14px;
+  }
+  .match-body { min-width: 0; }
+
+  .batt-grid { grid-template-columns: 1fr !important; }
+  .buy-grid { grid-template-columns: 1fr !important; }
+  .batt-card .b-hours { font-size: 1.45rem; }
+  .batt-inline { gap: 6px; }
+  .batt-pill { font-size: 12px; padding: 8px 10px; }
+
+  .detail-sheet {
+    width: 100% !important;
+    max-width: 100%;
+    border-left: none;
+  }
+  .detail-tabs {
+    gap: 2px;
+    padding: 6px 8px 0;
+  }
+  .detail-tab {
+    padding: 10px 10px;
+    font-size: 12px;
+    min-height: 40px;
+  }
+  .detail-hero { grid-template-columns: 1fr !important; }
+  .detail-body { padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
+  .hero-actions .btn-open-detail { width: 100%; }
+
+  .compare-sheet { width: 100%; border: none; }
+  .compare-top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .compare-top h2 { width: 100%; }
+  .compare-top .share-btn,
+  .compare-top .btn { min-height: var(--touch-min); }
+
+  .header-actions { gap: 4px; }
+  .logo span.finder-only-hdr,
+  .logo span.sheet-only-hdr { max-width: 9ch; overflow: hidden; text-overflow: ellipsis; }
+  #currency-toggle button { min-width: 0; }
+
+  /* Neo: smaller hard shadows so they don't cause horizontal scroll */
+  [data-theme="neo"] .finder-step,
+  [data-theme="neo"] .hero-pick,
+  [data-theme="neo"] .alt-card,
+  [data-theme="neo"] .match-card,
+  [data-theme="neo"] .buy-block,
+  [data-theme="neo"] .batt-endurance {
+    box-shadow: 4px 4px 0 0 #000 !important;
+  }
+  [data-theme="neo"] .btn,
+  [data-theme="neo"] .shortlist-btn,
+  [data-theme="neo"] .share-btn,
+  [data-theme="neo"] .compare-open-btn,
+  [data-theme="neo"] .budget-chip,
+  [data-theme="neo"] .must-chip,
+  [data-theme="neo"] .btn-open-detail {
+    box-shadow: 3px 3px 0 0 #000 !important;
+  }
+  [data-theme="neo"] .finder-inner {
+    padding-right: calc(var(--page-pad) + 4px);
+  }
+}
+
+@media (max-width: 560px) {
+  .mode-switch button { padding: 5px 7px; }
+  .currency-toggle button { padding: 4px 5px; font-size: 11px; }
 }
 
 /* Conditional formatting cells */
@@ -2954,7 +3457,7 @@ button:disabled {
         <button type="button" data-currency="GBP" id="btn-cur-gbp">GBP £</button>
         <button type="button" data-currency="AUD" id="btn-cur-aud">AUD $</button>
       </div>
-      <button class="btn btn-ghost btn-icon" id="btn-theme" title="Toggle theme" aria-label="Toggle theme">
+      <button class="btn btn-ghost btn-icon" id="btn-theme" title="Theme: Light · click for Dark" aria-label="Cycle theme" data-theme="light">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="theme-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
       <button class="btn btn-ghost btn-icon sheet-only-hdr" id="btn-help" title="Keyboard shortcuts (?)" aria-label="Help">
@@ -17364,9 +17867,43 @@ button:disabled {
 
   /** Multi-currency price: stores { EUR, GBP, AUD } and displays the workspace currency. */
   const SUPPORTED_CURRENCIES = ["EUR", "GBP", "AUD"];
+  /** Theme provider: light (default soft UI), dark, neo (neo-brutalism). */
+  const THEMES = ["light", "dark", "neo"];
   function activeCurrencyCode() {
     const c = Store.data && Store.data.displayCurrency;
     return SUPPORTED_CURRENCIES.includes(c) ? c : "EUR";
+  }
+
+  function updateThemeButtonUI(theme) {
+    const t = THEMES.includes(theme) ? theme : "light";
+    const btn = document.getElementById("btn-theme");
+    const icon = document.getElementById("theme-icon");
+    if (!btn) return;
+    const meta = {
+      light: {
+        title: "Theme: Light · click for Dark",
+        svg: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>',
+      },
+      dark: {
+        title: "Theme: Dark · click for Neo",
+        svg: '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+      },
+      neo: {
+        title: "Theme: Neo-brutal · click for Light",
+        svg: '<polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"/>',
+      },
+    };
+    const m = meta[t] || meta.light;
+    btn.title = m.title;
+    btn.setAttribute("aria-label", m.title);
+    btn.dataset.theme = t;
+    if (icon) {
+      icon.innerHTML = m.svg;
+      icon.setAttribute("viewBox", "0 0 24 24");
+      icon.setAttribute("fill", "none");
+      icon.setAttribute("stroke", "currentColor");
+      icon.setAttribute("stroke-width", "2");
+    }
   }
 
   function formatMoney(amount, code) {
@@ -18133,9 +18670,10 @@ button:disabled {
       throw new Error("Invalid workspace JSON: expected { sheets: [...] }");
     }
     const cur = SUPPORTED_CURRENCIES.includes(parsed.displayCurrency) ? parsed.displayCurrency : "EUR";
+    const themeIn = parsed.theme || fallbackTheme || "light";
     const data = {
       version: parsed.version || 1,
-      theme: parsed.theme || fallbackTheme || "light",
+      theme: THEMES.includes(themeIn) ? themeIn : "light",
       displayCurrency: cur,
       uiMode: parsed.uiMode === "sheet" ? "sheet" : "finder",
       finder: parsed.finder && typeof parsed.finder === "object"
@@ -18656,7 +19194,7 @@ button:disabled {
     loadPrefs() {
       try {
         const p = JSON.parse(localStorage.getItem(PREFS_KEY) || "{}");
-        if (p.theme && this.data) this.data.theme = p.theme;
+        if (p.theme && this.data && THEMES.includes(p.theme)) this.data.theme = p.theme;
         if (SUPPORTED_CURRENCIES.includes(p.displayCurrency) && this.data) {
           this.data.displayCurrency = p.displayCurrency;
         }
@@ -18754,7 +19292,8 @@ button:disabled {
     },
 
     setTheme(theme) {
-      this.data.theme = theme;
+      const t = THEMES.includes(theme) ? theme : "light";
+      this.data.theme = t;
       this.applyTheme();
       this.savePrefs();
       FileBackend.markDirty();
@@ -18762,7 +19301,9 @@ button:disabled {
     },
 
     applyTheme() {
-      document.documentElement.setAttribute("data-theme", this.data?.theme || "light");
+      const t = THEMES.includes(this.data?.theme) ? this.data.theme : "light";
+      document.documentElement.setAttribute("data-theme", t);
+      updateThemeButtonUI(t);
     },
 
     /** @deprecated use FileBackend + serialize — kept for console API */
@@ -22062,7 +22603,12 @@ button:disabled {
     });
 
     document.getElementById("btn-theme").addEventListener("click", () => {
-      Store.setTheme(Store.data.theme === "dark" ? "light" : "dark");
+      const cur = Store.data.theme || "light";
+      const idx = THEMES.indexOf(cur);
+      const next = THEMES[(idx >= 0 ? idx + 1 : 1) % THEMES.length];
+      Store.setTheme(next);
+      const labels = { light: "Light", dark: "Dark", neo: "Neo-brutal" };
+      toast("Theme: " + (labels[next] || next), "info");
     });
 
     document.querySelectorAll("#currency-toggle button[data-currency]").forEach((btn) => {
@@ -22277,7 +22823,8 @@ button:disabled {
     Store,
     FileBackend,
     Finder: { metrics: FINDER_METRICS, rankLaptops, renderFinder },
-    version: "1.2.0",
+    Themes: THEMES,
+    version: "1.3.0",
   };
 
   // Boot

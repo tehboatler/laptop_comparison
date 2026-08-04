@@ -2648,9 +2648,243 @@ button:disabled {
 }
 .buy-link.kind-official .buy-region { color: var(--success); }
 
+/* Must-haves */
+.must-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.must-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+.must-chip:hover { border-color: var(--accent); color: var(--text); }
+.must-chip.active {
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.must-chip input { display: none; }
+
+/* Shortlist / compare */
+.shortlist-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 11px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.shortlist-btn:hover { border-color: var(--accent); color: var(--text); }
+.shortlist-btn.on {
+  background: color-mix(in srgb, var(--warning) 16%, var(--bg));
+  border-color: color-mix(in srgb, var(--warning) 55%, var(--border));
+  color: var(--text);
+}
+.shortlist-btn .star { font-size: 14px; line-height: 1; }
+.finder-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 14px;
+}
+.finder-toolbar .spacer { flex: 1; min-width: 8px; }
+.share-btn, .compare-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+}
+.share-btn:hover, .compare-open-btn:hover { border-color: var(--accent); }
+.compare-open-btn.has-items {
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.decision-box {
+  margin: 12px 0 14px;
+  display: grid;
+  gap: 8px;
+}
+.decision-row {
+  border-radius: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+.decision-row.buy { border-left: 3px solid var(--success); }
+.decision-row.skip { border-left: 3px solid var(--danger); }
+.decision-row.watch { border-left: 3px solid var(--warning); }
+.decision-row h5 {
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.decision-row ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text);
+}
+.checklist-box {
+  margin: 12px 0 8px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+.checklist-box h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+.checklist-box ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+.checklist-box li { margin-bottom: 4px; }
+
+/* Compare modal */
+.compare-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 450;
+  background: var(--modal-backdrop);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  animation: fadeIn 120ms ease;
+}
+.compare-sheet {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  height: 100%;
+  max-height: 100dvh;
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.compare-top {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+}
+.compare-top h2 {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 750;
+  margin: 0;
+}
+.compare-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 12px 14px 28px;
+}
+.compare-table-wrap { overflow-x: auto; }
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+  font-size: 13px;
+}
+.compare-table th, .compare-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+  text-align: left;
+}
+.compare-table th {
+  background: var(--bg-elevated);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-weight: 750;
+  font-size: 12.5px;
+}
+.compare-table th .cmp-price {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+.compare-table td.row-lab {
+  font-weight: 650;
+  color: var(--text-muted);
+  width: 7.5rem;
+  white-space: nowrap;
+  background: var(--bg);
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.compare-table .cmp-best {
+  color: var(--success);
+  font-weight: 750;
+}
+.compare-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  align-items: center;
+}
+.filtered-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
 @media (max-width: 560px) {
   .batt-grid { grid-template-columns: 1fr; }
   .buy-grid { grid-template-columns: 1fr; }
+  .compare-table { min-width: 520px; }
 }
 
 .why-better {
@@ -18457,6 +18691,7 @@ button:disabled {
       this.savePrefs();
       FileBackend.markDirty();
       this.notify();
+      try { if (typeof syncFinderUrl === "function") syncFinderUrl(); } catch { /* ignore */ }
     },
 
     subscribe(fn) { this.listeners.add(fn); return () => this.listeners.delete(fn); },
@@ -19856,6 +20091,13 @@ button:disabled {
       underBudgetOnly: false,
       useCase: null,
       proximityPct: 0.22,
+      shortlist: [],
+      musts: {
+        light: false, // max ~2.0 kg
+        battery4: false, // min ~4 h light mid
+        dualChannel: false,
+        gpu4050: false, // RTX 4050 class or better
+      },
     };
   }
 
@@ -19868,7 +20110,425 @@ button:disabled {
     if (typeof f.proximityPct !== "number") f.proximityPct = 0.22;
     if (typeof f.underBudgetOnly !== "boolean") f.underBudgetOnly = false;
     if (f.useCase === undefined) f.useCase = null;
+    if (!Array.isArray(f.shortlist)) f.shortlist = [];
+    f.shortlist = f.shortlist.filter((id) => typeof id === "string").slice(0, 3);
+    if (!f.musts || typeof f.musts !== "object") f.musts = { ...d.musts };
+    else f.musts = { ...d.musts, ...f.musts };
     return f;
+  }
+
+  const GPU_TIER = {
+    rtx3050: 1,
+    "rtx3050 6gb": 1,
+    rtx4050: 2,
+    rtx4060: 3,
+    rtx5050: 3,
+    rtx5060: 4,
+    rtx4070: 5,
+    rtx5070: 5,
+    rx7700s: 3.5,
+    apple: 0,
+    igpu: 0,
+  };
+
+  function gpuTierOf(lap) {
+    const raw = String(lap.gpu || lap.detail?.graphics?.model || lap.detail?.performance?.gpu_class || "").toLowerCase();
+    if (/m[1-4]|apple silicon|macbook/.test(raw) || /macbook|m4/i.test(lap.model || "")) return 0;
+    if (/igpu|integrated|arc-class|no discrete/.test(raw)) return 0;
+    if (/5060|5070|5080/.test(raw)) return /5070|5080/.test(raw) ? 5 : 4;
+    if (/4070|4080|4090/.test(raw)) return 5;
+    if (/4060|5050|7700/.test(raw)) return 3;
+    if (/4050/.test(raw)) return 2;
+    if (/3050/.test(raw)) return 1;
+    const cls = String(lap.detail?.performance?.gpu_class || "").toLowerCase();
+    return GPU_TIER[cls] != null ? GPU_TIER[cls] : 1;
+  }
+
+  function lightBatteryHi(lap) {
+    const web = lap.detail?.battery?.estimated_web_h;
+    const p = batteryHoursParts(web);
+    if (p && p.hi != null) return p.hi;
+    // fallback from Wh
+    const wh = Number(lap.batteryWh || lap.detail?.battery?.capacity_wh) || 0;
+    if (wh >= 90) return 7;
+    if (wh >= 70) return 6;
+    if (wh >= 60) return 5;
+    if (wh >= 50) return 4;
+    return 3;
+  }
+
+  function looksDualChannel(lap) {
+    const mem = lap.detail?.memory || {};
+    const blob = [
+      mem.installed, mem.type, mem.soldered, mem.dual_channel,
+      lap.ram, lap.pricedConfig, lap.detail?.priced_config,
+      (lap.detail?.performance?.gaming || {}).assumes,
+    ].map((x) => String(x || "").toLowerCase()).join(" ");
+    if (/single.?channel|8\s*gb\s*single|8\+0|one\s*stick/.test(blob)) return false;
+    if (/dual.?channel|2×|2x|8\s*[×x]\s*2|16\s*[×x]\s*1.*dual|so-dimm.*2|slots.:?\s*2/.test(blob)) return true;
+    if (Number(mem.slots) >= 2 && /16|32|24/.test(String(mem.installed || lap.ram || ""))) return true;
+    // Apple / soldered unified often dual/fair multi-channel
+    if (/unified|apple|lpddr/.test(blob)) return true;
+    // Default: assume dual if 16GB+ and not flagged single (honest uncertainty)
+    if (/16|32/.test(String(mem.installed || lap.ram || ""))) return true;
+    return false;
+  }
+
+  function passesMusts(lap, musts) {
+    if (!musts) return true;
+    if (musts.light && !(lap.weight != null && lap.weight <= 2.05)) return false;
+    if (musts.battery4 && lightBatteryHi(lap) < 4) return false;
+    if (musts.dualChannel && !looksDualChannel(lap)) return false;
+    if (musts.gpu4050 && gpuTierOf(lap) < 2) return false;
+    return true;
+  }
+
+  function isShortlisted(id) {
+    return ensureFinderState().shortlist.includes(id);
+  }
+
+  function toggleShortlist(id, opts = {}) {
+    const f = ensureFinderState();
+    const i = f.shortlist.indexOf(id);
+    if (i >= 0) f.shortlist.splice(i, 1);
+    else {
+      if (f.shortlist.length >= 3) {
+        if (!opts.silent) toast("Shortlist holds up to 3 laptops — remove one first", "info");
+        return false;
+      }
+      f.shortlist.push(id);
+    }
+    FileBackend.markDirty();
+    syncFinderUrl();
+    if (!opts.skipRender) {
+      renderFinder();
+      // refresh open detail if any
+      const open = document.querySelector("#detail-root .detail-sheet");
+      if (open) openLaptopDetail(id);
+    }
+    return true;
+  }
+
+  function decisionBullets(lap) {
+    const buy = [];
+    const skip = [];
+    const watch = [];
+    const g = gpuTierOf(lap);
+    const w = lap.weight;
+    const batHi = lightBatteryHi(lap);
+    const gaming = lap.metrics?.gaming ?? 5;
+    const therm = lap.metrics?.thermals ?? 5;
+    const port = lap.metrics?.portable ?? 5;
+    const d = lap.detail || {};
+
+    if (g >= 3 && gaming >= 7.5) buy.push("Strong 1080p gaming in this price band");
+    else if (g >= 2 && gaming >= 7) buy.push("Solid modern 1080p gaming on the priced GPU");
+    else if (g <= 1) buy.push("OK for esports / older titles if budget is tight");
+
+    if (batHi >= 6) buy.push(`Usable unplugged light use (~${batHi} h class upper end)`);
+    if (w != null && w <= 1.9) buy.push(`Relatively light bag laptop (~${w} kg)`);
+    if (port >= 7.5 || (d.performance?.chassis_class === "thin" && gaming >= 7)) {
+      buy.push("Thinner/cleaner chassis than full gaming bricks nearby");
+    }
+    if (looksDualChannel(lap)) buy.push("Config looks dual-channel / upgradable class (verify sticks)");
+
+    if (batHi < 4) skip.push("Weak battery — plan around outlets for school/travel days");
+    if (w != null && w >= 2.4) skip.push("Heavy chassis — better as a desk machine than daily commute");
+    if (therm <= 5.5) skip.push("Thermals/noise are average-or-worse under load");
+    if (g <= 1 && gaming < 7) skip.push("GPU class ages out of new AAA faster than a 4050/4060");
+    if (/single m\.2|sparse ports|weak colour|weak gamut|panel lottery/i.test(String(d.notes || lap.notes || ""))) {
+      skip.push("Compromises on ports, upgrade paths, or screen quality");
+    }
+
+    const tgp = String(d.graphics?.tgp_this_chassis_w || "");
+    if (/thin|~45|~50|package|not full|low tgp|40–50|45–55/i.test(tgp)) {
+      watch.push("GPU power is chassis-limited — not the same as a full-TGP desktop-replacement SKU");
+    }
+    watch.push("Confirm dual-channel RAM, exact CPU, SSD size, and GPU TGP on the product label");
+    watch.push("Prefer local VAT-included sellers for easier warranty (EU/UK)");
+    if (lap.priceMin != null && lap.priceMax != null && lap.priceMax > lap.price * 1.15) {
+      watch.push("Street price swings a lot by CPU/RAM/SSD — don’t pay list for a base config");
+    }
+
+    if (!buy.length) buy.push("Fits the budget band and your ranked priorities well enough to shortlist");
+    if (!skip.length) skip.push("No hard deal-breakers from class data — still verify the exact SKU");
+
+    return { buy: buy.slice(0, 4), skip: skip.slice(0, 4), watch: watch.slice(0, 4) };
+  }
+
+  function decisionHtml(lap) {
+    const d = decisionBullets(lap);
+    const ul = (arr) => `<ul>${arr.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>`;
+    return `<div class="decision-box">
+      <div class="decision-row buy"><h5>Buy this if</h5>${ul(d.buy)}</div>
+      <div class="decision-row skip"><h5>Skip if</h5>${ul(d.skip)}</div>
+      <div class="decision-row watch"><h5>Watch-outs</h5>${ul(d.watch)}</div>
+    </div>`;
+  }
+
+  function beforeYouBuyHtml() {
+    return `<div class="checklist-box">
+      <h4>Before you buy</h4>
+      <ul>
+        <li><strong>RAM:</strong> prefer dual-channel 16 GB (2×8) over single-stick 16 or 8 GB</li>
+        <li><strong>GPU TGP:</strong> check the label / store page — thin chassis can halve a “4060/5060”</li>
+        <li><strong>Storage:</strong> 512 GB fills fast; 1 TB is more comfortable for games</li>
+        <li><strong>Seller:</strong> Amazon/Scan/Alternate/Coolblue/local — easier returns than grey import</li>
+        <li><strong>Warranty country:</strong> buying DE/NL stock for UK use can complicate claims</li>
+        <li><strong>Returns:</strong> test thermals, keyboard, and battery in the return window</li>
+      </ul>
+    </div>`;
+  }
+
+  function shortlistBtnHtml(id) {
+    const on = isShortlisted(id);
+    return `<button type="button" class="shortlist-btn${on ? " on" : ""}" data-shortlist="${escapeHtml(id)}" title="${on ? "Remove from shortlist" : "Add to shortlist (max 3)"}">
+      <span class="star">${on ? "★" : "☆"}</span>${on ? "Shortlisted" : "Shortlist"}
+    </button>`;
+  }
+
+  function syncFinderUrl() {
+    try {
+      if (!Store.data) return;
+      const f = ensureFinderState();
+      const cur = activeCurrencyCode();
+      const params = new URLSearchParams();
+      params.set("budget", String(Math.round(f.budget)));
+      params.set("cur", cur);
+      if (f.priorities?.length) params.set("p", f.priorities.slice(0, 3).join(","));
+      if (f.useCase) params.set("uc", f.useCase);
+      if (f.underBudgetOnly) params.set("under", "1");
+      const musts = f.musts || {};
+      const mbits = [];
+      if (musts.light) mbits.push("light");
+      if (musts.battery4) mbits.push("bat4");
+      if (musts.dualChannel) mbits.push("dual");
+      if (musts.gpu4050) mbits.push("4050");
+      if (mbits.length) params.set("must", mbits.join(","));
+      if (f.shortlist?.length) params.set("sl", f.shortlist.join(","));
+      const qs = params.toString();
+      const url = `${location.pathname}${qs ? "?" + qs : ""}${location.hash || ""}`;
+      history.replaceState(null, "", url);
+    } catch { /* ignore */ }
+  }
+
+  function applyFinderFromUrl() {
+    try {
+      const params = new URLSearchParams(location.search || "");
+      if (![...params.keys()].length) return false;
+      if (!Store.data) return false;
+      const f = ensureFinderState();
+      const cur = params.get("cur");
+      if (SUPPORTED_CURRENCIES.includes(cur)) {
+        Store.data.displayCurrency = cur;
+      }
+      const budget = Number(params.get("budget"));
+      if (budget > 0) f.budget = budget;
+      const p = params.get("p");
+      if (p) {
+        f.priorities = p.split(",").map((x) => x.trim()).filter((k) => FINDER_METRICS.some((m) => m.key === k)).slice(0, 3);
+      }
+      const uc = params.get("uc");
+      if (uc && USE_CASES.some((u) => u.id === uc)) f.useCase = uc;
+      f.underBudgetOnly = params.get("under") === "1";
+      const must = (params.get("must") || "").split(",").map((x) => x.trim()).filter(Boolean);
+      f.musts = {
+        light: must.includes("light"),
+        battery4: must.includes("bat4"),
+        dualChannel: must.includes("dual"),
+        gpu4050: must.includes("4050"),
+      };
+      const sl = params.get("sl");
+      if (sl) f.shortlist = sl.split(",").map((x) => x.trim()).filter(Boolean).slice(0, 3);
+      const openId = params.get("id");
+      return { openId };
+    } catch {
+      return false;
+    }
+  }
+
+  function shareFinderLink() {
+    syncFinderUrl();
+    const url = location.href.split("#")[0];
+    const done = () => toast("Link copied — share your budget, filters & shortlist", "success");
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(done).catch(() => {
+        prompt("Copy this link:", url);
+      });
+    } else {
+      prompt("Copy this link:", url);
+    }
+  }
+
+  function fpsForCompare(lap, gameName) {
+    const games = lap.detail?.performance?.gaming?.games || lap.performance?.gaming?.games || [];
+    const g = games.find((x) => String(x.name || "").toLowerCase().includes(gameName.toLowerCase()));
+    return g && g.fps != null ? Number(g.fps) : null;
+  }
+
+  function closeCompare() {
+    document.getElementById("compare-root")?.remove();
+  }
+
+  function openCompare() {
+    const f = ensureFinderState();
+    const currency = activeCurrencyCode();
+    const all = laptopRecords();
+    const ids = f.shortlist.slice();
+    // If shortlist empty, use hero + alts from rank
+    let laps = ids.map((id) => all.find((l) => l.id === id)).filter(Boolean);
+    if (!laps.length) {
+      const ranked = rankLaptops();
+      laps = [ranked.hero, ranked.cheaper, ranked.stronger].filter(Boolean);
+      // dedupe
+      const seen = new Set();
+      laps = laps.filter((l) => {
+        if (seen.has(l.id)) return false;
+        seen.add(l.id);
+        return true;
+      }).slice(0, 3);
+    }
+    let root = document.getElementById("compare-root");
+    if (!root) {
+      root = document.createElement("div");
+      root.id = "compare-root";
+      document.body.appendChild(root);
+    }
+    if (!laps.length) {
+      root.innerHTML = `<div class="compare-backdrop" id="compare-backdrop">
+        <div class="compare-sheet">
+          <div class="compare-top">
+            <h2>Compare</h2>
+            <button type="button" class="btn btn-ghost btn-sm" id="compare-close">Close</button>
+          </div>
+          <div class="compare-body"><div class="compare-empty">
+            <p>Shortlist up to 3 laptops with ★, then open Compare.</p>
+            <p style="margin-top:10px;font-size:13px">Or set a budget so we can load the current top picks.</p>
+          </div></div>
+        </div>
+      </div>`;
+    } else {
+      const rows = [
+        ["Price", (l) => formatMoney(l.price, currency)],
+        ["Priced config", (l) => l.pricedConfig || "—"],
+        ["GPU", (l) => l.gpu || "—"],
+        ["TGP this chassis", (l) => l.detail?.graphics?.tgp_this_chassis_w || "—"],
+        ["CPU", (l) => l.cpu || l.detail?.processor?.model || "—"],
+        ["Weight", (l) => (l.weight != null ? l.weight + " kg" : "—")],
+        ["Battery pack", (l) => {
+          const wh = l.batteryWh || l.detail?.battery?.capacity_wh;
+          return wh != null ? wh + " Wh" : "—";
+        }],
+        ["Light use", (l) => {
+          const p = batteryHoursParts(l.detail?.battery?.estimated_web_h);
+          return p ? p.text + " h" : "—";
+        }],
+        ["Gaming unplugged", (l) => {
+          const raw = l.detail?.battery?.estimated_game_h;
+          const p = batteryHoursParts(raw);
+          return p && /^\d/.test(String(raw || "")) ? p.text + " h" : String(raw || "—");
+        }],
+        ["Cyberpunk (est.)", (l) => {
+          const fps = fpsForCompare(l, "Cyberpunk");
+          return fps != null ? fps + " fps" : "—";
+        }],
+        ["Valorant (est.)", (l) => {
+          const fps = fpsForCompare(l, "Valorant");
+          return fps != null ? fps + " fps" : "—";
+        }],
+        ["Gaming score", (l) => (l.metrics?.gaming != null ? l.metrics.gaming.toFixed(1) : "—")],
+        ["Battery score", (l) => (l.metrics?.battery != null ? l.metrics.battery.toFixed(1) : "—")],
+        ["Portable score", (l) => (l.metrics?.portable != null ? l.metrics.portable.toFixed(1) : "—")],
+        ["Noise load", (l) => l.detail?.performance?.thermals?.load_dba || "—"],
+        ["Dual-channel?", (l) => (looksDualChannel(l) ? "Likely / verify" : "Risk — check")],
+      ];
+
+      // mark best numeric in each row when possible
+      const head = laps.map((l) => {
+        const on = isShortlisted(l.id);
+        return `<th>
+          ${escapeHtml(l.model)}
+          <span class="cmp-price">${escapeHtml(formatMoney(l.price, currency))}</span>
+          <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">
+            <button type="button" class="shortlist-btn${on ? " on" : ""} btn-sm" data-shortlist="${escapeHtml(l.id)}"><span class="star">${on ? "★" : "☆"}</span></button>
+            <button type="button" class="btn btn-ghost btn-sm" data-open-detail="${escapeHtml(l.id)}" style="border:1px solid var(--border);border-radius:8px;padding:6px 8px;font-size:12px">Details</button>
+          </div>
+        </th>`;
+      }).join("");
+
+      const body = rows.map(([lab, fn]) => {
+        const vals = laps.map((l) => fn(l));
+        // best: lowest price, highest fps/scores, lowest weight
+        let bestIdx = -1;
+        if (/price/i.test(lab)) {
+          const nums = laps.map((l) => l.price);
+          const min = Math.min(...nums);
+          bestIdx = nums.indexOf(min);
+        } else if (/weight/i.test(lab)) {
+          const nums = laps.map((l) => l.weight);
+          if (nums.every((n) => n != null)) bestIdx = nums.indexOf(Math.min(...nums));
+        } else if (/score|fps|light use|cyberpunk|valorant|battery pack/i.test(lab)) {
+          const nums = vals.map((v) => {
+            const m = String(v).match(/(\d+(?:\.\d+)?)/);
+            return m ? parseFloat(m[1]) : NaN;
+          });
+          if (nums.some((n) => !isNaN(n))) {
+            let best = -Infinity, bi = -1;
+            nums.forEach((n, i) => { if (!isNaN(n) && n > best) { best = n; bi = i; } });
+            bestIdx = bi;
+          }
+        }
+        return `<tr>
+          <td class="row-lab">${escapeHtml(lab)}</td>
+          ${vals.map((v, i) => `<td class="${i === bestIdx ? "cmp-best" : ""}">${escapeHtml(String(v))}</td>`).join("")}
+        </tr>`;
+      }).join("");
+
+      root.innerHTML = `<div class="compare-backdrop" id="compare-backdrop">
+        <div class="compare-sheet" role="dialog" aria-modal="true" aria-label="Compare laptops">
+          <div class="compare-top">
+            <h2>Compare · ${laps.length} laptop${laps.length > 1 ? "s" : ""}</h2>
+            <button type="button" class="share-btn" id="compare-share">Copy share link</button>
+            <button type="button" class="btn btn-ghost btn-sm" id="compare-close">Close</button>
+          </div>
+          <div class="compare-body">
+            <p class="detail-note" style="margin:0 0 12px">Green cells mark the stronger value in that row (where comparable). Shortlist is saved in the shareable URL.</p>
+            <div class="compare-table-wrap">
+              <table class="compare-table">
+                <thead><tr><th></th>${head}</tr></thead>
+                <tbody>${body}</tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    root.querySelector("#compare-close")?.addEventListener("click", closeCompare);
+    root.querySelector("#compare-backdrop")?.addEventListener("click", (e) => {
+      if (e.target.id === "compare-backdrop") closeCompare();
+    });
+    root.querySelector("#compare-share")?.addEventListener("click", shareFinderLink);
+    root.querySelectorAll("[data-shortlist]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleShortlist(btn.dataset.shortlist, { skipRender: true });
+        openCompare();
+      });
+    });
+    root.querySelectorAll("[data-open-detail]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        closeCompare();
+        openLaptopDetail(btn.dataset.openDetail);
+      });
+    });
+    document.addEventListener("keydown", function esc(e) {
+      if (e.key === "Escape") {
+        closeCompare();
+        document.removeEventListener("keydown", esc);
+      }
+    });
   }
 
   function getLaptopSheet() {
@@ -20350,10 +21010,14 @@ button:disabled {
                   ${d.os ? `<span>${escapeHtml(d.os)}</span>` : ""}
                 </div>
                 ${batteryEnduranceHtml(bat)}
+                ${decisionHtml(lap)}
+                ${beforeYouBuyHtml()}
                 ${buyLinksHtml(d)}
                 <p class="why-better">${escapeHtml(plainWhy(lap, ensureFinderState().priorities, ensureFinderState().budget, currency))}</p>
                 <ul class="hero-bullets">${heroBullets(lap, ensureFinderState().priorities).map((b) => `<li>${escapeHtml(b)}</li>`).join("")}</ul>
-                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
+                <div class="hero-actions">
+                  ${shortlistBtnHtml(lap.id)}
+                  <button type="button" class="compare-open-btn${isShortlisted(lap.id) || ensureFinderState().shortlist.length ? " has-items" : ""}" data-open-compare="1">Compare shortlist</button>
                   <button type="button" class="btn-open-detail" data-goto-tab="play">See game FPS →</button>
                   <button type="button" class="btn btn-ghost btn-sm" data-goto-tab="review" style="border:1px solid var(--border);border-radius:10px;padding:9px 12px">Watch review</button>
                 </div>
@@ -20404,6 +21068,20 @@ button:disabled {
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
         activateTab(btn.dataset.gotoTab);
+      });
+    });
+    root.querySelectorAll("[data-shortlist]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleShortlist(btn.dataset.shortlist);
+      });
+    });
+    root.querySelectorAll("[data-open-compare]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        // ensure current laptop is shortlisted if shortlist empty
+        if (!ensureFinderState().shortlist.length) toggleShortlist(lap.id, { skipRender: true, silent: true });
+        openCompare();
       });
     });
     root.querySelectorAll("#detail-thumbs button").forEach((btn) => {
@@ -20590,7 +21268,11 @@ button:disabled {
     const sumW = rawW.reduce((a, b) => a + b, 0);
     const weights = rawW.map((w) => w / sumW);
 
-    const all = laptopRecords();
+    const allRaw = laptopRecords();
+    const musts = f.musts || {};
+    const hasMust = !!(musts.light || musts.battery4 || musts.dualChannel || musts.gpu4050);
+    const all = hasMust ? allRaw.filter((lap) => passesMusts(lap, musts)) : allRaw;
+    const filteredOut = allRaw.length - all.length;
     const scored = all.map((lap) => {
       let feature = 0;
       const breakdown = [];
@@ -20668,7 +21350,10 @@ button:disabled {
       lo: underOnly ? Math.min(...(primary.map((p) => p.price).concat([budget * 0.5]))) : budget * (1 - prox),
       hi: underOnly ? budget : budget * (1 + prox),
       budget,
-      allCount: all.length,
+      allCount: allRaw.length,
+      matchCount: all.length,
+      filteredOut,
+      hasMust,
       bandCount: primary.length,
       underOnly,
       priorities,
@@ -20697,6 +21382,7 @@ button:disabled {
     const scrollTop = scroller ? scroller.scrollTop : 0;
     Object.assign(f, patch);
     FileBackend.markDirty();
+    syncFinderUrl();
     renderFinder();
     const scroller2 = document.querySelector(".finder-view");
     if (scroller2) scroller2.scrollTop = scrollTop;
@@ -20759,15 +21445,15 @@ button:disabled {
       resultsHtml = `<div class="finder-empty"><h3>No laptop list yet</h3><p>Switch to <strong>Edit data</strong> and load a data file with a Laptops sheet.</p></div>`;
     } else if (!ranked.list.length) {
       resultsHtml = `<div class="finder-empty">
-        <h3>Nothing in this range</h3>
-        <p>${f.underBudgetOnly ? "Try turning off “Under budget only”, or raise your budget." : "Try another price, or drag the slider."}
-br>${ranked.allCount} laptop(s) in your list.</p>
+        <h3>Nothing matches</h3>
+        <p>${ranked.hasMust ? "Try turning off a must-have filter, or " : ""}${f.underBudgetOnly ? "turn off “Under budget only”, or raise your budget." : "try another price / drag the slider."}<br>${ranked.matchCount} after filters · ${ranked.allCount} in catalog.</p>
       </div>`;
     } else {
       const hero = ranked.hero;
       if (hero) {
         const bullets = heroBullets(hero, ranked.priorities).map((b) => `<li>${escapeHtml(b)}</li>`).join("");
         const why = plainWhy(hero, ranked.priorities, budget, currency);
+        const dec = decisionBullets(hero);
         resultsHtml += `
           <article class="hero-pick" data-laptop-id="${escapeHtml(hero.id)}" role="button" tabindex="0">
             <div class="hero-img-wrap">${imgHtml(hero.image)}</div>
@@ -20781,7 +21467,10 @@ br>${ranked.allCount} laptop(s) in your list.</p>
               ${hero.pricedConfig ? `<p class="detail-note" style="margin:0 0 6px;font-size:12px"><strong>This pick is the:</strong> ${escapeHtml(hero.pricedConfig)}</p>` : ""}
               ${hero.priceMin != null && hero.priceMax != null ? `<p class="detail-note" style="margin:0 0 8px;font-size:12px">Nearby street for similar configs of this GPU: ${escapeHtml(formatMoney(hero.priceMin, currency))} – ${escapeHtml(formatMoney(hero.priceMax, currency))} (not a higher RAM/1TB/top SKU unless listed above)</p>` : ""}
               ${batteryEnduranceHtml((hero.detail || {}).battery || {}, { compact: true })}
-              <p class="detail-note" style="margin:0 0 10px;font-size:12px">Tap for <strong>Where to buy (EU/UK)</strong> — Geizhals, Scan, Amazon, Coolblue…</p>
+              <div class="decision-box" style="margin-top:10px">
+                <div class="decision-row buy"><h5>Buy this if</h5><ul>${dec.buy.slice(0, 2).map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul></div>
+                <div class="decision-row skip"><h5>Skip if</h5><ul>${dec.skip.slice(0, 2).map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul></div>
+              </div>
               <p class="why-better">${escapeHtml(why)}</p>
               <ul class="hero-bullets">${bullets}</ul>
               <div class="hero-specs">
@@ -20790,10 +21479,13 @@ br>${ranked.allCount} laptop(s) in your list.</p>
                 ${hero.ram ? `<span>${escapeHtml(hero.ram)}</span>` : ""}
                 ${hero.weight != null ? `<span>${hero.weight} kg</span>` : ""}
               </div>
-              <button type="button" class="btn-open-detail">Full breakdown · FPS · review →</button>
+              <div class="hero-actions">
+                ${shortlistBtnHtml(hero.id)}
+                <button type="button" class="btn-open-detail">Full breakdown · FPS · buy links →</button>
+              </div>
             </div>
           </article>`;
-      }
+      }      }
 
       const alts = [];
       if (ranked.cheaper) {
@@ -20822,6 +21514,7 @@ br>${ranked.allCount} laptop(s) in your list.</p>
               ${batteryEnduranceHtml((a.lap.detail || {}).battery || {}, { compact: true })}
               ${a.lap.priceMin != null ? `<div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">Similar SKUs ${escapeHtml(formatMoney(a.lap.priceMin, currency))}–${escapeHtml(formatMoney(a.lap.priceMax, currency))}</div>` : ""}
               <p class="alt-why">${escapeHtml(a.why)}</p>
+              <div style="margin-top:8px" onclick="event.stopPropagation()">${shortlistBtnHtml(a.lap.id)}</div>
               <p class="tap-hint">Tap for full specs →</p>
             </div>
           </article>`).join("")}</div>`;
@@ -20851,6 +21544,7 @@ br>${ranked.allCount} laptop(s) in your list.</p>
               ${batteryEnduranceHtml((lap.detail || {}).battery || {}, { compact: true })}
               <div class="match-bars">${bars}</div>
               <p class="match-why" style="border:none;padding-top:8px">${escapeHtml(plainWhy(lap, ranked.priorities, budget, currency))}</p>
+              <div style="margin-top:6px" onclick="event.stopPropagation()">${shortlistBtnHtml(lap.id)}</div>
               <p class="tap-hint">Tap for full specs →</p>
             </div>
             <div class="match-side">
@@ -20872,20 +21566,37 @@ br>${ranked.allCount} laptop(s) in your list.</p>
       const m = FINDER_METRICS.find((x) => x.key === k);
       return m ? `${i + 1}. ${m.label}` : k;
     });
+    const musts = f.musts || {};
+    const mustActive = [musts.light && "≤2 kg", musts.battery4 && "≥4 h light", musts.dualChannel && "Dual-channel", musts.gpu4050 && "RTX 4050+"].filter(Boolean);
     const stickyPills = [
       `<span class="st-pill">${escapeHtml(formatMoney(budget, currency))}</span>`,
       f.underBudgetOnly ? `<span class="st-pill muted">Under only</span>` : "",
       ...prioLabels.map((l) => `<span class="st-pill muted">${escapeHtml(l)}</span>`),
+      ...mustActive.map((l) => `<span class="st-pill muted">${escapeHtml(l)}</span>`),
+      f.shortlist?.length ? `<span class="st-pill">${f.shortlist.length} shortlisted</span>` : "",
     ].filter(Boolean).join("");
 
     const step1Done = !!f.useCase || f.priorities?.length;
     const step2Done = budget > 0;
     const step3Done = (f.priorities || []).length > 0;
+    const step4Done = mustActive.length > 0;
+    const slCount = (f.shortlist || []).length;
+
+    const mustHtml = [
+      { key: "light", label: "Under ~2 kg", sub: "portable bag" },
+      { key: "battery4", label: "≥ ~4 h light use", sub: "not Tiny pack" },
+      { key: "dualChannel", label: "Dual-channel RAM", sub: "avoid 8 GB traps" },
+      { key: "gpu4050", label: "RTX 4050 or better", sub: "skip 3050 class" },
+    ].map((m) =>
+      `<button type="button" class="must-chip${musts[m.key] ? " active" : ""}" data-must="${m.key}" title="${escapeHtml(m.sub)}">
+        ${escapeHtml(m.label)}
+      </button>`
+    ).join("");
 
     root.innerHTML = `
       <div class="finder-hero">
         <h1>Find a laptop that fits you</h1>
-        <p>Pick a budget and what you care about. We rank options near that price — tap any result for specs, game FPS, heat/noise, and a video review.</p>
+        <p>Set budget, priorities, and hard must-haves. Shortlist up to 3 to compare side-by-side — share a link with your exact settings.</p>
       </div>
 
       <div class="finder-sticky" id="finder-sticky">
@@ -20938,15 +21649,31 @@ br>${ranked.allCount} laptop(s) in your list.</p>
         <p class="priority-order">${orderText}</p>
       </section>
 
+      <section class="finder-step" id="step-musts">
+        <div class="finder-step-label">
+          <span class="finder-step-num${step4Done ? " done" : ""}">${step4Done ? "✓" : "4"}</span>
+          <h2>Must-haves</h2>
+          <span class="hint">Hard filters · optional</span>
+        </div>
+        <div class="must-grid">${mustHtml}</div>
+        ${ranked.filteredOut ? `<p class="filtered-count">Hiding ${ranked.filteredOut} laptop${ranked.filteredOut === 1 ? "" : "s"} that fail must-haves</p>` : ""}
+      </section>
+
       <div class="finder-results-block" id="finder-results-anchor">
         <div class="finder-results-head">
           <h2>Our pick for you</h2>
-          <span class="count">${ranked.bandCount} in range · ${ranked.allCount} total · tap a card for details</span>
+          <span class="count">${ranked.bandCount} in range · ${ranked.matchCount} after filters · ${ranked.allCount} total</span>
+        </div>
+        <div class="finder-toolbar">
+          <button type="button" class="compare-open-btn${slCount ? " has-items" : ""}" id="btn-open-compare">Compare${slCount ? ` (${slCount})` : ""}</button>
+          <button type="button" class="share-btn" id="btn-share-finder">Copy share link</button>
+          <span class="spacer"></span>
+          <span style="font-size:12px;color:var(--text-muted)">${slCount ? `${slCount}/3 shortlisted` : "★ shortlist up to 3 to compare"}</span>
         </div>
         <div id="finder-results">${resultsHtml}</div>
       </div>
       <p class="finder-footer-note">
-        Estimates only — verify street prices and SKU TGP before buying. Maintain the catalog under <strong>Edit data</strong>.
+        Estimates only — verify street prices, dual-channel RAM, and GPU TGP before buying. Share links keep budget, filters, and shortlist.
       </p>
     `;
 
@@ -21010,18 +21737,55 @@ br>${ranked.allCount} laptop(s) in your list.</p>
       });
     });
 
+    root.querySelectorAll("[data-must]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.must;
+        const f2 = ensureFinderState();
+        const next = { ...(f2.musts || {}) };
+        next[key] = !next[key];
+        persistFinder({ musts: next });
+      });
+    });
+
+    root.querySelector("#btn-share-finder")?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      shareFinderLink();
+    });
+    root.querySelector("#btn-open-compare")?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openCompare();
+    });
+
+    root.querySelectorAll("[data-shortlist]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        toggleShortlist(btn.dataset.shortlist);
+      });
+    });
+
     // Open full spec sheet
     const openFromEl = (el) => {
       const id = el.getAttribute("data-laptop-id");
       if (id) openLaptopDetail(id);
     };
     root.querySelectorAll("[data-laptop-id]").forEach((el) => {
-      el.addEventListener("click", () => openFromEl(el));
+      el.addEventListener("click", (e) => {
+        if (e.target.closest("[data-shortlist], .shortlist-btn, .btn-open-detail")) return;
+        openFromEl(el);
+      });
       el.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           openFromEl(el);
         }
+      });
+    });
+    root.querySelectorAll(".btn-open-detail").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const card = btn.closest("[data-laptop-id]");
+        if (card) openFromEl(card);
       });
     });
   }
@@ -21520,14 +22284,21 @@ br>${ranked.allCount} laptop(s) in your list.</p>
   bindEvents();
   Store.subscribe(renderApp);
   Store.init().then(() => {
+    const fromUrl = applyFinderFromUrl();
+    updateCurrencyToggleUI();
     renderApp();
     updateFileStatusUI();
+    syncFinderUrl();
+    if (fromUrl && fromUrl.openId) {
+      setTimeout(() => openLaptopDetail(fromUrl.openId), 80);
+    }
   }).catch((err) => {
     console.error(err);
     Store.data = createWorkspace();
     FileBackend.source = "memory";
     FileBackend.dirty = true;
     Store.applyTheme();
+    applyFinderFromUrl();
     renderApp();
     updateFileStatusUI();
     toast("Started with empty workspace", "info");

@@ -22,18 +22,35 @@ There is **no free universal API** for “every EU laptop, perfect specs, live p
 
 | Source | Type | What you get | Access |
 |--------|------|--------------|--------|
-| **Amazon Product Advertising API 5.0** | Official Amazon | Price, title, EAN, availability text, image for **ASINs you map** | Associates account + PA-API approval |
-| **Idealo Partner API** | Official Idealo | For **merchants pushing their own offers** — not reading the market | Merchant contract |
-| **Geizhals** | No free public read API | Commercial partners / PriceAPI-style products | Paid |
-| **Brand sites** | No unified API | Manual / search links | — |
-| **Buy-link compare URLs** | Always on | Live stock when the user clicks | Free (what shoppers need) |
+| **metoda Price API** (priceapi.com) | **Recommended** commercial data API | Multi-shop prices from Amazon, Google Shopping, Idealo, Geizhals, etc. by **GTIN/EAN, ASIN, or search term** | Free trial credits, then paid plans |
+| **Amazon PA-API 5.0** | Official Amazon only | Perfect for mapped **ASINs** | Associates + approval (harder) |
+| **Idealo Partner API** | Merchant push API | Not for reading competitor markets | Merchant contract |
+| **Buy-link compare URLs** | Always free | Live stock when user clicks | Built into the app |
+
+### metoda Price API (best fit for this project)
+Same product as **priceapi.com** — branded **metoda Price API**:
+https://www.metoda.com/en/services/priceapi · https://www.priceapi.com/
+
+**Why prefer it over Amazon Associates:**
+- Signup is a normal SaaS trial (token in minutes), not affiliate approval hell  
+- One API covers **UK + DE** shops and comparison sites  
+- Query by **GTIN/EAN** (best), ASIN, or free-text term  
+- Returns multi-offer street prices → great for “is this buyable / what’s the floor?”
+
+**Setup:**
+```bash
+copy .env.example .env
+# PRICEAPI_TOKEN=your_token_here
+# PRICEAPI_COUNTRY=gb
+# PRICEAPI_SOURCE=google_shopping   # or amazon | idealo | geizhals
+# PRICEAPI_MAX=15                   # credits per sync
+npm run catalog:sync
+```
 
 **Practical perfect mapping path:**
-1. Map each catalog id → **ASIN (UK/DE)** and/or **EAN** + **MPN** in `sku_registry.json`
-2. Run `npm run catalog:sync` with Amazon keys → prices + EAN backfill
-3. Specs (TGP, dual-channel, battery Wh) still come from **reviews / product pages you verify once** — APIs rarely expose laptop TGP cleanly
-
-Copy `.env.example` → `.env` and fill Amazon keys when ready.
+1. Fill **EAN/GTIN** (best) or ASIN in `tools/sku_registry.json`
+2. `npm run catalog:sync` with `PRICEAPI_TOKEN` → min price + offer count  
+3. Specs (TGP, dual-channel, chassis) still verified once from reviews/product pages — price APIs don’t replace that
 
 ### Perfect SKU mapping workflow
 1. `npm run catalog:sync` (generates research queue)

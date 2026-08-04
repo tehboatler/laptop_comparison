@@ -27408,26 +27408,26 @@
             },
             "col_gpu": "rtx5050",
             "col_cpu": "Intel Core i5-13450HX",
-            "col_display": "SKU-dependent",
-            "col_ram": "16GB",
+            "col_display": "15.6-inch FHD (1920x1080) IPS, 144Hz",
+            "col_ram": "16GB DDR5, likely dual-channel in 2x8GB configs; some retail units may ship as 1x16GB depending on region/listing",
             "col_battery": 60,
-            "col_weight": 2.2,
-            "col_s_gaming": 7.8,
-            "col_s_gpu": 7.6,
-            "col_s_cpu": 7.6,
+            "col_weight": 2.4,
+            "col_s_gaming": 7,
+            "col_s_gpu": 7,
+            "col_s_cpu": 6,
             "col_s_battery": 5,
-            "col_s_thermals": 6,
-            "col_s_display": 6.5,
+            "col_s_thermals": 7,
+            "col_s_display": 6,
             "col_s_ram": 7,
             "col_s_io": 7,
             "col_s_port": 6,
-            "col_s_build": 6.5,
+            "col_s_build": 5,
             "col_s_aesthetic": 6,
             "col_status": "draft",
-            "col_notes": "Idealo aggregates UK pricing from multiple sellers with a best price of £998.98 and lists this exact LOQ 15IRX10 RTX 5050 config; not enough evidence for a real Amazon UK ASIN URL. [AUTO-DRAFT via Sonar discover — confirm ASIN page & price before promoting.]",
+            "col_notes": "The RTX 5050 implementation in LOQ 15IRX10 is documented at 100W with 8GB GDDR7. Battery is 60Wh on this family, and reviewed/retail units are around 2.4kg. Dual-channel memory is not guaranteed from the listing alone; many market listings describe 16GB without confirming 2x8GB, so treat dual-channel as likely but not universally verified. This is a plastic-bodied gaming laptop, so build quality is functional rather than premium.",
             "col_url": "",
             "col_image": "",
-            "col_config": "i5-13450HX · RTX 5050 · 16GB · 1TB SSD",
+            "col_config": "Midrange 15.6-inch gaming laptop with i5-13450HX, RTX 5050 100W, 16GB RAM and 1TB SSD; strong 1080p value, but not a premium chassis.",
             "col_price_note": "Price from discovery search — re-sync with GTIN for street floor.",
             "col_price_eur_min": 1055,
             "col_price_eur_max": 1415,
@@ -27444,7 +27444,7 @@
               "price_gbp": 999,
               "price_aud": 1978,
               "price_note": "AUTO-DRAFT price",
-              "priced_config": "i5-13450HX · RTX 5050 · 16GB · 1TB SSD",
+              "priced_config": "Midrange 15.6-inch gaming laptop with i5-13450HX, RTX 5050 100W, 16GB RAM and 1TB SSD; strong 1080p value, but not a premium chassis.",
               "auto_draft": true,
               "auto_draft_source": "Lenovo LOQ 15 RTX 5050 UK price",
               "auto_draft_title": "LOQ 15IRX10 Gaming Laptop",
@@ -27473,21 +27473,21 @@
                 "aspect": "16:9"
               },
               "processor": {
-                "model": "SKU-dependent (auto-draft)",
+                "model": "Intel Core i5-13450HX",
                 "family": "verify"
               },
               "graphics": {
-                "model": "NVIDIA GeForce RTX 5050 Laptop GPU",
+                "model": "NVIDIA GeForce RTX 5050 Laptop GPU (8GB GDDR7)",
                 "vram_gb": 8,
-                "tgp_this_chassis_w": "≈75–115 W class"
+                "tgp_this_chassis_w": "100W"
               },
               "memory": {
-                "installed": "16GB class (verify dual-channel)",
+                "installed": "16GB DDR5, likely dual-channel in 2x8GB configs; some retail units may ship as 1x16GB depending on region/listing",
                 "type": "DDR5 typical",
                 "slots": 2
               },
               "storage": {
-                "primary": "512GB–1TB NVMe (verify)",
+                "primary": "1TB PCIe NVMe SSD",
                 "expandable": "Often yes"
               },
               "battery": {
@@ -27495,8 +27495,8 @@
                 "estimated_web_h": "verify"
               },
               "chassis": {
-                "weight_kg": 2.2,
-                "material": "verify",
+                "weight_kg": 2.4,
+                "material": "Plastic shell with Lenovo LOQ gaming design",
                 "grade": "plastic",
                 "grade_label": "verify"
               },
@@ -27630,7 +27630,43 @@
                 "official_url": "",
                 "search_query": "Lenovo LOQ 15 RTX 5050 UK price",
                 "last_sync": null,
-                "amazon_snapshot": null
+                "amazon_snapshot": null,
+                "sonar_id_candidates": {
+                  "asin_uk": null,
+                  "asin_de": null,
+                  "ean": "00198156206954",
+                  "mpn": "83JE",
+                  "amazon_uk_url": null,
+                  "amazon_de_url": null,
+                  "ids_confidence": "medium",
+                  "ids_note": "The provided EAN was not independently validated against an Amazon product URL in the available results. No real Amazon UK/DE product URL matching this exact config was found, so ASINs were left null."
+                },
+                "sonar_ids_at": "2026-08-04T15:35:55.831Z"
+              },
+              "sonar": {
+                "model": "sonar",
+                "confidence": "high",
+                "sources_note": "Chassis/GPU/battery/weight/spec family details were taken from Lenovo PSREF, Lenovo product pages, and retail/product listings for LOQ 15IRX10 RTX 5050 configs; TGP was corroborated by Lenovo PSREF and retailer copy.",
+                "citations": [
+                  "https://www.play.pl/dlaciebie/produkty/lenovo/lenovo-loq-15irx10-rtx5050",
+                  "https://www.newegg.com/lenovo-15-6-fhd-nvidia-geforce-rtx-5050-64gb-memory-4-tb-pcie-ssd-grey/p/1TS-000E-1DDG0",
+                  "https://www.lenovo.com/us/en/p/laptops/loq-laptops/loq-15-series/lenovo-loq-15irx10/len101q0011",
+                  "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15IRX10/LOQ_15IRX10_Spec.pdf",
+                  "https://www.youtube.com/watch?v=ZyvVeEJsTcU",
+                  "https://www.lenovo.com/us/en/p/laptops/loq-laptops/loq-15-series/lenovo-loq-15irx10/83je0013us",
+                  "https://www.youtube.com/watch?v=K_Hk52eHq-A",
+                  "https://www.sumashtech.com/product/lenovo-loq-15irx10-core-i7-13th-gen-rtx-5050-156-144hz-gaming-laptop",
+                  "https://marketplace.nvidia.com/es-mx/consumer/gaming-laptops/laptop-gamer-lenovo-loq-15irx10-15-6-1920x1080-full-hd-intel-core-i5-13450hx-nvidia-geforce-rtx-5050-24gb-512gb-ssd-windows-11-home-ingl-s/",
+                  "https://www.gadgets360.com/laptops/news/lenovo-loq-nvidia-geforce-rtx-50-series-gpu-price-india-launch-specifications-9040533",
+                  "https://www.gadgetbytenepal.com/product/lenovo-loq-15-15irx10-intel-i5-13450hx-rtx-5050/",
+                  "https://www.reddit.com/r/Lenovo/comments/1nyv8zy/lenovo_loq_15irx10_unbiased_review_still_the_best/"
+                ],
+                "enriched_at": "2026-08-04T15:35:55.831Z",
+                "price_left_alone": false,
+                "ids_only": false,
+                "ids_filled": [],
+                "ids_confidence": "medium",
+                "ids_note": "The provided EAN was not independently validated against an Amazon product URL in the available results. No real Amazon UK/DE product URL matching this exact config was found, so ASINs were left null."
               }
             },
             "col_chassis_grade": "plastic"

@@ -1375,7 +1375,8 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:23:05.225Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:35:55.831Z"
     },
     "lap_auto_asus_rtx5060_asus_tuf_gaming_a15_9c7d2f": {
       "model": "ASUS TUF Gaming A15",

@@ -24617,20 +24617,36 @@ button:disabled {
   }
 
   function buyLinksHtml(d) {
-    const links = Array.isArray(d.buy_links) ? d.buy_links : [];
+    const links = Array.isArray(d.buy_links) ? d.buy_links.slice() : [];
     if (!links.length && !d.buy_guide) return "";
-    const cards = links.slice(0, 10).map((l) => {
+    const rank = (l) => (l.kind === "compare" ? 0 : l.kind === "official" ? 1 : 2);
+    links.sort((a, b) => rank(a) - rank(b));
+    const compare = links.filter((l) => l.kind === "compare");
+    const rest = links.filter((l) => l.kind !== "compare");
+    const card = (l) => {
       const kind = l.kind || "shop";
       return `<a class="buy-link kind-${escapeHtml(kind)}" href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer">
-        <span class="buy-region">${escapeHtml(l.region || "")}</span>
+        <span class="buy-region">${escapeHtml(l.region || "")}${kind === "compare" ? " · live stock" : ""}</span>
         <span class="buy-name">${escapeHtml(l.label || l.retailer || "Shop")}</span>
         ${l.note ? `<span class="buy-note">${escapeHtml(l.note)}</span>` : ""}
       </a>`;
-    }).join("");
+    };
     return `<div class="buy-block">
-      <h4>Where to buy · EU / UK</h4>
-      ${d.buy_guide ? `<p class="buy-guide">${escapeHtml(d.buy_guide)}</p>` : `<p class="buy-guide">Compare live prices — listings change weekly. Prefer local VAT + warranty sellers.</p>`}
-      <div class="buy-grid">${cards}</div>
+      <h4>Live stock &amp; prices · EU / UK</h4>
+      <p class="buy-guide">${escapeHtml(
+        d.buy_guide ||
+          "Start with a comparison engine (live stock), then open a VAT-local shop. Listings change weekly."
+      )}</p>
+      ${
+        compare.length
+          ? `<p class="buy-guide" style="margin:0 0 8px;font-weight:750">1 · Who’s selling it right now</p><div class="buy-grid">${compare.map(card).join("")}</div>`
+          : ""
+      }
+      ${
+        rest.length
+          ? `<p class="buy-guide" style="margin:12px 0 8px;font-weight:750">2 · Brand store &amp; major shops</p><div class="buy-grid">${rest.slice(0, 10).map(card).join("")}</div>`
+          : ""
+      }
     </div>`;
   }
 

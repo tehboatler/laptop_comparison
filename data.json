@@ -203,6 +203,36 @@
           "config": {}
         },
         {
+          "id": "col_chassis_grade",
+          "name": "Chassis grade",
+          "type": "select",
+          "width": 120,
+          "config": {
+            "options": [
+              {
+                "id": "plastic",
+                "label": "Plastic",
+                "color": "#6b7280"
+              },
+              {
+                "id": "hybrid",
+                "label": "Hybrid (metal lid)",
+                "color": "#3b6cf0"
+              },
+              {
+                "id": "metal",
+                "label": "Metal",
+                "color": "#2a9d5c"
+              },
+              {
+                "id": "premium",
+                "label": "Premium metal",
+                "color": "#8b5cf6"
+              }
+            ]
+          }
+        },
+        {
           "id": "col_s_gaming",
           "name": "Gaming",
           "type": "number",
@@ -530,7 +560,9 @@
                 "material": "Aluminum lid, polycarbonate base",
                 "color": "Cosmos Gray",
                 "keyboard": "Single-zone white backlight, ~1.7 mm travel class",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Aluminum lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 (2×2)",
@@ -820,7 +852,8 @@
             "col_price_aud_min": 1199,
             "col_price_aud_max": 1699,
             "col_price_gbp_min": 649,
-            "col_price_gbp_max": 899
+            "col_price_gbp_max": 899,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -929,7 +962,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -1218,7 +1253,8 @@
             "col_price_aud_min": 849,
             "col_price_aud_max": 1249,
             "col_price_gbp_min": 449,
-            "col_price_gbp_max": 649
+            "col_price_gbp_max": 649,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -1328,7 +1364,9 @@
                 "material": "Plastic chassis, matte black",
                 "color": "Black",
                 "keyboard": "ErgoSense, 1.5–1.7 mm class, Turbo Blue backlight",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 (2×2)",
@@ -1624,7 +1662,8 @@
             "col_price_aud_min": 1399,
             "col_price_aud_max": 1899,
             "col_price_gbp_min": 749,
-            "col_price_gbp_max": 999
+            "col_price_gbp_max": 999,
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -1733,7 +1772,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -2029,7 +2070,8 @@
             "col_price_aud_min": 1899,
             "col_price_aud_max": 2699,
             "col_price_gbp_min": 999,
-            "col_price_gbp_max": 1349
+            "col_price_gbp_max": 1349,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -2138,7 +2180,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -2408,7 +2452,8 @@
             "col_price_aud_min": 1399,
             "col_price_aud_max": 1899,
             "col_price_gbp_min": 679,
-            "col_price_gbp_max": 949
+            "col_price_gbp_max": 949,
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -2517,7 +2562,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -2787,7 +2834,8 @@
             "col_price_aud_min": 1699,
             "col_price_aud_max": 2299,
             "col_price_gbp_min": 849,
-            "col_price_gbp_max": 1199
+            "col_price_gbp_max": 1199,
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -2896,7 +2944,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body (MIL-STD)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -3164,7 +3214,8 @@
             "col_price_aud_min": 1499,
             "col_price_aud_max": 2149,
             "col_price_gbp_min": 799,
-            "col_price_gbp_max": 1149
+            "col_price_gbp_max": 1149,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -3273,7 +3324,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -3545,7 +3598,8 @@
             "col_price_aud_min": 1099,
             "col_price_aud_max": 1599,
             "col_price_gbp_min": 579,
-            "col_price_gbp_max": 849
+            "col_price_gbp_max": 849,
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -3654,7 +3708,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -3924,7 +3980,8 @@
             "col_price_aud_min": 1199,
             "col_price_aud_max": 1699,
             "col_price_gbp_min": 619,
-            "col_price_gbp_max": 899
+            "col_price_gbp_max": 899,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -4033,7 +4090,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -4305,7 +4364,8 @@
             "col_price_aud_min": 1299,
             "col_price_aud_max": 1849,
             "col_price_gbp_min": 669,
-            "col_price_gbp_max": 949
+            "col_price_gbp_max": 949,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -4414,7 +4474,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -4686,7 +4748,8 @@
             "col_price_aud_min": 1199,
             "col_price_aud_max": 1699,
             "col_price_gbp_min": 619,
-            "col_price_gbp_max": 899
+            "col_price_gbp_max": 899,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -4795,7 +4858,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -5067,7 +5132,8 @@
             "col_price_aud_min": 1599,
             "col_price_aud_max": 2299,
             "col_price_gbp_min": 849,
-            "col_price_gbp_max": 1199
+            "col_price_gbp_max": 1199,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -5176,7 +5242,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -5446,7 +5514,8 @@
             "col_price_aud_min": 1899,
             "col_price_aud_max": 2699,
             "col_price_gbp_min": 999,
-            "col_price_gbp_max": 1399
+            "col_price_gbp_max": 1399,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -5555,7 +5624,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -5825,7 +5896,8 @@
             "col_price_aud_min": 899,
             "col_price_aud_max": 1349,
             "col_price_gbp_min": 449,
-            "col_price_gbp_max": 649
+            "col_price_gbp_max": 649,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -5934,7 +6006,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body (MIL-STD)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -6216,7 +6290,8 @@
             "col_price_aud_min": 1699,
             "col_price_aud_max": 2399,
             "col_price_gbp_min": 899,
-            "col_price_gbp_max": 1249
+            "col_price_gbp_max": 1249,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -6325,7 +6400,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "premium",
+                "grade_label": "CNC aluminum"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -6623,7 +6700,8 @@
             "col_price_aud_min": 2299,
             "col_price_aud_max": 3299,
             "col_price_gbp_min": 1299,
-            "col_price_gbp_max": 1849
+            "col_price_gbp_max": 1849,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -6732,7 +6810,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -7004,7 +7084,8 @@
             "col_price_aud_min": 1349,
             "col_price_aud_max": 1899,
             "col_price_gbp_min": 699,
-            "col_price_gbp_max": 999
+            "col_price_gbp_max": 999,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -7113,7 +7194,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -7383,7 +7466,8 @@
             "col_price_aud_min": 1899,
             "col_price_aud_max": 2699,
             "col_price_gbp_min": 999,
-            "col_price_gbp_max": 1449
+            "col_price_gbp_max": 1449,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -7492,7 +7576,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -7774,7 +7860,8 @@
             "col_price_aud_min": 1799,
             "col_price_aud_max": 2499,
             "col_price_gbp_min": 969,
-            "col_price_gbp_max": 1349
+            "col_price_gbp_max": 1349,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -7883,7 +7970,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -8155,7 +8244,8 @@
             "col_price_aud_min": 1099,
             "col_price_aud_max": 1599,
             "col_price_gbp_min": 579,
-            "col_price_gbp_max": 849
+            "col_price_gbp_max": 849,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -8264,7 +8354,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -8543,7 +8635,8 @@
             "col_price_aud_min": 1499,
             "col_price_aud_max": 2149,
             "col_price_gbp_min": 799,
-            "col_price_gbp_max": 1149
+            "col_price_gbp_max": 1149,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -8652,7 +8745,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -8924,7 +9019,8 @@
             "col_price_aud_min": 1899,
             "col_price_aud_max": 2699,
             "col_price_gbp_min": 1049,
-            "col_price_gbp_max": 1449
+            "col_price_gbp_max": 1449,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -9033,7 +9129,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -9305,7 +9403,8 @@
             "col_price_aud_min": 1899,
             "col_price_aud_max": 2799,
             "col_price_gbp_min": 1049,
-            "col_price_gbp_max": 1449
+            "col_price_gbp_max": 1449,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -9413,7 +9512,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -9683,7 +9784,8 @@
             "col_price_aud_min": 999,
             "col_price_aud_max": 1499,
             "col_price_gbp_min": 529,
-            "col_price_gbp_max": 749
+            "col_price_gbp_max": 749,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -9791,7 +9893,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -10079,7 +10183,8 @@
             "col_price_aud_min": 1249,
             "col_price_aud_max": 1699,
             "col_price_gbp_min": 649,
-            "col_price_gbp_max": 849
+            "col_price_gbp_max": 849,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -10188,7 +10293,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -10458,7 +10565,8 @@
             "col_price_aud_min": 1349,
             "col_price_aud_max": 1899,
             "col_price_gbp_min": 699,
-            "col_price_gbp_max": 999
+            "col_price_gbp_max": 999,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -10567,7 +10675,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -10848,7 +10958,8 @@
             "col_price_aud_min": 1499,
             "col_price_aud_max": 1999,
             "col_price_gbp_min": 799,
-            "col_price_gbp_max": 1049
+            "col_price_gbp_max": 1049,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -10957,7 +11068,9 @@
                 "material": "Plastic chassis (metal lid on some SKUs)",
                 "color": "Black / gray",
                 "keyboard": "Backlit chiclet keyboard",
-                "touchpad": "Precision multi-touch (size varies)"
+                "touchpad": "Precision multi-touch (size varies)",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic base"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6",
@@ -11227,7 +11340,8 @@
             "col_price_aud_min": 1799,
             "col_price_aud_max": 2499,
             "col_price_gbp_min": 929,
-            "col_price_gbp_max": 1299
+            "col_price_gbp_max": 1299,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -11323,7 +11437,9 @@
                 "material": "CNC aluminum unibody",
                 "color": "Black",
                 "keyboard": "Razer Chroma per-key (can set static/minimal)",
-                "touchpad": "Large glass precision pad"
+                "touchpad": "Large glass precision pad",
+                "grade": "premium",
+                "grade_label": "CNC aluminum unibody"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E/7 (SKU)",
@@ -11596,7 +11712,8 @@
             "col_price_aud_min": 2499,
             "col_price_aud_max": 3599,
             "col_price_gbp_min": 1399,
-            "col_price_gbp_max": 1949
+            "col_price_gbp_max": 1949,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -11690,7 +11807,9 @@
                 "material": "Aluminum CNC, magnesium alloy",
                 "color": "Eclipse Gray / Black",
                 "keyboard": "Per-key RGB (can disable)",
-                "touchpad": "Large glass"
+                "touchpad": "Large glass",
+                "grade": "premium",
+                "grade_label": "CNC aluminum / magnesium"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E/7",
@@ -11985,7 +12104,8 @@
             "col_price_aud_min": 2799,
             "col_price_aud_max": 3999,
             "col_price_gbp_min": 1549,
-            "col_price_gbp_max": 2199
+            "col_price_gbp_max": 2199,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -12079,7 +12199,9 @@
                 "material": "Aluminum / magnesium",
                 "color": "Stellar Gray",
                 "keyboard": "White / per-key RGB (can keep white)",
-                "touchpad": "Large precision"
+                "touchpad": "Large precision",
+                "grade": "premium",
+                "grade_label": "Aluminum thin chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E/7",
@@ -12357,7 +12479,8 @@
             "col_price_aud_min": 2499,
             "col_price_aud_max": 3499,
             "col_price_gbp_min": 1399,
-            "col_price_gbp_max": 1949
+            "col_price_gbp_max": 1949,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -12451,7 +12574,9 @@
                 "material": "Aluminum",
                 "color": "Tidal Teal / Luna Grey",
                 "keyboard": "Backlit chiclet, low profile",
-                "touchpad": "Glass large"
+                "touchpad": "Glass large",
+                "grade": "premium",
+                "grade_label": "Aluminum / premium thin"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E/7",
@@ -12726,7 +12851,8 @@
             "col_price_aud_min": 2599,
             "col_price_aud_max": 3699,
             "col_price_gbp_min": 1399,
-            "col_price_gbp_max": 1999
+            "col_price_gbp_max": 1999,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -12820,7 +12946,9 @@
                 "material": "Aluminum",
                 "color": "Nano Black",
                 "keyboard": "Backlit, optional ASUS Dial",
-                "touchpad": "Glass"
+                "touchpad": "Glass",
+                "grade": "premium",
+                "grade_label": "Aluminum creator chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E/7",
@@ -13105,7 +13233,8 @@
             "col_price_aud_min": 2799,
             "col_price_aud_max": 4199,
             "col_price_gbp_min": 1649,
-            "col_price_gbp_max": 2299
+            "col_price_gbp_max": 2299,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -13200,7 +13329,9 @@
                 "material": "Aluminum / carbon fiber variants",
                 "color": "Platinum / Graphite",
                 "keyboard": "InfinityEdge chiclet",
-                "touchpad": "Large haptic / precision"
+                "touchpad": "Large haptic / precision",
+                "grade": "premium",
+                "grade_label": "Aluminum CNC"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E/7",
@@ -13472,7 +13603,8 @@
             "col_price_aud_min": 2299,
             "col_price_aud_max": 3399,
             "col_price_gbp_min": 1299,
-            "col_price_gbp_max": 1849
+            "col_price_gbp_max": 1849,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -13567,7 +13699,9 @@
                 "material": "CNC aluminum",
                 "color": "Eclipse Gray",
                 "keyboard": "Excellent chiclet",
-                "touchpad": "Large glass"
+                "touchpad": "Large glass",
+                "grade": "premium",
+                "grade_label": "Aluminum premium thin"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 7",
@@ -13851,7 +13985,8 @@
             "col_price_aud_min": 1999,
             "col_price_aud_max": 3199,
             "col_price_gbp_min": 1099,
-            "col_price_gbp_max": 1649
+            "col_price_gbp_max": 1649,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -13947,7 +14082,9 @@
                 "material": "Aluminum unibody",
                 "color": "Space Black / Silver",
                 "keyboard": "Magic Keyboard",
-                "touchpad": "Force Touch large"
+                "touchpad": "Force Touch large",
+                "grade": "premium",
+                "grade_label": "Aluminum unibody"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E",
@@ -14220,7 +14357,8 @@
             "col_price_aud_min": 2299,
             "col_price_aud_max": 3099,
             "col_price_gbp_min": 1449,
-            "col_price_gbp_max": 1999
+            "col_price_gbp_max": 1999,
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -14314,7 +14452,9 @@
                 "material": "Metal lid + reinforced plastic",
                 "color": "Gray / Jaeger Gray",
                 "keyboard": "RGB (can set static white)",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · tough plastic body"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6E",
@@ -14600,7 +14740,8 @@
             "col_price_aud_min": 2099,
             "col_price_aud_max": 2899,
             "col_price_gbp_min": 1149,
-            "col_price_gbp_max": 1549
+            "col_price_gbp_max": 1549,
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -14695,7 +14836,9 @@
                 "material": "Aluminum + repair-friendly design",
                 "color": "Silver / DIY",
                 "keyboard": "Hot-swappable input modules",
-                "touchpad": "Input module"
+                "touchpad": "Input module",
+                "grade": "metal",
+                "grade_label": "Aluminum · modular/repairable"
               },
               "connectivity": {
                 "wifi": "User card (Wi-Fi 6E typical)",
@@ -14958,7 +15101,8 @@
             "col_price_aud_min": 2399,
             "col_price_aud_max": 3699,
             "col_price_gbp_min": 1349,
-            "col_price_gbp_max": 1999
+            "col_price_gbp_max": 1999,
+            "col_chassis_grade": "metal"
           }
         },
         {
@@ -15095,7 +15239,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -15309,7 +15455,8 @@
               ],
               "youtube_search_query": "Lenovo LOQ 15 (RTX 5060, 2025–26) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20LOQ%2015%20(RTX%205060%2C%202025%E2%80%9326)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -15446,7 +15593,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -15654,7 +15803,8 @@
               ],
               "youtube_search_query": "Lenovo LOQ 15 (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20LOQ%2015%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -15791,7 +15941,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body (MIL-STD)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -16005,7 +16157,8 @@
               ],
               "youtube_search_query": "ASUS TUF A15 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20TUF%20A15%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -16142,7 +16295,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -16356,7 +16511,8 @@
               ],
               "youtube_search_query": "Acer Nitro V 15 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Acer%20Nitro%20V%2015%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -16493,7 +16649,9 @@
                 "material": "Thin plastic/metal mix",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "hybrid",
+                "grade_label": "Hybrid metal/plastic"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -16701,7 +16859,8 @@
               ],
               "youtube_search_query": "MSI Thin 15 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=MSI%20Thin%2015%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -16838,7 +16997,9 @@
                 "material": "Thin plastic/metal mix",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "premium",
+                "grade_label": "CNC aluminum"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -17052,7 +17213,8 @@
               ],
               "youtube_search_query": "ASUS ROG Zephyrus G14 (2025, RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20ROG%20Zephyrus%20G14%20(2025%2C%20RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "premium"
           }
         },
         {
@@ -17189,7 +17351,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -17401,7 +17565,8 @@
               "images": [],
               "youtube_search_query": "HP Victus 15 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=HP%20Victus%2015%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -17538,7 +17703,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -17750,7 +17917,8 @@
               "images": [],
               "youtube_search_query": "Lenovo Legion 5 15 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20Legion%205%2015%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -17887,7 +18055,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body (MIL-STD)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -18099,7 +18269,8 @@
               "images": [],
               "youtube_search_query": "ASUS TUF Gaming F16 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20TUF%20Gaming%20F16%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -18236,7 +18407,9 @@
                 "material": "Plastic gaming chassis",
                 "color": "Black / grey",
                 "keyboard": "Backlit chiclet",
-                "touchpad": "Precision multi-touch"
+                "touchpad": "Precision multi-touch",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6 / 6E class",
@@ -18448,7 +18621,8 @@
               "images": [],
               "youtube_search_query": "MSI Crosshair / Sword 16 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=MSI%20Crosshair%20%2F%20Sword%2016%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -18585,7 +18759,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -18791,7 +18967,8 @@
               "images": [],
               "youtube_search_query": "Lenovo LOQ 17 (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20LOQ%2017%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -18928,7 +19105,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body (MIL-STD)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -19134,7 +19313,8 @@
               "images": [],
               "youtube_search_query": "ASUS TUF Gaming A16 (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20TUF%20Gaming%20A16%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -19271,7 +19451,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body (MIL-STD)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -19477,7 +19659,8 @@
               "images": [],
               "youtube_search_query": "ASUS TUF Gaming A16 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20TUF%20Gaming%20A16%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -19614,7 +19797,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body (MIL-STD)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -19820,7 +20005,8 @@
               "images": [],
               "youtube_search_query": "ASUS TUF Gaming F16 (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20TUF%20Gaming%20F16%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -19957,7 +20143,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -20163,7 +20351,8 @@
               "images": [],
               "youtube_search_query": "Acer Nitro V 16 AI (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Acer%20Nitro%20V%2016%20AI%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -20300,7 +20489,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -20506,7 +20697,8 @@
               "images": [],
               "youtube_search_query": "MSI Katana 15 HX (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=MSI%20Katana%2015%20HX%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -20643,7 +20835,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -20849,7 +21043,8 @@
               "images": [],
               "youtube_search_query": "MSI Cyborg A15 (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=MSI%20Cyborg%20A15%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -20986,7 +21181,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -21192,7 +21389,8 @@
               "images": [],
               "youtube_search_query": "Gigabyte G6 / A16 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Gigabyte%20G6%20%2F%20A16%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -21329,7 +21527,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "hybrid",
+                "grade_label": "Metal lid · plastic body"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -21535,7 +21735,8 @@
               "images": [],
               "youtube_search_query": "Lenovo Legion Pro 5 16 (RTX 5070) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20Legion%20Pro%205%2016%20(RTX%205070)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -21672,7 +21873,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic (reinforced gaming)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -21878,7 +22081,8 @@
               "images": [],
               "youtube_search_query": "HP Omen 16 (RTX 5070) review",
               "youtube_search": "https://www.youtube.com/results?search_query=HP%20Omen%2016%20(RTX%205070)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -22015,7 +22219,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "hybrid",
+                "grade_label": "Aluminum lid · premium plastics"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -22221,7 +22427,8 @@
               "images": [],
               "youtube_search_query": "Alienware 16 / 16X (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Alienware%2016%20%2F%2016X%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "hybrid"
           }
         },
         {
@@ -22358,7 +22565,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming (reinforced)"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -22564,7 +22773,8 @@
               "images": [],
               "youtube_search_query": "ASUS ROG Strix G16 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20ROG%20Strix%20G16%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -22701,7 +22911,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -22907,7 +23119,8 @@
               "images": [],
               "youtube_search_query": "ASUS V16 V3607 (RTX 5050) review",
               "youtube_search": "https://www.youtube.com/results?search_query=ASUS%20V16%20V3607%20(RTX%205050)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -23044,7 +23257,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -23250,7 +23465,8 @@
               "images": [],
               "youtube_search_query": "HP Victus 16 (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=HP%20Victus%2016%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         },
         {
@@ -23387,7 +23603,9 @@
                 "material": "Plastic gaming",
                 "color": "Black/grey",
                 "keyboard": "Backlit",
-                "touchpad": "Precision"
+                "touchpad": "Precision",
+                "grade": "plastic",
+                "grade_label": "Plastic gaming chassis"
               },
               "connectivity": {
                 "wifi": "Wi-Fi 6/6E/7 class",
@@ -23593,7 +23811,8 @@
               "images": [],
               "youtube_search_query": "Lenovo LOQ 15 AMD (RTX 5060) review",
               "youtube_search": "https://www.youtube.com/results?search_query=Lenovo%20LOQ%2015%20AMD%20(RTX%205060)%20review"
-            }
+            },
+            "col_chassis_grade": "plastic"
           }
         }
       ]

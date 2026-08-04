@@ -47,10 +47,21 @@ copy .env.example .env
 npm run catalog:sync
 ```
 
+**Important (gotcha):**  
+For `google_shopping` + `product_and_offers`, metoda only accepts keys **`gtin`** and **`id`** — **not** free-text `term`.  
+So without EANs in `sku_registry.json`, the API correctly returns 400.  
+
+| Source | Keys that work for product+offers |
+|--------|-----------------------------------|
+| `google_shopping` | `gtin`, `id` |
+| `amazon` | `asin`, `gtin`, `id` |
+| `geizhals` / `idealo` | typically `gtin`, `id` (varies) |
+
 **Practical perfect mapping path:**
-1. Fill **EAN/GTIN** (best) or ASIN in `tools/sku_registry.json`
-2. `npm run catalog:sync` with `PRICEAPI_TOKEN` → min price + offer count  
-3. Specs (TGP, dual-channel, chassis) still verified once from reviews/product pages — price APIs don’t replace that
+1. Fill **EAN/GTIN** (best) in `tools/sku_registry.json` — from Geizhals product page / Amazon details / barcode  
+2. Or fill **ASIN** and set `PRICEAPI_SOURCE=amazon`  
+3. `npm run catalog:sync` → min price + offer count  
+4. Specs (TGP, dual-channel, chassis) still verified once from reviews — price APIs don’t replace that
 
 ### Perfect SKU mapping workflow
 1. `npm run catalog:sync` (generates research queue)

@@ -264,8 +264,28 @@ function toCsv(rows) {
 }
 
 /**
- * metoda Price API enrichment — better multi-shop path than Amazon PA-API alone.
- * Priority keys: EAN/GTIN > ASIN > search term
+ * Allowed lookup keys by source (product_and_offers).
+ * google_shopping (esp. gb) only accepts gtin/id — NOT free-text "term".
+ * See metoda "Available Sources" + API error detail.
+ */
+const PRICEAPI_SOURCE_KEYS = {
+  google_shopping: ["gtin", "id"],
+  amazon: ["asin", "gtin", "id"],
+  idealo: ["gtin", "id"],
+  geizhals: ["gtin", "id", "mpn"],
+  billiger: ["gtin", "id"],
+  pricerunner: ["gtin", "id"],
+  skinflint: ["gtin", "id"],
+  ebay: ["gtin", "id"],
+};
+
+function allowedKeysForSource(source) {
+  return PRICEAPI_SOURCE_KEYS[source] || ["gtin", "id"];
+}
+
+/**
+ * metoda Price API enrichment
+ * Priority: EAN/GTIN > ASIN (amazon source) — free-text search is NOT reliable on many sources
  */
 async function enrichPriceApi(reg) {
   if (!hasPriceApiKey()) {
@@ -275,42 +295,89 @@ async function enrichPriceApi(reg) {
     return { fetched: 0, errors: [] };
   }
 
-  const source = (process.env.PRICEAPI_SOURCE || "google_shopping").toLowerCase();
+  let source = (process.env.PRICEAPI_SOURCE || "google_shopping").toLowerCase();
   const country = (process.env.PRICEAPI_COUNTRY || "gb").toLowerCase();
   const maxPerRun = Math.min(
     50,
     Math.max(1, parseInt(process.env.PRICEAPI_MAX || "15", 10) || 15)
   );
+  const allowed = allowedKeysForSource(source);
 
-  // Build work list: prefer EAN, then ASIN, then search term
+  // Build work list only with keys this source accepts
   const work = [];
+  let skippedNoId = 0;
   for (const [id, e] of Object.entries(reg.entries)) {
     if (e._orphan) continue;
-    if (e.ean) work.push({ id, key: "gtin", value: e.ean });
-    else if (e.asin?.uk || e.asin?.de) {
-      const asin = e.asin.uk || e.asin.de;
-      // Amazon source uses asin key; google/idealo often use term
-      if (source === "amazon") work.push({ id, key: "asin", value: asin });
-      else work.push({ id, key: "term", value: e.search_query || e.model || asin });
-    } else if (e.search_query || e.model) {
-      work.push({ id, key: "term", value: e.search_query || e.model });
+    if (e.ean && allowed.includes("gtin")) {
+      work.push({ id, key: "gtin", value: String(e.ean).replace(/\s/g, "") });
+      continue;
+    }
+    const asin = (e.asin?.uk || e.asin?.de || "").trim();
+    if (asin && allowed.includes("asin")) {
+      work.push({ id, key: "asin", value: asin });
+      continue;
+    }
+    if (e.mpn && allowed.includes("mpn")) {
+      work.push({ id, key: "mpn", value: String(e.mpn).trim() });
+      continue;
+    }
+    if (e.geizhals_id && allowed.includes("id")) {
+      work.push({ id, key: "id", value: String(e.geizhals_id).trim() });
+      continue;
+    }
+    skippedNoId++;
+  }
+
+  // If user picked google_shopping but has ASINs not EANs, auto-switch those to amazon
+  if (!work.length && source === "google_shopping") {
+    const asinWork = [];
+    for (const [id, e] of Object.entries(reg.entries)) {
+      if (e._orphan) continue;
+      const asin = (e.asin?.uk || e.asin?.de || "").trim();
+      if (asin) asinWork.push({ id, key: "asin", value: asin });
+    }
+    if (asinWork.length) {
+      source = "amazon";
+      work.push(...asinWork);
+      console.log(
+        "\nmetoda Price API: no GTINs for google_shopping — auto-using source=amazon with ASINs"
+      );
     }
   }
 
   const batch = work.slice(0, maxPerRun);
   if (!batch.length) {
-    console.log("metoda Price API: nothing to query");
-    return { fetched: 0, errors: [] };
+    console.log("\nmetoda Price API: nothing to query with valid keys.");
+    console.log(
+      `  Source "${source}" only accepts: ${allowedKeysForSource(source).join(", ")}`
+    );
+    console.log(
+      `  ${skippedNoId} catalog rows have no EAN/GTIN (and no usable ASIN for this source).`
+    );
+    console.log("  Fix: open tools/out/research_queue.csv → find product → paste EAN into");
+    console.log('       tools/sku_registry.json → entries.<id>.ean = "0194…"');
+    console.log("  Then: npm run catalog:sync");
+    console.log("  Tip: EAN is on Geizhals product pages / Amazon product details / box barcode.");
+    return {
+      fetched: 0,
+      errors: [
+        "no_valid_identifiers: fill ean (gtin) in sku_registry.json for google_shopping",
+      ],
+    };
   }
 
   console.log(
     `\nmetoda Price API: ${batch.length} item(s) via ${source}/${country} (cap ${maxPerRun})…`
   );
+  if (skippedNoId) {
+    console.log(
+      `  (skipped ${skippedNoId} rows without EAN/ASIN/MPN usable for this source)`
+    );
+  }
 
   const errors = [];
   let fetched = 0;
 
-  // Group by key type for fewer jobs
   const byKey = new Map();
   for (const w of batch) {
     if (!byKey.has(w.key)) byKey.set(w.key, []);
@@ -337,8 +404,6 @@ async function enrichPriceApi(reg) {
         `  ✓ job ${jobId}: products=${summary.products} min=${summary.currency || ""} ${summary.min_price ?? "?"} offers=${summary.offer_count ?? 0}`
       );
 
-      // Attach same job summary to each requested id (term matching is fuzzy)
-      // Better: try to match by value if results include query
       const resultList = Array.isArray(results)
         ? results
         : results?.results || results?.data || [];
@@ -356,18 +421,24 @@ async function enrichPriceApi(reg) {
                 p.gtins,
                 p.value,
                 p.query,
+                p.id,
               ]
                 .flat()
                 .filter(Boolean)
                 .map(String);
-              return ids.some((x) => x.includes(String(item.value)));
+              const v = String(item.value);
+              return ids.some((x) => x === v || x.includes(v) || v.includes(x));
             }) || null;
         }
+        // 1:1 when single value job, or when count matches values length and order preserved
+        if (!matched && Array.isArray(resultList) && resultList.length === items.length) {
+          matched = resultList[items.indexOf(item)] || null;
+        }
         const localSummary = matched
-          ? summarizeResults([matched], {
-              currencyHint: summary.currency,
-            })
-          : summary;
+          ? summarizeResults([matched], { currencyHint: summary.currency })
+          : items.length === 1
+            ? summary
+            : { products: 0, min_price: null, currency: summary.currency, offer_count: 0 };
 
         reg.entries[item.id].priceapi_snapshot = {
           source,
@@ -379,11 +450,17 @@ async function enrichPriceApi(reg) {
           fetched_at: new Date().toISOString(),
         };
         reg.entries[item.id].last_sync = new Date().toISOString();
-        fetched++;
+        if (localSummary.min_price != null) fetched++;
+        else if (matched || items.length === 1) fetched++;
       }
     } catch (err) {
       errors.push(`${key}: ${err.message}`);
       console.warn("  ✗", err.message);
+      if (/Allowed values/i.test(err.message)) {
+        console.warn(
+          "  → This source does not accept that key. Use EAN (gtin) in sku_registry.json."
+        );
+      }
     }
   }
 

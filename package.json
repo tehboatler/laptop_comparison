@@ -12,13 +12,17 @@
     "catalog:sonar:discover": "node tools/sonar_discover.js",
     "catalog:sonar:discover:dry": "node tools/sonar_discover.js --dry-run",
     "catalog:sync": "node tools/sync_catalog.js",
+    "catalog:hygiene": "node tools/catalog_hygiene.js",
     "catalog:resolve": "node tools/resolve_identifiers.js",
     "catalog:discover": "node tools/discover_laptops.js",
     "catalog:discover:apply": "node tools/discover_laptops.js --apply",
     "catalog:validate": "node tools/validate_catalog.js",
     "catalog:chassis": "node tools/normalize_chassis.js",
     "catalog:buys": "node tools/refresh_buy_links.js",
-    "catalog:embed": "node tools/embed_data.js"
+    "catalog:embed": "node tools/embed_data.js",
+    "recon:server": "node tools/recon_server.js",
+    "test:recon": "node tools/test_recon_guard.js",
+    "test:recon-images": "node tools/test_recon_images.js"
   },
   "engines": {
     "node": ">=18"

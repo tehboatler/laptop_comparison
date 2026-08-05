@@ -32,10 +32,8 @@ const {
 } = require("./lib/catalog_utils");
 const { hasSonarKey, sonarChat, sonarDelayMs } = require("./lib/sonar");
 const { pickRetailIds, hasRetailIds, normalizeAsin, normalizeEan } = require("./lib/sku_ids");
-const { runNodeSync } = (() => {
-  // lazy optional: not needed
-  return {};
-})();
+const { ensurePerfTemplate, ensureImageFromAsin } = require("./lib/perf_templates");
+const hygiene = require("./catalog_hygiene");
 
 loadDotEnv();
 
@@ -451,14 +449,26 @@ async function main() {
         });
 
         if (apply) {
+          // Skip if ASIN already in catalog (hard dedupe at insert time)
+          const a = cand.asin_uk || cand.asin_de;
+          if (a && sigs.asins.has(String(a).toUpperCase())) {
+            console.log(`  · skip existing ASIN ${a}`);
+            report.skipped.push({ model: cand.model, reason: "asin_exists" });
+            continue;
+          }
           const res = applyCandidate(cand, data, reg, sigs);
           if (res.applied) {
+            // Immediate fill: FPS template + ASIN image
+            const row = laptopSheet(data).rows.find((r) => r.id === res.id);
+            if (row) {
+              ensureImageFromAsin(row);
+              ensurePerfTemplate(row);
+            }
             console.log(
-              `  + draft ${res.id}${res.listingChecked ? " (price listing-checked via Sonar)" : ""}`
+              `  + draft ${res.id}${res.listingChecked ? " (price sonar-checked)" : ""}`
             );
             report.applied.push(res);
             existingNames.push(cand.model);
-            // persist as we go
             saveJson(dataPath, data);
             saveJson(regPath, reg);
           } else {
@@ -477,16 +487,23 @@ async function main() {
     }
   }
 
+  // Automatic hygiene after batch (dedupe, promote, templates)
+  if (apply && report.applied.length) {
+    console.log("\n→ catalog hygiene (dedupe / promote / templates)…");
+    try {
+      hygiene.main();
+    } catch (e) {
+      console.warn("  hygiene:", e.message);
+    }
+  }
+
   report.candidates = allCandidates;
   saveJson(path.join(outDir, "sonar_discover.json"), report);
 
   console.log(`\nDone. candidates=${allCandidates.length} applied=${report.applied.length} skipped=${report.skipped.length}`);
   console.log(`Report: tools/out/sonar_discover.json`);
   if (apply && report.applied.length) {
-    console.log("\nNext:");
-    console.log("  npm run catalog:sync          # buy links + embed");
-    console.log("  npm run catalog:sonar -- unenriched --max all   # optional deeper specs");
-    console.log("  Open drafts in app → promote col_status when happy");
+    console.log("\nNext: npm run catalog:sync  (buy links + embed — hygiene already ran)");
   } else if (!apply) {
     console.log("Dry-run only. Re-run without --dry-run (or with --apply) to add drafts.");
   }

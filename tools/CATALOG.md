@@ -4,7 +4,25 @@ Keep this **simple and free**. Paid price APIs are optional and off by default.
 
 ## The only workflow you need
 
-### A) Fully automated (Sonar — if you accept the API cost)
+### In-page deep recon (add / refresh one model)
+
+1. Terminal: `npm run recon:server` (uses `PERPLEXITY_API_KEY` from `.env`)
+2. Open the finder → **＋ Recon model** (or **↻ Refresh recon** on a detail page)
+3. **Name the SKU, not just the family.** Multi-config lines (Legion 5i, LOQ, TUF, Victus, …) need at least **GPU** in the query:
+   - Good: `Legion 5i Gen 10 15 UK RTX 5060 16GB i7-13650HX`
+   - Bad: `Legion 5i Gen 10` (blocked — many different products share that title)
+4. Leave **Deep research** checked (default) — 3 Sonar passes (~30–90s)
+5. Matching is by **config fingerprint** (GPU + CPU + RAM), not marketing title:
+   - Same config → **upgrade** that row  
+   - Same family, different GPU/RAM → **add new row** (no silent merge)  
+   - **Always add as new row** checkbox forces a split  
+6. Rows are renamed to `Family · RTX 5060 · CPU · 16GB` so cards stay distinct  
+7. Cards show **config chips** (GPU · CPU · RAM) + reliability  
+8. Browser overlay auto-saves recon (no hard refresh); optional Save for git/`data.json`
+
+Uncheck deep for a faster listings-only pass. Browser API key is optional fallback (quick only).
+
+### A) Fully automated batch (Sonar CLI)
 
 ```
 1. DISCOVER     Sonar finds sellable EU/UK configs
@@ -44,8 +62,23 @@ npm run catalog:sync
 ```bash
 npm run catalog:sonar:ids           # fill missing ASIN/EAN on current rows
 npm run catalog:sonar:unenriched    # specs for rows never Sonar'd
-npm run catalog:sync
+npm run catalog:sync                # always runs auto-hygiene
 ```
+
+### Automatic quality (every sync / after discover)
+
+`catalog_hygiene.js` runs automatically. **Default keeps discover work visible:**
+
+1. Restores rows wrongly buried by older “no ASIN → pass” hygiene  
+2. Scrubs fake/placeholder ASINs  
+3. Dedupes only **true ASIN collisions** (same B0… → keep best row)  
+4. Fills Amazon image from ASIN when missing  
+5. Fills class FPS / thermal templates when empty  
+6. **Auto-promotes priced discover drafts → `consider`** (ASIN optional; flags `needs_retail_id`)  
+
+Soft title-dedupe and “hide if no ASIN” are **off** unless `HYGIENE_STRICT=1`.
+
+Finder ranks **`top` | `consider` | `alt`** (not `draft` / `pass`).
 
 **Retail IDs from Sonar:** filled into `sku_map` + `sku_registry` when confidence is medium/high and the ASIN looks like `B0…` / EAN has a valid length. They are **not** marked listing-checked (`price_verified`) until you open the Amazon page yourself.
 
@@ -100,7 +133,13 @@ You open **one** Amazon (or Geizhals) page for the **exact** config → copy the
 - Buy links include Amazon for that ASIN when possible
 - Sonar **will not overwrite** a verified price
 
-There is no free multi-shop live floor. Users still check Geizhals/Idealo via buy links.
+There is no free multi-shop live floor. Buy links follow an **Ireland-first** path:
+
+1. **Google Shopping Ireland** — filter price + in stock / delivery  
+2. **Geizhals / Idealo** — cheapest EU for the exact model  
+3. **Currys.ie · Expert.ie · DID · Amazon.ie / Amazon.co.uk** — local convenience  
+
+Refresh all rows: `npm run catalog:buys`
 
 ---
 

@@ -1,6 +1,6 @@
 /**
  * Retail listing ID validation (ASIN / EAN / MPN).
- * Shared by Sonar enrich + discover.
+ * Shared by Sonar enrich + discover + hygiene.
  */
 
 function normalizeAsin(s) {
@@ -10,6 +10,12 @@ function normalizeAsin(s) {
   if (!/^[A-Z0-9]{10}$/.test(v)) return "";
   // Modern Amazon laptop ASINs are almost always B0…
   if (!/^B0[A-Z0-9]{8}$/.test(v)) return "";
+  // Reject obvious placeholders / hallucinations
+  if (/X{2,}|F{4,}|0{5,}|TEST|FAKE|XXXX|YYYY|ZZZZ|12345|ABCDE/i.test(v)) {
+    return "";
+  }
+  // Too many repeated chars
+  if (/(.)\1{4,}/.test(v)) return "";
   return v;
 }
 
@@ -72,6 +78,26 @@ function pickRetailIds(p = {}) {
   };
 }
 
+/** Prefer curated (non lap_auto) over auto drafts when deduping */
+function rowPriority(row) {
+  const id = row.id || "";
+  const st = row.cells?.col_status || "";
+  let p = 0;
+  if (!/^lap_auto_/.test(id)) p += 100;
+  if (st === "top") p += 50;
+  if (st === "consider") p += 40;
+  if (st === "alt") p += 30;
+  if (st === "pass") p += 5;
+  if (st === "draft") p += 1;
+  const sm = row.cells?.col_detail?.sku_map || {};
+  if (sm.price_verified || sm.price_source === "human_listing") p += 20;
+  if (sm.price_source === "sonar_verified") p += 10;
+  if (row.cells?.col_image) p += 5;
+  if (row.cells?.col_detail?.performance?.gaming?.games?.length) p += 8;
+  if (row.cells?.col_detail?.sonar) p += 3;
+  return p;
+}
+
 module.exports = {
   normalizeAsin,
   normalizeEan,
@@ -79,4 +105,5 @@ module.exports = {
   asinFromUrl,
   hasRetailIds,
   pickRetailIds,
+  rowPriority,
 };

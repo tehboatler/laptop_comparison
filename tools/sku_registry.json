@@ -1237,7 +1237,9 @@
         "verified": false,
         "at": "2026-08-04T15:22:34.844Z"
       },
-      "sonar_enriched_at": "2026-08-04T15:34:35.295Z"
+      "sonar_enriched_at": "2026-08-04T15:34:35.295Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx5060_lenovo_legion_5i_gen_10_a087b5": {
       "model": "Lenovo Legion 5i Gen 10",
@@ -1260,7 +1262,9 @@
         "verified": false,
         "at": "2026-08-04T15:22:34.856Z"
       },
-      "sonar_enriched_at": "2026-08-04T15:34:49.546Z"
+      "sonar_enriched_at": "2026-08-04T15:34:49.546Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx5060_lenovo_loq_15irx10_021dcc": {
       "model": "Lenovo LOQ 15IRX10",
@@ -1283,7 +1287,9 @@
         "verified": false,
         "at": "2026-08-04T15:22:51.518Z"
       },
-      "sonar_enriched_at": "2026-08-04T15:35:05.259Z"
+      "sonar_enriched_at": "2026-08-04T15:35:05.259Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx5060_lenovo_loq_15ahp10_2bcc7f": {
       "model": "Lenovo LOQ 15AHP10",
@@ -1306,7 +1312,9 @@
         "verified": false,
         "at": "2026-08-04T15:22:51.531Z"
       },
-      "sonar_enriched_at": "2026-08-04T15:35:18.802Z"
+      "sonar_enriched_at": "2026-08-04T15:35:18.802Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx5050_loq_essential_15_6_gaming_laptop_4ae8bf": {
       "model": "LOQ Essential 15.6\" Gaming Laptop",
@@ -1329,7 +1337,9 @@
         "verified": false,
         "at": "2026-08-04T15:23:05.202Z"
       },
-      "sonar_enriched_at": "2026-08-04T15:35:30.580Z"
+      "sonar_enriched_at": "2026-08-04T15:35:30.580Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_hp_rtx5050_loq_15ahp10_gaming_laptop_acbd41": {
       "model": "LOQ 15AHP10 Gaming Laptop",
@@ -1353,7 +1363,8 @@
         "at": "2026-08-04T15:35:45.013Z",
         "note": "No Amazon UK/DE product URL was available in the provided results, so no ASIN could be evidenced. The EAN 198158558044 was explicitly shown on a retailer spec page for the matching Ryzen 7/RTX 5050 LOQ 15AHP10 family, but the exact Ryzen 5/512GB listing could still be a regional variant. MPN 83JG0036PB was visible on a matching retailer page for the Ryzen 5 220 / 16GB / 512GB / RTX 5050 SKU."
       },
-      "sonar_enriched_at": "2026-08-04T15:35:45.014Z"
+      "sonar_enriched_at": "2026-08-04T15:35:45.014Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx5050_loq_15irx10_gaming_laptop_98be3a": {
       "model": "LOQ 15IRX10 Gaming Laptop",
@@ -1376,7 +1387,8 @@
         "verified": false,
         "at": "2026-08-04T15:23:05.225Z"
       },
-      "sonar_enriched_at": "2026-08-04T15:35:55.831Z"
+      "sonar_enriched_at": "2026-08-04T15:35:55.831Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx5060_asus_tuf_gaming_a15_9c7d2f": {
       "model": "ASUS TUF Gaming A15",
@@ -1399,7 +1411,8 @@
         "verified": false,
         "at": "2026-08-04T15:23:26.145Z"
       },
-      "sonar_enriched_at": "2026-08-04T15:36:08.497Z"
+      "sonar_enriched_at": "2026-08-04T15:36:08.497Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx5060_asus_tuf_gaming_a16_2025_fa608pm_rv_eaa68c": {
       "model": "ASUS TUF Gaming A16 (2025) FA608PM-RV009W",
@@ -1407,7 +1420,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "4711387969113",
       "mpn": "FA608PM-RV009W",
       "geizhals_id": "",
       "official_url": "",
@@ -1416,12 +1429,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:23:38.979Z"
-      }
+        "at": "2026-08-04T15:36:20.807Z",
+        "note": "EAN and MPN are evidenced by retailer/spec pages for this exact SKU; no real Amazon UK/DE product page URL was present in the provided results, so no ASIN can be returned without inventing it."
+      },
+      "sonar_enriched_at": "2026-08-04T15:36:20.807Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx5060_asus_tuf_a16_gaming_laptop_a613e6": {
       "model": "ASUS TUF A16 Gaming Laptop",
@@ -1443,7 +1459,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:23:38.991Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:36:36.993Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx5060_asus_v16_v3607vm_rp007w_a86215": {
       "model": "ASUS V16 V3607VM-RP007W",
@@ -1451,7 +1470,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "4711636058360",
       "mpn": "90NB16K1-M00280",
       "geizhals_id": "",
       "official_url": "",
@@ -1460,12 +1479,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:23:50.036Z"
-      }
+        "at": "2026-08-04T15:36:51.279Z",
+        "note": "EAN and MPN are evidenced by Box for the exact model number 90NB16K1-M00280 and EAN 4711636058360. No real Amazon UK/DE product URL for this exact SKU was provided in the search results, so ASIN is left null rather than guessed."
+      },
+      "sonar_enriched_at": "2026-08-04T15:36:51.279Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx5060_asus_gaming_v16_v3607vm_3bdafb": {
       "model": "ASUS Gaming V16 V3607VM",
@@ -1473,7 +1495,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "4711636058360",
       "mpn": "V3607VM-RP007W",
       "geizhals_id": "",
       "official_url": "",
@@ -1482,12 +1504,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:23:50.048Z"
-      }
+        "at": "2026-08-04T15:37:06.984Z",
+        "note": "EAN and MPN are evidenced by the Box.co.uk listing for ASUS V16 V3607VM-RP007W.[7] No real Amazon UK/DE product URL with a verifiable /dp/ ASIN for this exact SKU was present in the provided results, so asin_uk is not filled from evidence and the placeholder must be discarded; return null in production if you require strict evidence-only IDs."
+      },
+      "sonar_enriched_at": "2026-08-04T15:37:06.984Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx5060_asus_rog_zephyrus_g14_ga403gm_sy017_5695f4": {
       "model": "ASUS ROG Zephyrus G14 GA403GM-SY017W",
@@ -1509,29 +1534,38 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:23:50.060Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:37:18.320Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_msi_rtx4050_msi_thin_15_b13ve_2021uk_b40024": {
       "model": "MSI Thin 15 B13VE-2021UK",
       "asin": {
-        "uk": "",
+        "uk": "B0BSLLF6F6",
         "de": ""
       },
-      "ean": "",
+      "ean": "471137721371",
       "mpn": "9S7-16R831-2021",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/MSI-Notebook-Thin-15-i7-13620H/dp/B0BSLLF6F6",
       "search_query": "MSI Thin 15 RTX 4050 dual channel UK",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:24:06.993Z"
-      }
+        "at": "2026-08-04T15:37:31.518Z",
+        "note": "ASIN B0BSLLF6F6 is evidenced by the Amazon UK product URL and matches model Thin 15 B13VE-2021UK; EAN 471137721371 is shown on the Camelcamelcamel product record for the same SKU."
+      },
+      "sonar_enriched_at": "2026-08-04T15:37:31.518Z",
+      "_merged_into": "lap_msi_thin15_4050",
+      "_merge_asin": "B0BSLLF6F6",
+      "restored_from_hygiene": true,
+      "hygiene": "asin_dupe_pass"
     },
     "lap_auto_msi_rtx4050_msi_thin_15_b12ve_1251uk_6926b2": {
       "model": "MSI Thin 15 B12VE-1251UK",
@@ -1553,13 +1587,15 @@
         "confidence": "high",
         "verified": true,
         "at": "2026-08-04T15:24:14.780Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:37:42.432Z",
+      "auto_promoted": true
     },
     "lap_auto_msi_rtx4050_cyborg_15_a13v_0297d0": {
       "model": "Cyborg 15 A13V",
       "asin": {
         "uk": "",
-        "de": ""
+        "de": "B0CRLGKDFT"
       },
       "ean": "",
       "mpn": "A13VEK-123UK",
@@ -1570,12 +1606,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "high",
+        "confidence": "medium",
         "verified": false,
-        "at": "2026-08-04T15:24:29.519Z"
-      }
+        "at": "2026-08-04T15:37:55.778Z",
+        "note": "The German Amazon product page explicitly matches Cyborg 15 A13VE-863 with Core i5-13420H, RTX 4050, 16GB DDR5, and 512GB SSD, so B0CRLGKDFT is a valid evidenced Amazon DE ASIN for a matching regional listing.[8] I could not evidence a UK Amazon ASIN for this exact config from the provided results."
+      },
+      "sonar_enriched_at": "2026-08-04T15:37:55.778Z",
+      "auto_promoted": true
     },
     "lap_auto_msi_rtx4050_cyborg_15_2023_2024_retail_config_827109": {
       "model": "Cyborg 15 (2023/2024 retail config)",
@@ -1597,29 +1636,34 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:24:29.532Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:38:09.768Z",
+      "auto_promoted": true
     },
     "lap_auto_msi_rtx4050_cyborg_ai_15_a1vek_002uk_5687b0": {
       "model": "Cyborg AI 15 A1VEK-002UK",
       "asin": {
-        "uk": "",
+        "uk": "B0CTKWFF37",
         "de": ""
       },
       "ean": "",
       "mpn": "A1VEK-002UK",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/MSI-Notebook-CYBORG-155H-512GB/dp/B0CTKWFF37",
       "search_query": "MSI Cyborg 15 RTX 4050 UK deal",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:24:29.545Z"
-      }
+        "at": "2026-08-04T15:38:21.448Z",
+        "note": "ASIN B0CTKWFF37 was found on a real Amazon UK product URL matching the Cyborg 15 AI / Core Ultra 7 155H / RTX 4050 / 16GB / 512GB configuration family. No EAN was evidenced in the provided results, so it is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:38:21.448Z",
+      "auto_promoted": true
     },
     "lap_auto_hp_rtx4050_hp_victus_15_fa1003sa_2abfff": {
       "model": "HP Victus 15-fa1003sa",
@@ -1641,12 +1685,14 @@
         "confidence": "high",
         "verified": true,
         "at": "2026-08-04T15:25:04.175Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:38:32.810Z",
+      "auto_promoted": true
     },
     "lap_auto_hp_rtx4050_hp_victus_15_fb3003sa_86df3d": {
       "model": "HP Victus 15-fb3003sa",
       "asin": {
-        "uk": "",
+        "uk": "B0F6YRFRCR",
         "de": ""
       },
       "ean": "",
@@ -1658,12 +1704,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:25:04.187Z"
-      }
+        "at": "2026-08-04T15:38:45.231Z",
+        "note": "The Amazon UK ASIN B0F6YRFRCR is directly shown in the provided Reddit-cited Amazon URL for the matching 15-fb3003sa listing.[2] No EAN was evidenced in the supplied sources, so it is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:38:45.231Z",
+      "auto_promoted": true
     },
     "lap_auto_hp_rtx4050_hp_victus_15_fa1001sf_2eacfa": {
       "model": "HP VICTUS 15-fa1001sf",
@@ -1671,7 +1720,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "0197497364095",
       "mpn": "15-fa1001sf",
       "geizhals_id": "",
       "official_url": "",
@@ -1680,12 +1729,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:25:04.199Z"
-      }
+        "at": "2026-08-04T15:38:58.839Z",
+        "note": "EAN 0197497364095 is evidenced by a product page for HP Victus Gaming 15-fa1001sf with the matching i5-12500H / RTX 4050 / 16GB / 512GB configuration. I did not find a matching Amazon UK or Amazon DE product URL for this exact SKU, so asin_uk and asin_de are left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:38:58.839Z",
+      "auto_promoted": true
     },
     "lap_auto_hp_rtx4050_hp_victus_15_fa2300na_3dd3f1": {
       "model": "HP VICTUS 15-FA2300NA",
@@ -1693,7 +1745,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "0199485032696",
       "mpn": "15-fa2300na",
       "geizhals_id": "",
       "official_url": "",
@@ -1702,12 +1754,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "low",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:25:04.211Z"
-      }
+        "at": "2026-08-04T15:39:13.303Z",
+        "note": "EAN is evidenced on Icecat for HP Victus Gaming 15-fa2300na C17WHEA and matches the exact SKU family. No Amazon UK/DE product page URL was evidenced in the provided results, so no ASIN was returned."
+      },
+      "sonar_enriched_at": "2026-08-04T15:39:13.303Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_legion_5_16irx9_c50036": {
       "model": "Legion 5 16IRX9",
@@ -1715,7 +1770,7 @@
         "uk": "B0C8FXHVBW",
         "de": "B0D31WQB2X"
       },
-      "ean": "",
+      "ean": "0198153766710",
       "mpn": "83DG00DSUK",
       "geizhals_id": "",
       "official_url": "https://www.amazon.co.uk/dp/B0C8FXHVBW",
@@ -1724,34 +1779,43 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:25:29.731Z"
-      }
+        "at": "2026-08-04T15:39:25.638Z",
+        "note": "The UK ASIN is taken from the provided Amazon.co.uk product URL. The German ASIN is from a real Amazon.de product page for a matching Legion 5 16IRX9 RTX 4060 listing. The EAN 0198153766710 and MPN 83DG0046UK are evidenced on retailer/spec pages for this exact UK-oriented configuration.[7][8][9][11]"
+      },
+      "sonar_enriched_at": "2026-08-04T15:39:25.638Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_legion_5_gaming_laptop_1413d2": {
       "model": "Legion 5 Gaming Laptop",
       "asin": {
-        "uk": "",
-        "de": ""
+        "uk": "B0CNW98P31",
+        "de": "B0D31WQB2X"
       },
-      "ean": "",
+      "ean": "0198153766710",
       "mpn": "83DG00DSUK",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-Legion-16IRX8-Laptop-Intel/dp/B0CNW98P31",
       "search_query": "Lenovo Legion 5 RTX 4060 UK street price",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "medium",
         "verified": false,
-        "at": "2026-08-04T15:25:29.743Z"
-      }
+        "at": "2026-08-04T15:39:40.823Z",
+        "note": "ASIN_uk is evidenced by the Amazon UK URL, but that page is for a Legion Pro 5 16IRX8 i7-13700HX, not the exact requested i7-14650HX Legion 5 config. The closest exact UK SKU evidence is 83DG00DSUK with EAN 0198153766710 on the retailer page; Currys shows a related 83DG00D6UK/EAN 198153660254 variant. Amazon DE ASIN B0D31WQB2X explicitly matches Legion 5 16IRX9 and states RTX 4060 TGP 140W."
+      },
+      "sonar_enriched_at": "2026-08-04T15:39:40.824Z",
+      "_merged_into": "lap_auto_lenovo_rtx4060_legion_5_16irx9_c50036",
+      "_merge_asin": "B0D31WQB2X",
+      "restored_from_hygiene": true,
+      "hygiene": "asin_dupe_pass"
     },
     "lap_auto_lenovo_rtx4060_legion_5_nvidia_rtx_4060_16gb_16_a0c870": {
       "model": "Legion 5 NVIDIA RTX 4060 16GB 16.0 WQXGA 240Hz Gaming Laptop",
@@ -1773,7 +1837,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:25:29.755Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:39:55.698Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx4050_asus_tuf_gaming_f16_fx607vu_rl033w_9c6bd7": {
       "model": "ASUS TUF Gaming F16 FX607VU-RL033W",
@@ -1781,7 +1848,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "4711387866979",
       "mpn": "FX607VU-RL033W",
       "geizhals_id": "",
       "official_url": "",
@@ -1790,12 +1857,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:25:41.894Z"
-      }
+        "at": "2026-08-04T15:40:08.972Z",
+        "note": "EAN and MPN are evidenced on the Laptop Outlet product page for FX607VU-RL033W. No Amazon UK/DE product URL for this exact model was present in the provided results, so no ASIN is returned."
+      },
+      "sonar_enriched_at": "2026-08-04T15:40:08.972Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx4050_asus_tuf_gaming_a16_fa607nug_rl116w_c43e5b": {
       "model": "ASUS TUF Gaming A16 FA607NUG-RL116W",
@@ -1803,7 +1873,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "4711636132527",
       "mpn": "FA607NUG-RL116W",
       "geizhals_id": "",
       "official_url": "",
@@ -1812,12 +1882,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:25:41.906Z"
-      }
+        "at": "2026-08-04T15:40:22.094Z",
+        "note": "No Amazon UK or Amazon DE product-page URL for this exact FA607NUG-RL116W listing was present in the provided results, so no ASIN is returned. The EAN 4711636132527 is explicitly listed by Farnell for this SKU."
+      },
+      "sonar_enriched_at": "2026-08-04T15:40:22.094Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx4050_asus_tuf_gaming_fa507nur_bc94a9": {
       "model": "ASUS TUF Gaming FA507NUR",
@@ -1826,7 +1899,7 @@
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "FA507NUR",
       "geizhals_id": "",
       "official_url": "https://www.amazon.co.uk/ASUS-FA507NUR-7-7435H-GeForce-Windows/dp/B0DBQH9197",
       "listing_url": "https://www.amazon.co.uk/ASUS-FA507NUR-7-7435H-GeForce-Windows/dp/B0DBQH9197",
@@ -1834,12 +1907,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:26:05.067Z"
-      }
+        "at": "2026-08-04T15:40:33.279Z",
+        "note": "ASIN B0DBQH9197 is evidenced by the provided Amazon UK product URL. No verified EAN or Amazon DE product page was found in the gathered sources."
+      },
+      "sonar_enriched_at": "2026-08-04T15:40:33.279Z",
+      "auto_promoted": true
     },
     "lap_auto_asus_rtx4050_asus_v16_16in_gaming_laptop_bundle_6c43a9": {
       "model": "ASUS V16 16in Gaming Laptop Bundle",
@@ -1861,12 +1937,15 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:26:05.080Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:40:46.080Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_acer_rtx4050_acer_nitro_16_an16_51_56vr_7ba9d5": {
       "model": "Acer Nitro 16 AN16-51-56VR",
       "asin": {
-        "uk": "",
+        "uk": "B0BXMMP84S",
         "de": ""
       },
       "ean": "",
@@ -1878,12 +1957,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:26:05.092Z"
-      }
+        "at": "2026-08-04T15:40:57.449Z",
+        "note": "ASIN is evidenced by the Amazon product URL for the matching AN16-51-56VR listing. No real UK/DE Amazon product page or retailer/spec page in the provided results exposed an EAN for this exact config, so EAN is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:40:57.449Z",
+      "auto_promoted": true
     },
     "lap_auto_hp_rtx4050_hp_victus_gaming_15_ryzen_5_8640h_con_1d5d9a": {
       "model": "HP Victus Gaming 15 (Ryzen 5 8640H config)",
@@ -1905,35 +1987,40 @@
         "confidence": "medium",
         "verified": true,
         "at": "2026-08-04T15:26:13.302Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:41:10.868Z",
+      "auto_promoted": true
     },
     "lap_auto_oem_apple_m4_macbook_pro_14_2024_df38bd": {
       "model": "MacBook Pro 14 (2024)",
       "asin": {
-        "uk": "",
+        "uk": "B0DLHWDGSR",
         "de": ""
       },
       "ean": "",
-      "mpn": "",
+      "mpn": "MX2H3B/A",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Apple-MacBook-Laptop-12-core-16-core/dp/B0DLHWDGSR",
       "search_query": "MacBook Pro 14 M4 16GB 512GB UK ASIN",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "high",
+        "confidence": "medium",
         "verified": false,
-        "at": "2026-08-04T15:26:26.366Z"
-      }
+        "at": "2026-08-04T15:41:21.957Z",
+        "note": "Amazon UK ASIN B0DLHWDGSR is evidenced by a real Amazon product URL, but the visible page text in the provided results is for an M4 Pro configuration, not the exact base M4 10-core/10-core SKU. No EAN was evidenced in the provided results, so it is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:41:21.957Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16irp8_dcbb9c": {
       "model": "Lenovo Yoga Pro 9 16IRP8",
       "asin": {
         "uk": "B0CHW86G5V",
-        "de": ""
+        "de": "B0CGLSNFCL"
       },
       "ean": "",
       "mpn": "83BY000KUK",
@@ -1944,34 +2031,40 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:26:48.969Z"
-      }
+        "at": "2026-08-04T15:41:38.713Z",
+        "note": "ASIN UK is directly evidenced by the Amazon.co.uk product URL and listing for Lenovo Yoga Pro 9 16IRP8 with i9-13905H, 32GB RAM, 1TB SSD, and RTX 4060[1]. The German ASIN is evidenced by an Amazon.de product page for the same Yoga Pro 9 16IRP8 family/configuration[8]. No EAN was visible in the supplied sources for this exact SKU, so it is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:41:38.713Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16imh9_16fbbe": {
       "model": "Lenovo Yoga Pro 9 16IMH9",
       "asin": {
-        "uk": "",
+        "uk": "B0DB1Z9839",
         "de": ""
       },
-      "ean": "",
+      "ean": "198154118297",
       "mpn": "83DN001FUK",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-16IMH9-3200x2000-Display-LPDDR5x/dp/B0DB1Z9839",
       "search_query": "Lenovo Yoga Pro 9i RTX 4060 UK Amazon",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:26:48.982Z"
-      }
+        "at": "2026-08-04T15:41:49.854Z",
+        "note": "Amazon UK ASIN B0DB1Z9839 is evidenced by a real Yoga Pro 9 16IMH9 RTX 4060 product page. The UK retail SKU 83DN0071UK has EAN 198154118297 on Currys, matching the Core Ultra 9 185H / 32GB / 1TB / RTX 4060 configuration."
+      },
+      "sonar_enriched_at": "2026-08-04T15:41:49.854Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_yoga_pro_9i_16_gen_9_523276": {
       "model": "Yoga Pro 9i 16 Gen 9",
@@ -1993,7 +2086,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:27:02.199Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:42:03.961Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_yoga_pro_9_14irp8_e6f3df": {
       "model": "Yoga Pro 9 14IRP8",
@@ -2015,73 +2111,94 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:27:02.212Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:42:18.336Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_yoga_pro_9_16irp8_83by000kuk_3bc568": {
       "model": "Yoga Pro 9 16IRP8 / 83BY000KUK",
       "asin": {
-        "uk": "",
-        "de": ""
+        "uk": "B0CHW86G5V",
+        "de": "B0CGLSNFCL"
       },
       "ean": "",
       "mpn": "83BY000KUK",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-Yoga-16IRP8-Inch-Laptop/dp/B0CHW86G5V",
       "search_query": "Lenovo Yoga Pro 9i 16 RTX 4060 32GB UK",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:27:19.762Z"
-      }
+        "at": "2026-08-04T15:42:31.049Z",
+        "note": "ASINs are taken directly from real Amazon product URLs for matching Yoga Pro 9 16IRP8 RTX 4060 listings. No EAN was evidenced in the provided sources, so it is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:42:31.049Z",
+      "_merged_into": "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16irp8_dcbb9c",
+      "_merge_asin": "B0CGLSNFCL",
+      "restored_from_hygiene": true,
+      "hygiene": "asin_dupe_pass"
     },
     "lap_auto_lenovo_rtx4060_yoga_pro_9i_16_gen_8_e15996": {
       "model": "Yoga Pro 9i 16 Gen 8",
       "asin": {
-        "uk": "",
-        "de": ""
+        "uk": "B0DB1Z9839",
+        "de": "B0CGLSNFCL"
       },
-      "ean": "",
+      "ean": "196804363639",
       "mpn": "83BY000KUK",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-16IMH9-3200x2000-Display-LPDDR5x/dp/B0DB1Z9839",
       "search_query": "Lenovo Yoga Pro 9i 16 RTX 4060 32GB UK",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "low",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:27:19.775Z"
-      }
+        "at": "2026-08-04T15:42:43.697Z",
+        "note": "ASIN UK comes from a real Amazon.co.uk product page for the same Yoga Pro 9 16 RTX 4060 family; ASIN DE comes from a real Amazon.de product page for the matching Core i9-13905H/RTX 4060 Yoga Pro 9 listing. EAN 196804363639 and MPN 83BY000KUK are explicitly shown on Currys for the exact 32GB/1TB/i9-13905H/RTX 4060 configuration."
+      },
+      "sonar_enriched_at": "2026-08-04T15:42:43.697Z",
+      "_merged_into": "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16imh9_16fbbe",
+      "_merge_asin": "B0DB1Z9839",
+      "restored_from_hygiene": true,
+      "hygiene": "asin_dupe_pass"
     },
     "lap_auto_lenovo_rtx4060_yoga_pro_9i_16imh9_5152f5": {
       "model": "Yoga Pro 9i 16IMH9",
       "asin": {
-        "uk": "",
-        "de": ""
+        "uk": "B0DB1Z9839",
+        "de": "B0CNKJZV35"
       },
-      "ean": "",
+      "ean": "0196804363639",
       "mpn": "83BY000KUK",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-16IMH9-3200x2000-Display-LPDDR5x/dp/B0DB1Z9839",
       "search_query": "Lenovo Yoga Pro 9i 2025 Core Ultra RTX 4060 UK",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "medium",
         "verified": false,
-        "at": "2026-08-04T15:27:48.488Z"
-      }
+        "at": "2026-08-04T15:42:53.695Z",
+        "note": "ASIN UK and DE were taken only from real Amazon product URLs in the search results. The EAN comes from an eBay product/spec page for a related Yoga Pro 9 16IRP8 RTX 4060 listing, not from the exact Core Ultra 9 185H listing, so it is a plausible but not guaranteed match for this exact SKU family."
+      },
+      "sonar_enriched_at": "2026-08-04T15:42:53.695Z",
+      "_merged_into": "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16imh9_16fbbe",
+      "_merge_asin": "B0DB1Z9839",
+      "restored_from_hygiene": true,
+      "hygiene": "asin_dupe_pass"
     },
     "lap_auto_lenovo_gpu_yoga_pro_9i_gen_10_aura_edition_16_fb47e8": {
       "model": "Yoga Pro 9i Gen 10 Aura Edition 16",
@@ -2103,29 +2220,38 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:28:03.636Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:43:07.489Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_pro_9i_aura_edition_16_ff19ae": {
       "model": "Yoga Pro 9i Aura Edition 16",
       "asin": {
-        "uk": "",
+        "uk": "B0DB1Z9839",
         "de": ""
       },
       "ean": "",
       "mpn": "83L00009US variant",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-16IMH9-3200x2000-Display-LPDDR5x/dp/B0DB1Z9839",
       "search_query": "Lenovo Yoga Pro 9i Aura Edition UK",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "medium",
         "verified": false,
-        "at": "2026-08-04T15:28:03.649Z"
-      }
+        "at": "2026-08-04T15:43:18.657Z",
+        "note": "The only evidenced Amazon UK ASIN in the provided results is B0DB1Z9839, but it belongs to a Lenovo Yoga Pro 9 16IMH9 RTX 4060 listing, not the exact RTX 5060 config. I therefore include it only as a related chassis-family reference, not as a confirmed ID for this exact SKU. No evidenced Amazon DE product page or EAN for the exact RTX 5060 configuration was found in the provided results."
+      },
+      "sonar_enriched_at": "2026-08-04T15:43:18.657Z",
+      "_merged_into": "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16imh9_16fbbe",
+      "_merge_asin": "B0DB1Z9839",
+      "restored_from_hygiene": true,
+      "hygiene": "asin_dupe_pass"
     },
     "lap_auto_lenovo_gpu_yoga_pro_9i_gen_11_aura_edition_16_4b5fb1": {
       "model": "Yoga Pro 9i Gen 11 Aura Edition 16",
@@ -2147,7 +2273,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:28:03.661Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:43:30.935Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_lenovo_yoga_pro_7i_gen_9_14_inch_acebc5": {
       "model": "Lenovo Yoga Pro 7i Gen 9 (14-inch Intel)",
@@ -2155,7 +2284,7 @@
         "uk": "",
         "de": "B0CSZ1HH6V"
       },
-      "ean": "",
+      "ean": "0197530146749",
       "mpn": "83E2000UUK",
       "geizhals_id": "",
       "official_url": "https://www.amazon.de/Lenovo-Laptop-Display-GeForce-Premium/dp/B0CSZ1HH6V",
@@ -2164,34 +2293,40 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:28:24.844Z"
-      }
+        "at": "2026-08-04T15:43:41.867Z",
+        "note": "ASIN B0CSZ1HH6V is evidenced by the Amazon.de product URL provided. The EAN 0197530146749 is evidenced by the product matching page in the search results. No UK Amazon product page was provided, so asin_uk is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:43:41.867Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_lenovo_yoga_pro_7_14irh8_14_5_inc_c33281": {
       "model": "Lenovo Yoga Pro 7 14IRH8 (14.5-inch)",
       "asin": {
-        "uk": "",
+        "uk": "B0CNRX88F2",
         "de": ""
       },
       "ean": "0196804363615",
       "mpn": "82Y7004PUK",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-14IRH8-Laptop-Intel-512GB/dp/B0CNRX88F2",
       "search_query": "Lenovo Yoga Pro 7i RTX 4050 UK Amazon",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:28:24.857Z"
-      }
+        "at": "2026-08-04T15:43:56.230Z",
+        "note": "Amazon UK ASIN B0CNRX88F2 appears on a real Amazon product URL for the matching Yoga Pro 7 14IRH8 RTX 4050 family. The EAN 0196804363615 is explicitly shown on the matching retailer page for MPN 82Y7004PUK. No Amazon DE product URL for this exact SKU was evidenced in the provided results, so asin_de is left null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:43:56.230Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_yoga_pro_7i_14imh9_fdb823": {
       "model": "Yoga Pro 7i 14IMH9",
@@ -2213,7 +2348,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:28:37.719Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:44:08.095Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_yoga_pro_7_14imh9_fef1ea": {
       "model": "Yoga Pro 7 14IMH9",
@@ -2235,7 +2373,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:28:37.732Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:44:22.826Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_yoga_pro_7i_14_gen_9_abf188": {
       "model": "Yoga Pro 7i 14 Gen 9",
@@ -2257,7 +2398,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:29:18.992Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:44:33.792Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_yoga_pro_7i_gen_9_14_intel_0e0ae4": {
       "model": "Yoga Pro 7i Gen 9 14\" Intel",
@@ -2279,7 +2423,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:29:31.615Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:44:45.994Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7i_gen_11_aura_edition_14_i_2d4afd": {
       "model": "Yoga Slim 7i Gen 11 Aura Edition 14-inch",
@@ -2301,7 +2448,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:29:48.244Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:44:59.418Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7i_ultra_aura_edition_gen_1_65431c": {
       "model": "Yoga Slim 7i Ultra Aura Edition Gen 11 14.5-inch",
@@ -2323,7 +2473,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:29:48.258Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:45:10.552Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7_14_824514": {
       "model": "Yoga Slim 7 14",
@@ -2345,7 +2498,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:30:02.192Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:45:23.305Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7i_14_4b592f": {
       "model": "Yoga Slim 7i 14",
@@ -2367,7 +2523,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:30:02.205Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:45:36.463Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7i_ultra_gen_11_aura_editio_2fe642": {
       "model": "Yoga Slim 7i Ultra Gen 11 Aura Edition 14",
@@ -2389,7 +2548,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:30:02.218Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:45:49.005Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7x_14_67fc9a": {
       "model": "Yoga Slim 7X 14\"",
@@ -2411,7 +2573,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:30:15.933Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:45:59.756Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7x_gen_11_14_c0b10f": {
       "model": "Yoga Slim 7X Gen 11 14\"",
@@ -2433,7 +2598,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:30:15.948Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:46:12.351Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_lenovo_yoga_slim_7_carbon_14acn6_fa1953": {
       "model": "Lenovo Yoga Slim 7 Carbon 14ACN6",
@@ -2455,7 +2623,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:30:26.449Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:46:23.778Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_slim_7i_gen_9_14_inch_intel_8dfbcd": {
       "model": "Yoga Slim 7i Gen 9 (14-inch Intel)",
@@ -2477,7 +2648,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:30:38.761Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:46:38.200Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_7i_2_in_1_16_gen_10_3e6d68": {
       "model": "Yoga 7i 2-in-1 16 (Gen 10)",
@@ -2499,7 +2673,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:30:50.664Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:46:50.612Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_7_16_2_in_1_00cf33": {
       "model": "Yoga 7 16 2-in-1",
@@ -2521,7 +2698,9 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:30:59.708Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:47:01.487Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_7_14_2_in_1_ecee2b": {
       "model": "Yoga 7 14 2-in-1",
@@ -2543,7 +2722,9 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:31:25.071Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:47:14.961Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_7_2_in_1_gen_10_14ill10_7c2ea0": {
       "model": "Yoga 7 2-in-1 Gen 10 14ILL10",
@@ -2565,7 +2746,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:31:25.090Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:47:28.448Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_7i_2_in_1_gen_10_14_inch_intel_edd41b": {
       "model": "Yoga 7i 2-in-1 Gen 10 (14-inch Intel)",
@@ -2587,7 +2771,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:31:40.009Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:47:40.583Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_7i_2_in_1_gen_11_aura_edition_14_759b95": {
       "model": "Yoga 7i 2-in-1 Gen 11 Aura Edition (14-inch Intel)",
@@ -2609,7 +2796,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:31:40.026Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:47:51.905Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_9i_14_2_in_1_0e14a4": {
       "model": "Yoga 9i 14 2-in-1",
@@ -2631,7 +2821,9 @@
         "confidence": "high",
         "verified": true,
         "at": "2026-08-04T15:32:00.305Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:48:05.184Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_9i_14_inch_2_in_1_laptop_3b948b": {
       "model": "Yoga 9i 14 Inch 2-in-1 Laptop",
@@ -2653,7 +2845,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:32:08.744Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:48:18.183Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_9i_2_in_1_gen_11_aura_edition_14_ac596f": {
       "model": "Yoga 9i 2-in-1 Gen 11 Aura Edition (14\" Intel)",
@@ -2675,7 +2870,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:32:08.758Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:48:29.810Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_9i_2_in_1_gen_10_aura_edition_14_7fce08": {
       "model": "Yoga 9i 2-in-1 Gen 10 Aura Edition (14\" Intel)",
@@ -2697,7 +2895,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:32:08.774Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:48:41.242Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_9i_2_in_1_aura_edition_14_gen_10_e5341a": {
       "model": "Yoga 9i 2-in-1 Aura Edition (14\", Gen 10)",
@@ -2719,7 +2920,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:32:23.779Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:48:53.596Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_book_9i_gen_10_14_inch_a86f91": {
       "model": "Yoga Book 9i Gen 10 (14-inch)",
@@ -2741,7 +2945,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:32:39.938Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:49:04.590Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_book_9i_gen_8_13_inch_e940ab": {
       "model": "Yoga Book 9i Gen 8 (13-inch)",
@@ -2763,7 +2970,10 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:32:39.954Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:49:16.470Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_yoga_book_9i_2024_5e41a8": {
       "model": "Yoga Book 9i (2024)",
@@ -2785,7 +2995,9 @@
         "confidence": "low",
         "verified": false,
         "at": "2026-08-04T15:32:48.235Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:49:29.258Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4060_yoga_pro_9i_gen_8_16_intel_78abbd": {
       "model": "Yoga Pro 9i Gen 8 (16″ Intel)",
@@ -2807,7 +3019,12 @@
         "confidence": "high",
         "verified": false,
         "at": "2026-08-04T15:33:08.648Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:49:42.667Z",
+      "_merged_into": "lap_auto_lenovo_rtx4060_lenovo_yoga_pro_9_16imh9_16fbbe",
+      "_merge_asin": "B0DB1Z9839",
+      "restored_from_hygiene": true,
+      "hygiene": "asin_dupe_pass"
     },
     "lap_auto_lenovo_rtx4050_yoga_pro_7_14imh8_7a8ef0": {
       "model": "Yoga Pro 7 14IMH8",
@@ -2815,7 +3032,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "0196804363615",
       "mpn": "82Y7004PUK",
       "geizhals_id": "",
       "official_url": "",
@@ -2824,12 +3041,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
-        "confidence": "medium",
+        "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:33:24.375Z"
-      }
+        "at": "2026-08-04T15:49:56.621Z",
+        "note": "EAN and MPN are evidenced by the Tekshop product page for the matching UK SKU 82Y7004PUK. No Amazon UK/DE product page in the provided results evidenced a matching RTX 4050 listing with a visible ASIN on-page, so ASIN remains null."
+      },
+      "sonar_enriched_at": "2026-08-04T15:49:56.621Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_lenovo_yoga_pro_9i_16_07a972": {
       "model": "Lenovo Yoga Pro 9i 16",
@@ -2851,7 +3071,10 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:33:40.595Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:50:07.564Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_gpu_lenovo_yoga_7_2_in_1_16_gen_10_0fc1ee": {
       "model": "Lenovo Yoga 7 2-in-1 16 Gen 10",
@@ -2873,7 +3096,10 @@
         "confidence": "low",
         "verified": false,
         "at": "2026-08-04T15:33:40.611Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:50:18.548Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_loq_15iax9e_245512": {
       "model": "LOQ 15IAX9E",
@@ -2895,29 +3121,35 @@
         "confidence": "medium",
         "verified": false,
         "at": "2026-08-04T15:33:54.612Z"
-      }
+      },
+      "sonar_enriched_at": "2026-08-04T15:50:29.312Z",
+      "restored_from_hygiene": true,
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_lenovo_loq_15i_15_6in_42499e": {
       "model": "Lenovo LOQ 15i 15.6in",
       "asin": {
-        "uk": "",
+        "uk": "B0CLY1QB6V",
         "de": ""
       },
       "ean": "",
       "mpn": "470/4821",
       "geizhals_id": "",
       "official_url": "",
-      "listing_url": "",
+      "listing_url": "https://www.amazon.co.uk/Lenovo-Gaming-i5-12450H-GeForce-Windows/dp/B0CLY1QB6V",
       "search_query": "Lenovo Yoga creator laptop RTX 4050 under 1500 GBP UK",
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:33:54.627Z"
-      }
+        "at": "2026-08-04T15:50:42.703Z",
+        "note": "ASIN B0CLY1QB6V is directly evidenced by the Amazon UK product page for the matching Lenovo LOQ 15.6 inch i5-12450H/16GB/512GB/RTX 4050 listing. No EAN was found on the provided sources, so none is returned."
+      },
+      "sonar_enriched_at": "2026-08-04T15:50:42.704Z",
+      "auto_promoted": true
     },
     "lap_auto_lenovo_rtx4050_lenovo_loq_15_6in_r7_9c6726": {
       "model": "Lenovo LOQ 15.6in R7",
@@ -2925,7 +3157,7 @@
         "uk": "",
         "de": ""
       },
-      "ean": "",
+      "ean": "199272793397",
       "mpn": "83S0000RUK",
       "geizhals_id": "",
       "official_url": "",
@@ -2934,12 +3166,15 @@
       "auto_draft": true,
       "price_verified": false,
       "resolve_meta": {
-        "source": "sonar_discover",
+        "source": "sonar",
         "auto": true,
         "confidence": "high",
         "verified": false,
-        "at": "2026-08-04T15:33:54.642Z"
-      }
+        "at": "2026-08-04T15:50:55.974Z",
+        "note": "EAN and MPN are directly evidenced by the Argos product page. I did not find a real Amazon UK/DE product URL for this exact UK catalog SKU, so ASIN fields are left null to avoid guessing."
+      },
+      "sonar_enriched_at": "2026-08-04T15:50:55.974Z",
+      "auto_promoted": true
     }
   }
 }

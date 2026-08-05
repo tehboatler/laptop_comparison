@@ -172,8 +172,17 @@ async function sonarChat({ prompt, system, model, json = true, skipPace = false 
           data.choices?.[0]?.message?.content ||
           data.choices?.[0]?.message?.reasoning ||
           "";
-        const citations =
+        // Prefer top-level citations; fall back to message / search_results URLs
+        let citations =
           data.citations || data.choices?.[0]?.message?.citations || [];
+        const search_results = Array.isArray(data.search_results)
+          ? data.search_results
+          : Array.isArray(data.choices?.[0]?.message?.search_results)
+            ? data.choices[0].message.search_results
+            : [];
+        if ((!citations || !citations.length) && search_results.length) {
+          citations = search_results.map((r) => r?.url).filter(Boolean);
+        }
 
         let parsed = null;
         if (json && content) {
@@ -201,6 +210,7 @@ async function sonarChat({ prompt, system, model, json = true, skipPace = false 
           content: String(content || ""),
           parsed,
           citations: Array.isArray(citations) ? citations : [],
+          search_results,
           model: useModel,
           raw: data,
         };

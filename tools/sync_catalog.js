@@ -666,7 +666,13 @@ async function main() {
     }
   }
 
-  // 2–3) Local transforms
+  // 2) Automatic quality gates (dedupe, scrub ASINs, images, FPS templates, promote)
+  console.log("\n→ tools/catalog_hygiene.js");
+  runNode("tools/catalog_hygiene.js");
+  data = loadJson(dataPath);
+  reg = loadJson(regPath);
+
+  // 3) Local transforms
   runNode("tools/normalize_chassis.js");
   runNode("tools/refresh_buy_links.js");
 
